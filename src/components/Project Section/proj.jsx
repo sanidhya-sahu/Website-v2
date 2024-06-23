@@ -13,7 +13,6 @@ const ProjectsSection = () => {
     gsap.registerPlugin(ScrollTrigger);
     useGSAP(() => {
         const H = document.querySelector(".projectPage").clientWidth;
-        console.log(H);
         // to make body dark
 
         gsap.to("body", {
