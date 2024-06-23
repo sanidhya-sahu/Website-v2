@@ -72,6 +72,10 @@
   background-color: #1b1b1b;
 }
 
+.container1>.projDesc,.container1>.projName,.container1>.projNum{
+  color: white;
+}
+
 .container2 {
   background-color: #f9fdfe;
 }
