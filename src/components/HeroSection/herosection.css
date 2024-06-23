@@ -1,0 +1,232 @@
+.heroWrap {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+}
+
+.highlight {
+  position: relative;
+  display: inline-block;
+  padding: 8px;
+}
+
+.highlight-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 95%;
+  background: #c6ff97;
+  border-radius: 10px;
+  transition: width 0.7s ease-in-out;
+}
+
+.highContent {
+  position: relative;
+}
+
+.heroTitle {
+  position: static;
+  display: flex;
+  justify-content: flex-start;
+  width: -webkit-fill-available;
+  margin-left: 90px;
+  margin-bottom: 45px;
+}
+
+.event-container {
+  /* background-image: radial-gradient(rgba(128, 128, 128, 0.5) 1.5px,
+            transparent 1px),
+        radial-gradient(rgba(128, 128, 128, 0.5) 1.5px, transparent 1px);
+    background-size: 20px 20px;
+    background-position: 0 0, 10px 10px; */
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  height: 80%;
+  font-family: "Arame";
+}
+
+.left-event-container {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* margin: 20vh 0 0 0; */
+}
+
+.left-event-container p {
+  padding: 10px 90px;
+  font-size: 22px;
+  color: black;
+}
+
+.left-event-container p::selection {
+  color: black;
+  background: #c6ff97;
+}
+
+.register-button {
+  font-size: 15px;
+  margin: 0px auto 0 90px;
+  padding: 8px 30px;
+  background: black;
+  border: 5px solid black;
+  border-radius: 35px;
+  position: relative;
+  color: white;
+  padding-left: 15px;
+  padding-right: 35px;
+}
+
+.register-button::after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background-color: rgba(204, 255, 0, 0.7);
+  border-radius: 50%;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
+
+.right-event-container {
+  width: 60%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.right-event-container img {
+  width: 65%;
+  border-radius: 20px;
+  margin: 2vh 8vh 0 0;
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 10px;
+  font-size: 2rem;
+  font-weight: 100;
+  /* padding: 15vh 8vh 0 0; */
+  margin: 0 3vh 24px 0;
+}
+
+.description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 0 8vh 0 0;
+  margin: 2vh 5vh 0 2vh;
+}
+
+@media screen and (max-width: 1145px) {
+  .heroTitle {
+    margin-bottom: 20px;
+    margin-left: 70px;
+    left: 20px;
+  }
+  .left-event-container {
+    width: 45%;
+  }
+  .left-event-container p {
+    padding: 10px 70px;
+  }
+  .register-button {
+    margin: 0px auto 0 70px;
+  }
+  .right-event-container img {
+    width: 75%;
+    margin: 2vh 4vh 0 0;
+  }
+  .heading {
+    font-size: 2.1rem;
+  }
+}
+@media screen and (max-width: 968px) {
+  .heroTitle {
+    margin-bottom: 20px;
+    margin-left: 50px;
+  }
+  .left-event-container {
+    width: 50%;
+  }
+  .left-event-container p {
+    padding: 10px 50px;
+    font-size: 20px;
+  }
+  .register-button {
+    margin: 0px auto 0 50px;
+  }
+  .right-event-container img {
+    width: 80%;
+    margin: 2vh 3vh 0 0;
+  }
+  .heading {
+    font-size: 1.6rem;
+    margin: 0 2vh 24px 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .event-container {
+    flex-direction: column-reverse;
+    height: 100%;
+  }
+  .heroTitle {
+    margin-left: 10px;
+    position: absolute;
+    top: 15px;
+  }
+  .left-event-container {
+    width: 100%;
+    flex-direction: column-reverse;
+  }
+  .left-event-container p {
+    text-align: center;
+    padding: 10px 10px;
+    font-size: 23px;
+  }
+  .register-button {
+    margin: 10px 0px 0px 0px;
+  }
+  .right-event-container {
+    width: 100%;
+    margin-top: 50px;
+  }
+  .right-event-container img {
+    width: 100%;
+    margin: 0 0 24px 0;
+  }
+  .heading {
+    letter-spacing: 5px;
+    font-size: 1.7rem;
+    margin: 0 0 24px 0;
+  }
+}

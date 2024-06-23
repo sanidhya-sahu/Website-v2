@@ -1,27 +1,28 @@
-import { useState } from 'react'
-import './App.css'
+import { useState } from "react";
+import "./App.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Proj from './components/Project Section/proj'
-import Magazine from './components/Magazine/magazine'
+import Proj from "./components/ProjectSection/project";
+import Magazine from "./components/Magazine/magazine";
+import Heropage from "./components/HeroSection/herosection";
 const App = () => {
   return (
     <>
       <Router>
         <Routes>
           <Route
-            path='/'
+            path="/"
             element={
               <>
+                <Heropage></Heropage>
                 <Proj></Proj>
               </>
             }
-          >
-          </Route>
+          ></Route>
           <Route path="/magazine" element={<Magazine />}></Route>
         </Routes>
       </Router>
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;
