@@ -57,7 +57,7 @@ function Flipbook() {
   };
 
   return (
-    <>
+    <div className="magazineWrap">
 
       <div className="flipbook-container">
         <div className="nav-bar">
@@ -130,7 +130,7 @@ function Flipbook() {
           </svg>
         </button>
       </div>
-    </>
+    </div>
   );
 }
 
