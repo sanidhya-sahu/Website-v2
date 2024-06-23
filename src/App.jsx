@@ -11,9 +11,7 @@ const App = () => {
             path='/'
             element={
               <>
-                <div className='page'></div>
                 <Proj></Proj>
-                <div className='page'></div>
               </>
             }
           >
