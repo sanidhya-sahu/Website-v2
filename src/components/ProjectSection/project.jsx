@@ -51,7 +51,7 @@ const ProjectsSection = () => {
                     style={{
                         position: "absolute",
                         top: "90px",
-                        left: "20px",
+                        left: "120px",
                         color: isDark ? "white" : "black",
                     }}
                 >
