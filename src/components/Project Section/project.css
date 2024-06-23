@@ -1,0 +1,225 @@
+@font-face {
+  font-family: arame;
+  src: url("../../fonts/Arame.ttf");
+}
+.projectCover {
+  /* background-color: black; */
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.projectPage {
+  width: fit-content;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  /* transform: translateX(-55%); */
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.projectTitle {
+  width: 300px;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 40px;
+  gap: 80px;
+}
+
+.projectTitle h1 {
+  font-size: 40px;
+  font-weight: 600;
+  font-family: "Arame";
+  color: white;
+  text-align: left;
+}
+
+.viewmore {
+  width: auto;
+  margin-left: 100px;
+  align-items: center;
+  justify-content: center;
+  width: 206px;
+  gap: 50px;
+  transition: all 0.3s ease;
+}
+
+.viewmore:hover {
+  transform: scale(1.1);
+}
+
+.container1,
+.container2,
+.container3 {
+  width: 60vw;
+  height: 60%;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 50px;
+  margin-top: 100px;
+  flex-wrap: wrap;
+}
+
+.container1 {
+  background-color: #1b1b1b;
+}
+
+.container2 {
+  background-color: #f9fdfe;
+}
+
+.container3 {
+  background-color: #baf400;
+}
+
+.projImg {
+  width: 50%;
+  height: 70%;
+  position: relative;
+}
+
+.projMedia {
+  width: 100%;
+  height: 100%;
+}
+
+.projImgMask {
+  width: 65%;
+  height: 100%;
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  background-color: white;
+  border-radius: 340px;
+  /* mix-blend-mode: screen; */
+}
+
+.projDesc {
+  width: 50%;
+  height: 70%;
+  font-family: "Arame";
+  line-height: 30px;
+  letter-spacing: 2px;
+  word-spacing: 5px;
+  text-align: start;
+  font-size: x-large;
+  color: #474747;
+}
+
+.projName {
+  width: 70%;
+  height: 30%;
+  font-size: 45px;
+  font-weight: 600;
+  font-family: "Arame";
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  top: 25px;
+  left: 25px;
+  color: #474747;
+}
+
+.projNum {
+  width: 30%;
+  height: 30%;
+  font-size: 70px;
+  font-weight: 600;
+  font-family: "Arame";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 20px;
+  left: 35px;
+  color: #474747;
+}
+
+@media screen and (max-width: 650px) {
+
+  .container1,
+  .container2,
+  .container3 {
+    width: 95vw;
+    height: 75%;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 50px;
+    margin-top: 100px;
+    flex-wrap: wrap;
+  }
+
+  .projDesc {
+    padding-top: 40px;
+    width: 100%;
+    height: 30%;
+    font-family: "Arame";
+    line-height: 20px;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+    text-align: start;
+    font-size: smaller;
+    color: #474747;
+  }
+
+  .projImgMask {
+    width: 65%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 18%;
+    background-color: white;
+    border-radius: 340px;
+    /* mix-blend-mode: screen; */
+  }
+
+  .projImg {
+    width: 100%;
+    height: 40%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .projName {
+    width: 70%;
+    height: 30%;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: "Arame";
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    top: 35px;
+    left: 0px;
+    color: #474747;
+  }
+
+  .projNum {
+    width: 30%;
+    height: 30%;
+    font-size: 45px;
+    font-weight: 600;
+    font-family: "Arame";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 35px;
+    left: 0px;
+    color: #474747;
+  }
+}
