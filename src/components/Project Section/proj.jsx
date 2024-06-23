@@ -31,7 +31,7 @@ const ProjectsSection = () => {
         });
 
         gsap.to(".projectPage", {
-            translateX: -H,
+            translateX: -H + 300,
             scrollTrigger: {
                 trigger: ".projectPage",
                 scroller: "body",
@@ -52,6 +52,7 @@ const ProjectsSection = () => {
                     style={{
                         position: "absolute",
                         top: "90px",
+                        left: "20px",
                         color: isDark ? "white" : "black",
                     }}
                 >
