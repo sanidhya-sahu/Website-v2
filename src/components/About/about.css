@@ -1,0 +1,727 @@
+.aboutWrap {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    gap: 10vh;
+    background-color: #f1f1f1;
+    background-image: url(/src/assets/aboutBG.png);
+    background-size: contain;
+    background-position-x: left;
+    background-attachment: fixed;
+}
+
+.top {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+}
+
+.aboutBox {
+    width: 45%;
+    height: 95%;
+    background-color: #6D6E6DCC;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.aboutHead {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.aboutHead>h1 {
+    font-family: 'Sora';
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+.aboutHeadButton {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 30px;
+    padding: 10px 15px;
+    background-color: transparent;
+    gap: 20px;
+    font-family: 'Sora';
+    font-weight: 700;
+    font-size: medium;
+    cursor: pointer;
+}
+
+.aboutMain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.aboutMain>p {
+    font-family: 'Sora';
+    font-size: 30px;
+    width: 75%;
+    text-align: center;
+}
+
+.aboutMain>p>span {
+    color: #CDFF63;
+    font-family: 'Sora';
+}
+
+.aboutMain>button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 30px;
+    padding: 7px 7px;
+    background-color: black;
+    color: white;
+    gap: 20px;
+    font-family: 'Sora';
+    cursor: pointer;
+}
+
+.quote {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Sora';
+    font-size: 25px;
+    text-align: center;
+    position: relative;
+}
+
+.quote>p>span {
+    color: #CDFF63;
+    text-align: start;
+}
+
+.quote::after {
+    content: "-Google";
+    position: absolute;
+    font-size: 15px;
+    right: 25px;
+    bottom: 20px;
+}
+
+.topContent {
+    display: none;
+}
+
+.sideBox {
+    width: 45%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.sideTopBox {
+    width: 50%;
+    height: 35%;
+    border: 1px solid white;
+    border-radius: 30px;
+    box-shadow: 3px 3px 12px -10px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+}
+
+.AI_SVG {
+    position: absolute;
+    right: 0px;
+    /* z-index: -5; */
+}
+
+.socials {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    padding-left: 10px;
+}
+
+.sideTopBox>.socials>a {
+    display: block;
+    width: fit-content;
+    height: auto;
+}
+
+.sideTopBox>.socials>a:-webkit-any-link {
+    color: #f1f1f1;
+    text-decoration: none;
+}
+
+.para {
+    width: 90%;
+    margin-bottom: 20px;
+    font-family: 'Sora';
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.para>.head {
+    font-family: 'Sora';
+    font-size: 17px;
+    font-weight: 800;
+}
+
+.para>.content {
+    font-size: 14px;
+}
+
+.circle {
+    width: 45px;
+    height: 45px;
+    background-color: white;
+    border-radius: 50px;
+    border: 2px solid #828282;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sideBottomBox {
+    width: 100%;
+    height: 45%;
+    border: 1px solid white;
+    background-color: #f1f1f1;
+    border-radius: 30px;
+    box-shadow: 3px 3px 12px -10px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3%;
+}
+
+.cont1,
+.cont2 {
+    width: 97%;
+    height: 45%;
+    border-radius: 30px;
+}
+
+.cont1 {
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    border-radius: 30px;
+}
+
+.cont2 {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    border-radius: 30px;
+}
+
+.subCont11,
+.subCont12 {
+    background-color: white;
+    width: 49%;
+    height: 100%;
+    border-radius: 30px;
+}
+
+.subCont21,
+.subCont22 {
+    width: 49%;
+    height: 100%;
+    border-radius: 30px;
+}
+
+.bottom {
+    width: 95%;
+    height: 95vh;
+    background: white;
+    border-radius: 30px;
+    border: 1px solid white;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    background-image: url(/src/assets/aboutBottomPattern.svg);
+    background-repeat: repeat-x;
+    background-position-y: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.CLUB_SVG {
+    height: 80%;
+    left: 0;
+    position: absolute;
+    top: 10%;
+}
+
+.bottom>.content {
+    font-family: 'Sora';
+    width: 60%;
+    padding-top: 30px;
+}
+
+.textup {
+    font-size: xx-large;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.textdown {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.textdownleft {
+    font-size: xx-large;
+    font-weight: 700;
+    text-transform: uppercase;
+    width: 50%;
+}
+
+.textdownright {
+    font-size: medium;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    padding-left: 10px;
+    font-style: italic;
+    font-family: "Playwrite ES", cursive;
+    font-weight: 400;
+    color: #00000080;
+}
+
+.stats {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    height: 55%;
+}
+
+.statText {
+    font-size: 30px;
+    width: 40%;
+    text-align: right;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+    font-family: 'Sora';
+}
+
+.statText>span {
+    color: #9be400;
+}
+
+.statBox {
+    width: 40%;
+    height: 100%;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.row1 {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 20px;
+}
+
+.row2 {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.istatBox {
+    width: 150px;
+    height: 150px;
+    content-visibility: auto;
+}
+
+.istatBox>img {
+    width: 40%;
+}
+
+.statBox1 {
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    background-image: url(/src/assets/members23-24.png);
+    background-size: 230px;
+    background-position-x: -40px;
+}
+
+.purplayer {
+    width: 100%;
+    height: 100%;
+    background: rgb(144 19 254 / 15%);
+    backdrop-filter: blur(0.7px);
+    -webkit-backdrop-filter: blur(0.7px);
+    position: relative;
+    z-index: -1;
+}
+
+.greenlayer {
+    width: 100%;
+    height: 100%;
+    background: rgba(105, 254, 19, 0.15);
+    backdrop-filter: blur(0.7px);
+    -webkit-backdrop-filter: blur(0.7px);
+    position: relative;
+    z-index: -1;
+}
+
+.statBox2 {
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-image: url(/src/assets/aboutSpeaker.png);
+    background-size: 230px;
+    background-position-x: -40px;
+    background-position-y: center;
+}
+
+.statBox3 {
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 50px;
+    background-image: url(/src/assets/aboutEvent.png);
+    background-size: 230px;
+    background-position-x: -40px;
+    background-position-y: center;
+}
+
+.statBox4 {
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    background-image: url(/src/assets/aboutComp.png);
+    background-size: 230px;
+    background-position-x: -17px;
+    background-position-y: center;
+}
+
+.statName {
+    position: relative;
+    background: white;
+    border-radius: 50px;
+    padding: 5px;
+    font-family: 'Sora';
+    font-size: x-small;
+    text-align: center;
+    width: max-content;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.statName1 {
+    bottom: 65px;
+    right: -18px;
+}
+
+.statName2 {
+    bottom: 65px;
+    right: -3px;
+}
+
+.statName3 {
+    bottom: 105px;
+    right: -34px;
+}
+
+.statName4 {
+    bottom: 105px;
+    right: -3px;
+}
+
+.statCount {
+    position: relative;
+    background: white;
+    border-radius: 50px;
+    padding: 5px;
+    font-family: 'Sora';
+    font-size: x-small;
+    text-align: center;
+    width: max-content;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.statCount1 {
+    bottom: 55px;
+    right: -100px;
+}
+
+.statCount2 {
+    bottom: 55px;
+    right: -4px;
+}
+
+.statCount3 {
+    bottom: 160px;
+    right: -106px;
+}
+
+.statCount4 {
+    bottom: 160px;
+    right: -4px;
+}
+
+.BottomJoinBox {
+    display: none;
+}
+
+.foot {
+    width: 100%;
+    height: 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.foot>.line {
+    width: 95%;
+    height: 1.5px;
+    background-color: #0000008f;
+}
+
+.footData {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    align-items: center;
+    height: 90%;
+}
+
+.footText {
+    font-family: 'Sora';
+    font-weight: 600;
+}
+
+.footData>.socials {
+    width: auto;
+    height: auto;
+}
+
+.footData>.socials>a>.circle {
+    width: 30px;
+    height: 30px;
+    border: none;
+}
+
+.footData>.socials>a>.circle>img {
+    filter: brightness(0.5);
+}
+
+/* Mob View */
+
+
+@media (max-width: 850px) {
+    .aboutWrap {
+        background: #f1f1f1;
+    }
+
+    .top,
+    .bottom {
+        width: 100vw;
+        height: auto;
+    }
+
+    .top {
+        padding-top: 10px;
+        flex-direction: column;
+    }
+
+    .aboutBox {
+        width: 95%;
+        padding: 15px;
+        gap: 35px;
+        padding-bottom: 25px;
+    }
+
+    .aboutHead {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .aboutHead>h1 {
+        font-size: 25px;
+    }
+
+    .aboutHeadButton {
+        padding: 5px 10px;
+    }
+
+    .aboutMain {
+        gap: 20px;
+        padding-top: 10px;
+    }
+    .aboutMain>button{
+        gap: 40px;
+    }
+    .quote{
+        font-size: 20px;
+    }
+    .quote::after{
+        bottom: -12px;
+    }
+    .AI_SVG {
+        display: none;
+    }
+
+    .CLUB_SVG {
+        display: none;
+    }
+
+    .sideBottomBox {
+        display: none;
+    }
+
+    .sideTopBox {
+        display: none;
+    }
+
+    .BottomJoinBox {
+        width: 95%;
+        height: 35%;
+        border: 1px solid white;
+        border-radius: 30px;
+        box-shadow: 3px 3px 12px -10px black;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background: rgba(255, 255, 255, 0.25);
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+        padding: 10px;
+        gap: 10px;
+    }
+    .circle {
+        border: none;
+        width: 30px;
+        height: 30px;
+    }
+    .circle>img{
+        filter: brightness(0.5);
+    }
+    .BottomJoinBox>.line{
+        width: 95%;
+        height: 1.5px;
+        background: #00000066;
+    }
+    .para{
+        margin-bottom: 0;
+        gap: 0;
+    }
+    .para>.head{
+        font-weight: 700;
+    }
+    .para>.content{
+        font-size: 12px;
+    }
+    .bottom>.content {
+        display: none;
+    }
+
+    .topContent {
+        display: block;
+        font-family: 'Sora';
+        width: 90%;
+    }
+    .textdownright{
+         font-size: 12px;
+    }
+    .sideBox {
+        display: none;
+    }
+
+
+
+    .bottom {
+        background: none;
+        border: none;
+        gap: 20px;
+    }
+
+    .stats {
+        width: 95%;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 20px;
+    }
+    .statBox{
+        width: 100%;
+        gap: 15px;
+    }
+    .statText {
+        width: 100%;
+        font-size: 20px;
+        text-align: center;
+        word-spacing: 5px;
+        letter-spacing: 2px;
+        font-family: 'Sora';
+    }
+    .footData{
+        justify-content: center;
+        padding-bottom: 10px;
+    }
+    .footText{
+        font-size: 20px;
+        font-weight: 800;
+    }
+    .footData>.socials{
+        display: none;
+    }
+    .foot>.line{
+        display: none;
+    }
+    .foot{
+        height: 8vh;
+    }
+}
