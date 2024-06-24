@@ -16,9 +16,9 @@ const About = () => {
         document.getElementById('aboutBottom').scrollIntoView({ behavior: 'smooth' })
     }
     return (
-        <div data-scroll className='aboutWrap'>
-            <div data-scroll className="top">
-                <div data-scroll className="aboutBox">
+        <div className='aboutWrap'>
+            <div className="top">
+                <div className="aboutBox">
                     <div className="aboutHead">
                         <h1>About</h1>
                         <Link to="/" style={{ textDecoration: "none" }}>
@@ -43,7 +43,7 @@ const About = () => {
                         <div className="textdownright">We are a very new club of VIT Bhopal, for all the futuristic ones. We promise to make systems adaptive through artificial intelligence. We will be organizing webinars, debates, various competitions to show up your skills and improve the abilities to analyze, and develop computational intelligence. </div>
                     </div>
                 </div>
-                <div data-scroll className="sideBox">
+                <div className="sideBox">
                     <img className='AI_SVG' src={AI} alt="AI" />
                     <div className="sideTopBox">
                         <div className="socials">
@@ -90,7 +90,7 @@ const About = () => {
                     </div>
                 </div>
             </div>
-            <div data-scroll id='aboutBottom' className="bottom">
+            <div id='aboutBottom' className="bottom">
                 <img className='AI_SVG CLUB_SVG' src={CLUB} alt="CLUB" />
                 <div className="content">
                     <div className="textup">

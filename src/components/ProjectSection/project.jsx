@@ -45,7 +45,7 @@ const ProjectsSection = () => {
 
     return (
         <div className="projectCover">
-            <div data-scroll className="projectPage">
+            <div className="projectPage">
                 <div
                     className="eventTitle"
                     style={{
@@ -63,13 +63,13 @@ const ProjectsSection = () => {
                         width: "60px",
                     }}
                 ></div>
-                <div data-scroll className="projectTitle">
+                <div className="projectTitle">
                     <h1 style={{ color: isDark ? "white" : "black" }}>
                         Our Cool Creations
                     </h1>
                     <ProjArrow fill={isDark ? "white" : "black"} />
                 </div>
-                <div data-scroll className="container1">
+                <div className="container1">
                     <div className="projImg">
                         <div className="projMedia"></div>
                         <div className="projImgMask"></div>
@@ -82,7 +82,7 @@ const ProjectsSection = () => {
                     <div className="projName">XYZ Project</div>
                     <div className="projNum">01</div>
                 </div>
-                <div data-scroll className="container2">
+                <div className="container2">
                     <div className="projImg">
                         <div className="projMedia"></div>
                         <div className="projImgMask"></div>
@@ -95,7 +95,7 @@ const ProjectsSection = () => {
                     <div className="projName">XYZ Project</div>
                     <div className="projNum">02</div>
                 </div>
-                <div data-scroll className="container3">
+                <div className="container3">
                     <div className="projImg">
                         <div className="projMedia"></div>
                         <div className="projImgMask"></div>
