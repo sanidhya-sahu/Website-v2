@@ -5,6 +5,7 @@ import Proj from "./components/ProjectSection/project";
 import Magazine from "./components/Magazine/magazine";
 import About from "./components/About/About";
 import Heropage from "./components/HeroSection/herosection";
+import TeamMembersSection from "./components/TeamMembersSection/teamMembers";
 const App = () => {
   return (
     <>
@@ -16,6 +17,7 @@ const App = () => {
               <>
                 <Heropage></Heropage>
                 <Proj></Proj>
+                <TeamMembersSection></TeamMembersSection>
               </>
             }
           ></Route>
