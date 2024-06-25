@@ -1,92 +1,92 @@
 [
     {
-        "name": "sanidhya",
-        "pos": "lead",
-        "team": "web Team",
-        "img": "/membersIMG/sanidhya.jpg"
+        "name": "Anushka Singh",
+        "pos": "VP",
+        "team": "Vice President",
+        "img": "/membersIMG/anushka.png"
     },
     {
-        "name": "mohak",
-        "pos": "co-lead",
-        "team": "web Team",
-        "img": "/membersIMG/mohak.png"
+        "name": "Kshitij Dalvi",
+        "pos": "Lead",
+        "team": "Technical Lead",
+        "img": "/membersIMG/kshitij.png"
     },
     {
-        "name": "bhavesh",
-        "pos": "ux designer",
-        "team": "web Team",
-        "img": "/membersIMG/bhavesh.png"
+        "name": "Aryan Mandlik",
+        "pos": "Lead",
+        "team": "Event Lead",
+        "img": "/membersIMG/aryanmandlik.png"
     },
     {
-        "name": "sanidhya",
-        "pos": "lead",
-        "team": "web Team",
-        "img": "/membersIMG/sanidhya.jpg"
+        "name": "Wrishita Paul",
+        "pos": "Lead",
+        "team": "Editorial Lead",
+        "img": "/membersIMG/wrishita.png"
     },
     {
-        "name": "mohak",
-        "pos": "co-lead",
-        "team": "web Team",
-        "img": "/membersIMG/mohak.png"
+        "name": "Saumya Tiwari",
+        "pos": "Lead",
+        "team": "Social Media Lead",
+        "img": "/membersIMG/saumya.png"
     },
     {
-        "name": "bhavesh",
-        "pos": "ux designer",
-        "team": "web Team",
-        "img": "/membersIMG/bhavesh.png"
+        "name": "Punit Kaushik",
+        "pos": "P",
+        "team": "President",
+        "img": "/membersIMG/punit.png"
     },
     {
-        "name": "sanidhya",
-        "pos": "lead",
-        "team": "web Team",
-        "img": "/membersIMG/sanidhya.jpg"
+        "name": "Sanidhya Sahu",
+        "pos": "Lead",
+        "team": "Web Lead",
+        "img": "/membersIMG/sanidhya.png"
     },
     {
-        "name": "mohak",
-        "pos": "co-lead",
-        "team": "web Team",
-        "img": "/membersIMG/mohak.png"
+        "name": "Harsh Dayal",
+        "pos": "Lead",
+        "team": "Graphics Lead",
+        "img": "/membersIMG/harsh.png"
     },
     {
-        "name": "bhavesh",
-        "pos": "ux designer",
-        "team": "web Team",
-        "img": "/membersIMG/bhavesh.png"
+        "name": "Sanyukta Gokhale",
+        "pos": "Lead",
+        "team": "Content Lead",
+        "img": "/membersIMG/sanyukta.png"
     },
     {
-        "name": "sanidhya",
-        "pos": "lead",
-        "team": "web Team",
-        "img": "/membersIMG/sanidhya.jpg"
+        "name": "Harshit Shukla",
+        "pos": "Lead",
+        "team": "Outreach Lead",
+        "img": "/membersIMG/harshit.png"
     },
     {
-        "name": "mohak",
-        "pos": "co-lead",
-        "team": "web Team",
-        "img": "/membersIMG/mohak.png"
+        "name": "Virat Shrivastava",
+        "pos": "GSC",
+        "team": "General Secretary",
+        "img": "/membersIMG/virat.png"
     },
     {
-        "name": "bhavesh",
-        "pos": "ux designer",
-        "team": "web Team",
-        "img": "/membersIMG/bhavesh.png"
+        "name": "Aryan Shah",
+        "pos": "Lead",
+        "team": "Partnership Lead",
+        "img": "/membersIMG/aryan.png"
     },
     {
-        "name": "sanidhya",
-        "pos": "lead",
-        "team": "web Team",
-        "img": "/membersIMG/sanidhya.jpg"
+        "name": "Aarushi",
+        "pos": "OM",
+        "team": "Operational Manager",
+        "img": "/membersIMG/aarushi.png"
     },
     {
-        "name": "mohak",
-        "pos": "co-lead",
-        "team": "web Team",
-        "img": "/membersIMG/mohak.png"
+        "name": "Arpit Sengar",
+        "pos": "OM",
+        "team": "Operational Manager",
+        "img": "/membersIMG/arpit.png"
     },
     {
-        "name": "bhavesh",
-        "pos": "ux designer",
-        "team": "web Team",
-        "img": "/membersIMG/bhavesh.png"
+        "name": "Tarun Nichwani",
+        "pos": "OM",
+        "team": "Operational Manager",
+        "img": "/membersIMG/tarun.png"
     }
 ]

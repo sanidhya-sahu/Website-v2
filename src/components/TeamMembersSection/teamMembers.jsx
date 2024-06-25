@@ -177,9 +177,9 @@ const BrandingSection = () => {
       </div>
 
       <div id="brand_col">
-        <ul className="left">{renderListItems(data.slice(0, 6))}</ul>
-        <ul className="center">{renderListItems(data.slice(6, 12))}</ul>
-        <ul className="right">{renderListItems(data.slice(12))}</ul>
+        <ul className="left">{renderListItems(data.slice(0, 5))}</ul>
+        <ul className="center">{renderListItems(data.slice(5, 10))}</ul>
+        <ul className="right">{renderListItems(data.slice(10))}</ul>
       </div>
     </div>
   );
