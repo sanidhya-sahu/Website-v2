@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./team.css";
+import { Link } from "react-router-dom";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -15,7 +16,7 @@ const BrandingSection = () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    fetch("/Data/members.json")
+    fetch("/Data/leads.json")
       .then((response) => {
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
@@ -36,7 +37,7 @@ const BrandingSection = () => {
     gsap.utils.toArray("#brand_col .left li").forEach((section) => {
       gsap.fromTo(
         section,
-        { autoAlpha: 1, y: 50, rotation: 0, x:0 },
+        { autoAlpha: 1, y: 50, rotation: 0, x: 0 },
         {
           autoAlpha: 1,
           y: -20,
@@ -98,7 +99,7 @@ const BrandingSection = () => {
         { autoAlpha: 1, y: -50 },
         {
           autoAlpha: 1,
-          opacity:1,
+          opacity: 1,
           y: 20,
           scrollTrigger: {
             trigger: faculty1,
@@ -115,10 +116,10 @@ const BrandingSection = () => {
     if (faculty2) {
       gsap.fromTo(
         faculty2,
-        { autoAlpha: 1, y: -50},
+        { autoAlpha: 1, y: -50 },
         {
           autoAlpha: 1,
-          opacity:1,
+          opacity: 1,
           y: 20,
           scrollTrigger: {
             trigger: faculty2,
@@ -138,17 +139,19 @@ const BrandingSection = () => {
 
   const renderListItems = (items) => {
     return items.map((item, index) => (
-      <li key={index}>
-        <div>
-          <h3>{item.name}</h3>
-        </div>
-        <picture>
-          <img fetchpriority="low" alt='' src={item.img} />
-        </picture>
-        <div>
-          <span>{item.team}</span>
-        </div>
-      </li>
+      <Link to={item.team != false ? `/members?team=${item.team}` : null} style={{ textDecoration: "none" }}>
+        <li key={index}>
+          <div>
+            <h3>{item.name}</h3>
+          </div>
+          <picture>
+            <img fetchpriority="low" alt='' src={item.img} />
+          </picture>
+          <div>
+            <span>{item.teamPos}</span>
+          </div>
+        </li>
+      </Link >
     ));
   };
 

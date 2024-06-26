@@ -1,0 +1,107 @@
+[
+    {
+        "name": "Anushka Singh",
+        "pos": "VP",
+        "teamPos": "Vice President",
+        "img": "/membersIMG/anushka.png",
+        "team":false
+    },
+    {
+        "name": "Kshitij Dalvi",
+        "pos": "Lead",
+        "teamPos": "Technical Lead",
+        "img": "/membersIMG/kshitij.png",
+        "team":"tech"
+    },
+    {
+        "name": "Aryan Mandlik",
+        "pos": "Lead",
+        "teamPos": "Event Lead",
+        "img": "/membersIMG/aryanmandlik.png",
+        "team":"event"
+    },
+    {
+        "team":"editorial",
+        "name": "Wrishita Paul",
+        "pos": "Lead",
+        "teamPos": "Editorial Lead",
+        "img": "/membersIMG/wrishita.png"
+    },
+    {
+        "team":"socialmedia",
+        "name": "Saumya Tiwari",
+        "pos": "Lead",
+        "teamPos": "Social Media Lead",
+        "img": "/membersIMG/saumya.png"
+    },
+    {
+        "team":false,
+        "name": "Punit Kaushik",
+        "pos": "P",
+        "teamPos": "President",
+        "img": "/membersIMG/punit.png"
+    },
+    {
+        "team":"web",
+        "name": "Sanidhya Sahu",
+        "pos": "Lead",
+        "teamPos": "Web Lead",
+        "img": "/membersIMG/sanidhya.png"
+    },
+    {
+        "team":"graphics",
+        "name": "Harsh Dayal",
+        "pos": "Lead",
+        "teamPos": "Graphics Lead",
+        "img": "/membersIMG/harsh.png"
+    },
+    {
+        "team":"content",
+        "name": "Sanyukta Gokhale",
+        "pos": "Lead",
+        "teamPos": "Content Lead",
+        "img": "/membersIMG/sanyukta.png"
+    },
+    {
+        "team":"outreach",
+        "name": "Harshit Shukla",
+        "pos": "Lead",
+        "teamPos": "Outreach Lead",
+        "img": "/membersIMG/harshit.png"
+    },
+    {
+        "team":false,
+        "name": "Virat Shrivastava",
+        "pos": "GSC",
+        "teamPos": "General Secretary",
+        "img": "/membersIMG/virat.png"
+    },
+    {
+        "team":"partnership",
+        "name": "Aryan Shah",
+        "pos": "Lead",
+        "teamPos": "Partnership Lead",
+        "img": "/membersIMG/aryan.png"
+    },
+    {
+        "team":false,
+        "name": "Aarushi",
+        "pos": "OM",
+        "teamPos": "Operational Manager",
+        "img": "/membersIMG/aarushi.png"
+    },
+    {
+        "team":false,
+        "name": "Arpit Sengar",
+        "pos": "OM",
+        "teamPos": "Operational Manager",
+        "img": "/membersIMG/arpit.png"
+    },
+    {
+        "team":false,
+        "name": "Tarun Nichwani",
+        "pos": "OM",
+        "teamPos": "Operational Manager",
+        "img": "/membersIMG/tarun.png"
+    }
+]
