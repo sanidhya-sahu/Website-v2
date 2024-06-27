@@ -1,0 +1,38 @@
+{
+    "1": {
+        "name": "Hack Exchange 2.0",
+        "keyWords": [
+            "Work Shops",
+            "Projects",
+            "Games"
+        ],
+        "bannerPath": "../eventBanners/hackExchange2.png"
+    },
+    "2": {
+        "name": "Genesis 24",
+        "keyWords": [
+            "NLP",
+            "LLM's",
+            "Work Shops"
+        ],
+        "bannerPath": "../eventBanners/genesis.png"
+    },
+    "3": {
+        "name": "Hack Exchange 1.0",
+        "keyWords": [
+            "Work Shops",
+            "Projects",
+            "Games"
+        ],
+        "bannerPath": "../eventBanners/hackExchange.png"
+    },
+    "4": {
+        "name": "AI Conclave 24",
+        "keyWords": [
+            "Work Shops",
+            "Projects",
+            "Games"
+        ],
+        "bannerPath": "../eventBanners/conclave3.png"
+    }
+}
