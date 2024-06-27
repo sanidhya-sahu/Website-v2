@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react'
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-// import './memberPos.css'
 import './membersPage.css'
 import { useSearchParams } from "react-router-dom";
 import HeadSVG from '../../assets/teamHeadSvg.svg'
@@ -11,20 +10,34 @@ const membersPage = () => {
     gsap.registerPlugin(ScrollTrigger);
     useGSAP(() => {
         const H = document.querySelector("#membersBox").clientWidth;
-        gsap.to(".teamBox", {
-            translateX: -H - 800,
-            scrollTrigger: {
-                trigger: ".teamWrap",
-                scroller: "body",
-                // markers: true,
-                start: "top 0%",
-                end: `top -${H / 2}%`,
-                scrub: 2,
-                pin: true,
-            },
+        let mm = gsap.matchMedia();
+        mm.add("(max-width: 767px)", () => {
+            gsap.to(".teamBox", {
+                x: -H - 750,
+                scrollTrigger: {
+                    trigger: ".teamWrap",
+                    scroller: "body",
+                    start: "top 0%",
+                    end: `top -${H / 2}%`,
+                    scrub: 2,
+                    pin: true,
+                },
+            });
         });
-    });
-
+        mm.add("(min-width: 768px)", () => {
+            gsap.to(".teamBox", {
+                x: -H - 300,
+                scrollTrigger: {
+                    trigger: ".teamWrap",
+                    scroller: "body",
+                    start: "top 0%",
+                    end: `top -${H / 2}%`,
+                    scrub: 2,
+                    pin: true,
+                },
+            });
+        });
+    })
 
     const [team, setTeam] = useState('')
     let [searchParams, setSearchParams] = useSearchParams();
@@ -33,7 +46,7 @@ const membersPage = () => {
         var len = data[searchParams.get("team")].length
         if (len % 2 != 0) {
             len = len + 1
-            for (let i = 0; i < len / 2; i++) {
+            for (let i = 0; i < len; i++) {
                 if (!document.getElementById(`wave${i}`)) {
                     if (i == 0) {
                         document.getElementById('wave').innerHTML += `
@@ -54,12 +67,12 @@ const membersPage = () => {
             }
         }
         else {
-            for (let i = 0; i < len / 2; i++) {
+            for (let i = 0; i < len; i++) {
                 if (!document.getElementById(`wave${i}`)) {
                     if (i == 0) {
                         document.getElementById('wave').innerHTML += `
                         <div className="waveBox">
-                        <img id="wave${i}" style="position: relative;" src="src/assets/teamWave.svg" alt="" key=${i} />
+                        <img id="wave${i}" style="transform: rotate(2deg);position: relative;" src="src/assets/teamWave.svg" alt="" key=${i} />
                         </div>
                         `
                     }
@@ -67,7 +80,7 @@ const membersPage = () => {
                         let leftVal = i * 28
                         document.getElementById('wave').innerHTML += `
                         <div className="waveBox">
-                        <img id="wave${i}" style="position: relative;left: -${leftVal}px;" src="src/assets/teamWave.svg" alt="" key=${i} />
+                        <img id="wave${i}" style="transform: rotate(2deg);position: relative;left: -${leftVal}px;" src="src/assets/teamWave.svg" alt="" key=${i} />
                         </div>
                         `
                     }
@@ -102,12 +115,6 @@ const membersPage = () => {
         });
 
     }, [searchParams])
-    // useEffect(()=>{
-    //     console.log(data[team]);
-    //     data[team].forEach((e,i) => {
-    //         console.log(e,i);            
-    //     });
-    // },[team])
     return (
         <div className='teamWrap'>
             <div className="teamCont">

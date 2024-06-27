@@ -18,7 +18,7 @@ const App = () => {
     const handleResize = () => {
       setIsMobile(window.innerWidth < 480);
       if (window.innerWidth < 768 || window.innerWidth > 768) {
-        window.location.reload();
+        // window.location.reload();
       }
     };
 
@@ -38,7 +38,7 @@ const App = () => {
               <>
                 <Heropage />
                 {isMobile ? <EventsSectionMobile /> : <EventSection />}
-                <GallerySection></GallerySection>
+                {/* <GallerySection></GallerySection> */}
                 <Proj />
                 <TeamMembersSection />
               </>

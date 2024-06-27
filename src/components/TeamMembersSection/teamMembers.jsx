@@ -107,7 +107,7 @@ const BrandingSection = () => {
             start: "top 70%",
             end: "bottom 0%",
             scrub: 2,
-            // toggleActions: "play reverse play reverse",
+            toggleActions: "play reverse play reverse",
           },
         }
       );
@@ -127,7 +127,7 @@ const BrandingSection = () => {
             start: "top 70%",
             end: "bottom 0%",
             scrub: 2,
-            // toggleActions: "play reverse play reverse",
+            toggleActions: "play reverse play reverse",
           },
         }
       );
