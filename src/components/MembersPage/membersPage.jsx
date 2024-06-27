@@ -72,7 +72,7 @@ const membersPage = () => {
                     if (i == 0) {
                         document.getElementById('wave').innerHTML += `
                         <div className="waveBox">
-                        <img id="wave${i}" style="transform: rotate(2deg);position: relative;" src="src/assets/teamWave.svg" alt="" key=${i} />
+                        <img id="wave${i}" style="transform: rotate(3deg);position: relative;" src="src/assets/teamWave.svg" alt="" key=${i} />
                         </div>
                         `
                     }
@@ -80,7 +80,7 @@ const membersPage = () => {
                         let leftVal = i * 28
                         document.getElementById('wave').innerHTML += `
                         <div className="waveBox">
-                        <img id="wave${i}" style="transform: rotate(2deg);position: relative;left: -${leftVal}px;" src="src/assets/teamWave.svg" alt="" key=${i} />
+                        <img id="wave${i}" style="transform: rotate(3deg);position: relative;left: -${leftVal}px;" src="src/assets/teamWave.svg" alt="" key=${i} />
                         </div>
                         `
                     }
@@ -91,22 +91,29 @@ const membersPage = () => {
             if (!document.getElementById(`member${i}`)) {
                 if (i == 0) {
                     document.getElementById('membersBox').innerHTML += `
-                    <div className="member" id="member${i}" style="left:70px;bottom:0px">
-                    <div className="name">${e.name}</div>
-                    <div className="msg">${e.msg}</div>
-                    <div className="mask"> 
+                    <div className="member" id="member${i}" style="left:70px;flex-direction: column-reverse;bottom:0px">
+                    <div id="teamDetailCont">
+                        <div id="memName">${e.name}</div>
+                        <div id="msg">${e.msg}</div>
+                    </div>
+                    <div id="mask">
+                    <img id="teamImg" src="${e.img}" alt="" />
                     </div>
                     </div>
                     `
                 }
                 else {
                     var bottom = i % 2 == 0 ? 0 : -250
+                    var colDirection = i % 2 != 0 ? 'column' : 'column-reverse'
                     var Left = Number(document.getElementById(`member${i - 1}`).style.left.replace('px', '')) + 140
                     document.getElementById('membersBox').innerHTML += `
-                    <div className="member" id="member${i}" style="left:${Left}px;bottom:${bottom}px">
-                    <div className="name">${e.name}</div>
-                    <div className="msg">${e.msg}</div>
-                    <div className="mask"> 
+                    <div className="member" id="member${i}" style="left:${Left}px;flex-direction: ${colDirection};bottom:${bottom}px">
+                    <div id="teamDetailCont">
+                        <div id="memName">${e.name}</div>
+                        <div id="msg">${e.msg}</div>
+                    </div>
+                    <div id="mask"> 
+                    <img id="teamImg" src="${e.img}" alt="" />
                     </div>
                     </div>
                     `
