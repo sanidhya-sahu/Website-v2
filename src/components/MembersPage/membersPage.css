@@ -1,0 +1,63 @@
+.teamWrap {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    color: white;
+}
+
+.teamCont {
+    width: auto;
+    height: 100vh;
+    background: url(/src/assets/dotGrid.png);
+    background-size: cover;
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+}
+
+.teamHead {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    letter-spacing: 1px;
+    padding-top: 35px;
+    height: 15vh;
+}
+
+.headBorder {
+    position: absolute;
+    width: 110px;
+    left: 6px;
+    top: -2px;
+}
+
+.teamNameHead {
+    position: relative;
+    left: 40px;
+}
+
+.headHighlight {
+    color: #CDFF63;
+}
+
+.teamBox{
+    height: 85vh;
+}
+.wave{
+    display: flex;
+    position: fixed;
+}
+#membersBox{
+    display: flex;
+    height: 100%;
+    width: max-content;
+}
+
+#membersBox>*{
+    width: 150px;
+    height: 300px;
+    border: 2px dashed lime;
+    position: relative;
+}

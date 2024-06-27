@@ -5,6 +5,7 @@ import Proj from "./components/ProjectSection/project";
 import Magazine from "./components/Magazine/magazine";
 import About from "./components/About/About";
 import Heropage from "./components/HeroSection/herosection";
+import MembersPage from "./components/MembersPage/membersPage";
 import TeamMembersSection from "./components/TeamMembersSection/teamMembers";
 import EventSection from "./components/EventSection/eventsection";
 import EventsSectionMobile from "./components/EventSection/eventsectionmobile";
@@ -43,9 +44,10 @@ const App = () => {
                 {isMobile ? <FooterMobile /> : <Footer />}
               </>
             }
-          />
-          <Route path="/magazine" element={<Magazine />} />
-          <Route path="/about" element={<About />} />
+          ></Route>
+          <Route path="/magazine" element={<Magazine />}></Route>
+          <Route path="/about" element={<About />}></Route>
+          <Route path="/members" element={<MembersPage />}></Route>
         </Routes>
       </Router>
     </>

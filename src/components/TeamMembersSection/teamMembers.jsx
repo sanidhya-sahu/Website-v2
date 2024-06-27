@@ -62,6 +62,7 @@ const BrandingSection = () => {
           autoAlpha: 1,
           y: -50,
           scrollTrigger: {
+            // markers:true,
             trigger: section,
             start: "top 60%",
             end: "bottom 0%",
@@ -145,7 +146,7 @@ const BrandingSection = () => {
             <h3>{item.name}</h3>
           </div>
           <picture>
-            <img fetchpriority="low" alt='' src={item.img} />
+            <img fetchpriority="high" alt='' src={item.img} />
           </picture>
           <div>
             <span>{item.teamPos}</span>
