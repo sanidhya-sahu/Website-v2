@@ -9,7 +9,7 @@ import MembersPage from "./components/MembersPage/membersPage";
 import TeamMembersSection from "./components/TeamMembersSection/teamMembers";
 import EventSection from "./components/EventSection/eventsection";
 import EventsSectionMobile from "./components/EventSection/eventsectionmobile";
-import GallerySection from "./components/GallerySection/gallerySection";
+// import GallerySection from "./components/GallerySection/gallerySection";
 import Footer from "./components/Footer/footer";
 import FooterMobile from "./components/FooterMobile/footermobile";
 
@@ -38,7 +38,7 @@ const App = () => {
               <>
                 <Heropage />
                 {isMobile ? <EventsSectionMobile /> : <EventSection />}
-                <GallerySection></GallerySection>
+                {/* <GallerySection></GallerySection> */}
                 <Proj />
                 <TeamMembersSection />
                 {isMobile ? <FooterMobile /> : <Footer />}
