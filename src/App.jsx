@@ -20,8 +20,7 @@ const App = () => {
     const handleResize = () => {
       setIsMobile(window.innerWidth < 480);
       if (window.innerWidth < 768 || window.innerWidth > 768) {
-        // window.location.reload();
-        alert("We know you wanna test our responsiveness, so please reload site after resizing , thanks 🙂")
+        // alert("We know you wanna test our responsiveness, so please reload site after resizing , thanks 🙂")
       }
     };
 
