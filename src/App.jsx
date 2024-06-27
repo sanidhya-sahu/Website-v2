@@ -10,6 +10,8 @@ import TeamMembersSection from "./components/TeamMembersSection/teamMembers";
 import EventSection from "./components/EventSection/eventsection";
 import EventsSectionMobile from "./components/EventSection/eventsectionmobile";
 import GallerySection from "./components/GallerySection/gallerysection";
+import Footer from "./components/Footer/footer";
+import FooterMobile from "./components/FooterMobile/footermobile";
 
 const App = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 480);
@@ -23,8 +25,6 @@ const App = () => {
     };
 
     window.addEventListener("resize", handleResize);
-
-    // Clean up the event listener when the component unmounts
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
@@ -41,6 +41,7 @@ const App = () => {
                 {/* <GallerySection></GallerySection> */}
                 <Proj />
                 <TeamMembersSection />
+                {isMobile ? <FooterMobile /> : <Footer />}
               </>
             }
           ></Route>
