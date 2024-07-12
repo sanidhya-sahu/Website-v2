@@ -9,7 +9,7 @@ import MembersPage from "./components/MembersPage/membersPage";
 import TeamMembersSection from "./components/TeamMembersSection/teamMembers";
 import EventSection from "./components/EventSection/eventsection";
 import EventsSectionMobile from "./components/EventSection/eventsectionmobile";
-import GallerySection from "./components/GallerySection/gallerySection";
+import GallerySection from "./components/GallerySection/gallerysection";
 import Footer from "./components/Footer/footer";
 import FooterMobile from "./components/FooterMobile/footermobile";
 
@@ -21,7 +21,9 @@ const App = () => {
       setIsMobile(window.innerWidth < 480);
       if (window.innerWidth < 768 || window.innerWidth > 768) {
         // window.location.reload();
-        alert("We know you wanna test our responsiveness, so please reload site after resizing , thanks 🙂")
+        alert(
+          "We know you wanna test our responsiveness, so please reload site after resizing , thanks 🙂"
+        );
       }
     };
 
