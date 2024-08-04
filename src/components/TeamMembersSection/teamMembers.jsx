@@ -93,45 +93,45 @@ const BrandingSection = () => {
       );
     });
 
-    const faculty1 = document.querySelector(".faculty1");
-    if (faculty1) {
-      gsap.fromTo(
-        faculty1,
-        { autoAlpha: 1, y: -50 },
-        {
-          autoAlpha: 1,
-          opacity: 1,
-          y: 20,
-          scrollTrigger: {
-            trigger: faculty1,
-            start: "top 70%",
-            end: "bottom 0%",
-            scrub: 2,
-            toggleActions: "play reverse play reverse",
-          },
-        }
-      );
-    }
+  //   const faculty1 = document.querySelector(".faculty1");
+  //   if (faculty1) {
+  //     gsap.fromTo(
+  //       faculty1,
+  //       { autoAlpha: 1, y: -50 },
+  //       {
+  //         autoAlpha: 1,
+  //         opacity: 1,
+  //         y: 20,
+  //         scrollTrigger: {
+  //           trigger: faculty1,
+  //           start: "top 70%",
+  //           end: "bottom 0%",
+  //           scrub: 2,
+  //           toggleActions: "play reverse play reverse",
+  //         },
+  //       }
+  //     );
+  //   }
 
-    const faculty2 = document.querySelector(".faculty2");
-    if (faculty2) {
-      gsap.fromTo(
-        faculty2,
-        { autoAlpha: 1, y: -50 },
-        {
-          autoAlpha: 1,
-          opacity: 1,
-          y: 20,
-          scrollTrigger: {
-            trigger: faculty2,
-            start: "top 70%",
-            end: "bottom 0%",
-            scrub: 2,
-            toggleActions: "play reverse play reverse",
-          },
-        }
-      );
-    }
+  //   const faculty2 = document.querySelector(".faculty2");
+  //   if (faculty2) {
+  //     gsap.fromTo(
+  //       faculty2,
+  //       { autoAlpha: 1, y: -50 },
+  //       {
+  //         autoAlpha: 1,
+  //         opacity: 1,
+  //         y: 20,
+  //         scrollTrigger: {
+  //           trigger: faculty2,
+  //           start: "top 70%",
+  //           end: "bottom 0%",
+  //           scrub: 2,
+  //           toggleActions: "play reverse play reverse",
+  //         },
+  //       }
+  //     );
+  //   }
   };
 
   useGSAP(() => {
