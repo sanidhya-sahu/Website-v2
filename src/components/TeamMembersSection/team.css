@@ -143,7 +143,7 @@
   justify-content: center;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  opacity: 0;
+  /* opacity: 0;` */
 }
 
 .faculty1:hover,

@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import "./App.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Proj from "./components/ProjectSection/project";
+import PorjectsPage from "./components/PorjectsPage/projectpage";
 import Magazine from "./components/Magazine/magazine";
 import About from "./components/About/About";
 import Heropage from "./components/HeroSection/herosection";
@@ -49,6 +50,7 @@ const App = () => {
           <Route path="/magazine" element={<Magazine />}></Route>
           <Route path="/about" element={<About />}></Route>
           <Route path="/members" element={<MembersPage />}></Route>
+          <Route path="/projects" element={<PorjectsPage />}></Route>
         </Routes>
       </Router>
     </>
