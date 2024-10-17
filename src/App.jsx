@@ -19,18 +19,18 @@ const App = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 480);
 
   useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth < 480);
-      if (window.innerWidth < 768 || window.innerWidth > 768) {
-        // window.location.reload();
-        alert(
-          "We know you wanna test our responsiveness, so please reload site after resizing , thanks 🙂"
-        );
-      }
-    };
+    // const handleResize = () => {
+    //   setIsMobile(window.innerWidth < 480);
+    //   if (window.innerWidth < 768 || window.innerWidth > 768) {
+    //     // window.location.reload();
+    //     alert(
+    //       "We know you wanna test our responsiveness, so please reload site after resizing , thanks 🙂"
+    //     );
+    //   }
+    // };
 
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
+    // window.addEventListener("resize", handleResize);
+    // return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   return (
