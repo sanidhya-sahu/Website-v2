@@ -1,0 +1,23 @@
+.box {
+    background-color: #2b2b3f;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    /* width: ; */
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .box:hover {
+    background-color: #55556b;
+  }
+  
+  .box:nth-child(6) {
+    background-color: #3b3b4f; 
+  }
+  

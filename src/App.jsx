@@ -14,6 +14,8 @@ import GallerySection from "./components/gallery/gallerysection";
 import GallerySectionMobile from "./components/gallery/gallerysectionmobile";
 import Footer from "./components/Footer/footer";
 import FooterMobile from "./components/FooterMobile/footermobile";
+import BoxGrid from "./components/gallery/BoxGrid.jsx";
+import AsymmetricScrollingGallery from "./components/gallery/Gallery.jsx";
 
 const App = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 480);
@@ -28,7 +30,6 @@ const App = () => {
     //     );
     //   }
     // };
-
     // window.addEventListener("resize", handleResize);
     // return () => window.removeEventListener("resize", handleResize);
   }, []);
@@ -54,6 +55,11 @@ const App = () => {
           <Route path="/about" element={<About />}></Route>
           <Route path="/members" element={<MembersPage />}></Route>
           <Route path="/projects" element={<PorjectsPage />}></Route>
+          <Route path="/events-gallery" element={<BoxGrid />} />
+          <Route
+            path="/gallery"
+            element={<AsymmetricScrollingGallery></AsymmetricScrollingGallery>}
+          ></Route>
         </Routes>
       </Router>
     </>
