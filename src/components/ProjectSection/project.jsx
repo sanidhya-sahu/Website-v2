@@ -46,7 +46,7 @@ const ProjectsSection = () => {
     return (
         <div className="projectCover">
             <div className="projectPage">
-                <div
+                {/* <div
                     className="eventTitle"
                     style={{
                         position: "absolute",
@@ -56,7 +56,7 @@ const ProjectsSection = () => {
                     }}
                 >
                     /Projects
-                </div>
+                </div> */}
                 <div
                     className="ghost"
                     style={{

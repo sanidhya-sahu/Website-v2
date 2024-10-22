@@ -40,9 +40,8 @@
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  
+  cursor: pointer;
 }
-
 
 
 #brand_col li > div {
@@ -184,6 +183,7 @@
   color: white;
   font-size: 1.8vw;
 }
+
 
 /*
 .##.....##.########.########..####....###.......########.....###....########..########

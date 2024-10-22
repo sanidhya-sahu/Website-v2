@@ -43,9 +43,9 @@ const EventsSectionMobile = () => {
   //   });
   return (
     <div data-scroll className="eventSection">
-      <div data-scroll className="eventTitle">
+      {/* <div data-scroll className="eventTitle">
         /Recent Events
-      </div>
+      </div> */}
       <div data-scroll className="slider">
         <span data-scroll style={{ "--i": 4 }}>
           <div data-scroll className="cardbox octa">

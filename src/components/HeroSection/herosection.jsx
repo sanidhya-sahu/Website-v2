@@ -25,7 +25,7 @@ const Heropage = () => {
     <div className="heroWrap">
       <div className="event-container">
         <div className="left-event-container">
-          <div className="eventTitle heroTitle">/Upcoming Event</div>
+          {/* <div className="eventTitle heroTitle">/Upcoming Event</div> */}
           <p className="context">
             Immerse yourself in
             <span className="highlight">

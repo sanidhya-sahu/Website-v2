@@ -16,24 +16,26 @@ import Footer from "./components/Footer/footer";
 import FooterMobile from "./components/FooterMobile/footermobile";
 import BoxGrid from "./components/gallery/BoxGrid.jsx";
 import AsymmetricScrollingGallery from "./components/gallery/Gallery.jsx";
+import GooeyCursor from "./components/Gooey Cursor/gooeyCursor.jsx";
 
 const App = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 480);
 
   useEffect(() => {
-    // const handleResize = () => {
-    //   setIsMobile(window.innerWidth < 480);
-    //   if (window.innerWidth < 768 || window.innerWidth > 768) {
-    //     // window.location.reload();
-    //     alert(
-    //       "We know you wanna test our responsiveness, so please reload site after resizing , thanks 🙂"
-    //     );
-    //   }
-    // };
-    // window.addEventListener("resize", handleResize);
-    // return () => window.removeEventListener("resize", handleResize);
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 480);
+      if (window.innerWidth < 768 || window.innerWidth > 768) {
+        window.location.reload();
+        // alert(
+        //   "We know you wanna test our responsiveness, so please reload site after resizing , thanks 🙂"
+        // );
+      }
+    };
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize)
   }, []);
 
+ 
   return (
     <>
       <Router>
@@ -42,6 +44,7 @@ const App = () => {
             path="/"
             element={
               <>
+                <GooeyCursor />
                 <Heropage />
                 {isMobile ? <EventsSectionMobile /> : <EventSection />}
                 {isMobile ? <GallerySectionMobile /> : <GallerySection />}

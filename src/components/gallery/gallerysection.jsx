@@ -68,7 +68,7 @@ const GallerySection = () => {
 
   return (
     <div className="galleryWrap">
-      <div className="eventTitle galleryTitle">/Gallery</div>
+      {/* <div className="eventTitle galleryTitle">/Gallery</div> */}
       <div className="galleryRow1">
         <div className="ghostboximg1"></div>
         <div id="galleryBox1" onClick={handleBoxClick} className="boximg1"></div>
