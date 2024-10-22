@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import './Gallery.css'; // Import the external CSS file
-
+import GooeyCursor from "../Gooey Cursor/gooeyCursor.jsx";
 export default function AsymmetricScrollingGallery() {
   const leftColumnRef = useRef(null);
   const centerColumnRef = useRef(null);
@@ -48,19 +48,22 @@ export default function AsymmetricScrollingGallery() {
   };
 
   return (
-    <div className="gallery-container">
-      <h1 className="gallery-title">Asymmetric Scrolling Gallery</h1>
-      <div className="gallery-grid">
-        <div ref={leftColumnRef} className="gallery-column">
-          {renderColumn(0)}
-        </div>
-        <div ref={centerColumnRef} className="gallery-column">
-          {renderColumn(1)}
-        </div>
-        <div ref={rightColumnRef} className="gallery-column">
-          {renderColumn(2)}
+    <>
+      <GooeyCursor></GooeyCursor>
+      <div className="gallery-container">
+        <h1 className="gallery-title">Asymmetric Scrolling Gallery</h1>
+        <div className="gallery-grid">
+          <div ref={leftColumnRef} className="gallery-column">
+            {renderColumn(0)}
+          </div>
+          <div ref={centerColumnRef} className="gallery-column">
+            {renderColumn(1)}
+          </div>
+          <div ref={rightColumnRef} className="gallery-column">
+            {renderColumn(2)}
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }

@@ -4,6 +4,7 @@ import pdf1 from "/Magazines/Edition_1.pdf";
 import pdf2 from "/Magazines/Edition_2.pdf";
 import { Document, Page, pdfjs } from "react-pdf";
 import "./magazine.css";
+import GooeyCursor from "../Gooey Cursor/gooeyCursor.jsx";
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`;
 
@@ -57,8 +58,9 @@ function Flipbook() {
   };
 
   return (
+    <>
+      <GooeyCursor></GooeyCursor>
     <div className="magazineWrap">
-
       <div className="flipbook-container">
         <div className="nav-bar">
           <div className="previousButton">
@@ -131,6 +133,7 @@ function Flipbook() {
         </button>
       </div>
     </div>
+    </>
   );
 }
 

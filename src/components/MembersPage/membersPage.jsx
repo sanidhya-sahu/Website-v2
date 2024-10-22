@@ -6,6 +6,7 @@ import './membersPage.css'
 import { useSearchParams } from "react-router-dom";
 import HeadSVG from '../../assets/teamHeadSvg.svg'
 import data from '../../../public/Data/members.json'
+import GooeyCursor from "../Gooey Cursor/gooeyCursor.jsx";
 const membersPage = () => {
     gsap.registerPlugin(ScrollTrigger);
     useGSAP(() => {
@@ -123,18 +124,21 @@ const membersPage = () => {
 
     }, [searchParams])
     return (
-        <div className='teamWrap'>
-            <div className="teamCont">
-                <div className="teamHead">
-                    <h1>Meet the minds behind the <span style={{ position: 'absolute', paddingLeft: '17px' }} ><img className='headBorder' src={HeadSVG} alt="" />magic</span></h1>
-                    <h1 className='teamNameHead' >The <span className='headHighlight'>{team}</span> Team</h1>
-                </div>
-                <div className="teamBox">
-                    <div id='wave' className="wave"></div>
-                    <div id="membersBox"></div>
+        <>
+            <GooeyCursor></GooeyCursor>
+            <div className='teamWrap'>
+                <div className="teamCont">
+                    <div className="teamHead">
+                        <h1>Meet the minds behind the <span style={{ position: 'absolute', paddingLeft: '17px' }} ><img className='headBorder' src={HeadSVG} alt="" />magic</span></h1>
+                        <h1 className='teamNameHead' >The <span className='headHighlight'>{team}</span> Team</h1>
+                    </div>
+                    <div className="teamBox">
+                        <div id='wave' className="wave"></div>
+                        <div id="membersBox"></div>
+                    </div>
                 </div>
             </div>
-        </div>
+        </>
     )
 }
 

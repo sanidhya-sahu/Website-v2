@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Box from "./Box";
 import "./BoxGrid.css";
-
+import GooeyCursor from "../Gooey Cursor/gooeyCursor.jsx";
 const BoxGrid = () => {
   const [boxes] = useState(["A", "B", "C", "D", "E", "F"]);
   const [columns, setColumns] = useState(3);
@@ -32,14 +32,17 @@ const BoxGrid = () => {
   };
 
   return (
-    <div
-      className="grid-container"
-      style={{ gridTemplateColumns: `repeat(${columns}, 1fr)` }}
-    >
-      {boxes.map((box, index) => (
-        <Box key={index} letter={box} handleClick={handleBoxClick} />
-      ))}
-    </div>
+    <>
+    <GooeyCursor></GooeyCursor>
+      <div
+        className="grid-container"
+        style={{ gridTemplateColumns: `repeat(${columns}, 1fr)` }}
+      >
+        {boxes.map((box, index) => (
+          <Box key={index} letter={box} handleClick={handleBoxClick} />
+        ))}
+      </div>
+    </>
   );
 };
 
