@@ -84,18 +84,26 @@
 #galleryBox1{
     transform: translateX(-100px);
     opacity: 0;
+    cursor: pointer;
 }
 #galleryBox2{
     transform: translateY(100px);
     opacity: 0;
+    cursor: pointer;
 }
 #galleryBox3{
     transform: translateY(-100px);
     opacity: 0;
+    cursor: pointer;
 }
 #galleryBox4,#galleryBox5{
     transform: translateX(100px);
     opacity: 0;
+    cursor: pointer;
+}
+
+.boximg2{
+    cursor: pointer;
 }
 
 .galleryTitle{

@@ -71,17 +71,17 @@ const GallerySection = () => {
       <div className="eventTitle galleryTitle">/Gallery</div>
       <div className="galleryRow1">
         <div className="ghostboximg1"></div>
-        <div id="galleryBox1" className="boximg1"></div>
+        <div id="galleryBox1" onClick={handleBoxClick} className="boximg1"></div>
         <div className="ghostboximg2"></div>
       </div>
       <div className="galleryRow2">
-        <div id="galleryBox2" className="boximg1"></div>
+        <div id="galleryBox2" onClick={handleBoxClick} className="boximg1"></div>
         <div className="boximg2" onClick={handleBoxClick}></div>
-        <div id="galleryBox3" className="boximg3"></div>
+        <div id="galleryBox3" onClick={handleBoxClick} className="boximg3"></div>
       </div>
       <div className="galleryRow3">
-        <div id="galleryBox4" className="boximg1"></div>
-        <div id="galleryBox5" className="boximg2"></div>
+        <div id="galleryBox4" onClick={handleBoxClick} className="boximg1"></div>
+        <div id="galleryBox5" onClick={handleBoxClick} className="boximg2"></div>
       </div>
     </div>
   );
