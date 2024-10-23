@@ -11,6 +11,7 @@ function projectpage() {
     window.addEventListener('load', () => {
       setblurLayerHeight(document.getElementById("projectWrap").clientHeight)
     })
+    scrollTo({top:0,behavior: "smooth"})
   }, [])
 
   return (

@@ -50,7 +50,7 @@ export default function AsymmetricScrollingGallery() {
   return (
     <>
       <GooeyCursor></GooeyCursor>
-      <div className="gallery-container">
+      <div id='galleryContainer' className="gallery-container">
         <h1 className="gallery-title">Asymmetric Scrolling Gallery</h1>
         <div className="gallery-grid">
           <div ref={leftColumnRef} className="gallery-column">
