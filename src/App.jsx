@@ -8,6 +8,7 @@ import About from "./components/About/About";
 import Heropage from "./components/HeroSection/herosection";
 import MembersPage from "./components/MembersPage/membersPage";
 import TeamMembersSection from "./components/TeamMembersSection/teamMembers";
+import TeamMembersSectionMobile from "./components/TeamMembersSection/teamMembersMobile.jsx";
 import EventSection from "./components/EventSection/eventsection";
 import EventsSectionMobile from "./components/EventSection/eventsectionmobile";
 import GallerySection from "./components/gallery/gallerysection";
@@ -35,7 +36,7 @@ const App = () => {
     return () => window.removeEventListener("resize", handleResize)
   }, []);
 
- 
+
   return (
     <>
       <Router>
@@ -50,7 +51,7 @@ const App = () => {
                 {isMobile ? <EventsSectionMobile /> : <EventSection />}
                 {isMobile ? <GallerySectionMobile /> : <GallerySection />}
                 <Proj />
-                <TeamMembersSection />
+                {isMobile ? <TeamMembersSectionMobile /> : <TeamMembersSection />}
                 {isMobile ? <FooterMobile /> : <Footer />}
               </>
             }

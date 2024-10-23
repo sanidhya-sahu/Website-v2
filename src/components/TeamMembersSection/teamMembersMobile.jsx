@@ -27,71 +27,71 @@ const BrandingSection = () => {
       .catch((error) => console.error("Error fetching data:", error));
   }, []);
 
-  useEffect(() => {
-    if (data.length > 0) {
-      animateSections();
-    }
-  }, [data]);
+  // useEffect(() => {
+  //   if (data.length > 0) {
+  //     animateSections();
+  //   }
+  // }, [data]);
 
-  const animateSections = () => {
-    gsap.utils.toArray("#brand_col .left li").forEach((section) => {
-      gsap.fromTo(
-        section,
-        { autoAlpha: 1, y: 50, rotation: 0, x: 0 },
-        {
-          autoAlpha: 1,
-          y: -20,
-          x: -30,
-          rotation: -10,
-          scrollTrigger: {
-            trigger: section,
-            start: "top 50%",
-            end: "bottom 0%",
-            scrub: 1,
-            toggleActions: "play reverse play reverse",
-          },
-        }
-      );
-    });
+  // const animateSections = () => {
+  //   gsap.utils.toArray("#brand_col .left li").forEach((section) => {
+  //     gsap.fromTo(
+  //       section,
+  //       { autoAlpha: 1, y: 50, rotation: 0, x: 0 },
+  //       {
+  //         autoAlpha: 1,
+  //         y: -20,
+  //         x: -30,
+  //         rotation: -10,
+  //         scrollTrigger: {
+  //           trigger: section,
+  //           start: "top 50%",
+  //           end: "bottom 0%",
+  //           scrub: 1,
+  //           toggleActions: "play reverse play reverse",
+  //         },
+  //       }
+  //     );
+  //   });
 
-    gsap.utils.toArray("#brand_col .center li").forEach((section) => {
-      gsap.fromTo(
-        section,
-        { autoAlpha: 1, y: 50 },
-        {
-          autoAlpha: 1,
-          y: -50,
-          scrollTrigger: {
-            // markers:true,
-            trigger: section,
-            start: "top 60%",
-            end: "bottom 0%",
-            scrub: 1,
-            toggleActions: "play reverse play reverse",
-          },
-        }
-      );
-    });
+  //   gsap.utils.toArray("#brand_col .center li").forEach((section) => {
+  //     gsap.fromTo(
+  //       section,
+  //       { autoAlpha: 1, y: 50 },
+  //       {
+  //         autoAlpha: 1,
+  //         y: -50,
+  //         scrollTrigger: {
+  //           // markers:true,
+  //           trigger: section,
+  //           start: "top 60%",
+  //           end: "bottom 0%",
+  //           scrub: 1,
+  //           toggleActions: "play reverse play reverse",
+  //         },
+  //       }
+  //     );
+  //   });
 
-    gsap.utils.toArray("#brand_col .right li").forEach((section) => {
-      gsap.fromTo(
-        section,
-        { autoAlpha: 1, y: 50, rotation: 0 },
-        {
-          autoAlpha: 1,
-          y: -10,
-          x: 10,
-          rotation: 10,
-          scrollTrigger: {
-            trigger: section,
-            start: "top 50%",
-            end: "bottom 0%",
-            scrub: 1,
-            toggleActions: "play reverse play reverse",
-          },
-        }
-      );
-    });
+  //   gsap.utils.toArray("#brand_col .right li").forEach((section) => {
+  //     gsap.fromTo(
+  //       section,
+  //       { autoAlpha: 1, y: 50, rotation: 0 },
+  //       {
+  //         autoAlpha: 1,
+  //         y: -10,
+  //         x: 10,
+  //         rotation: 10,
+  //         scrollTrigger: {
+  //           trigger: section,
+  //           start: "top 50%",
+  //           end: "bottom 0%",
+  //           scrub: 1,
+  //           toggleActions: "play reverse play reverse",
+  //         },
+  //       }
+  //     );
+  //   });
 
   //   const faculty1 = document.querySelector(".faculty1");
   //   if (faculty1) {
@@ -132,11 +132,11 @@ const BrandingSection = () => {
   //       }
   //     );
   //   }
-  };
+  // };
 
-  useGSAP(() => {
-    animateSections();
-  });
+  // useGSAP(() => {
+  //   animateSections();
+  // });
 
   const renderListItems = (items) => {
     return items.map((item, index) => (

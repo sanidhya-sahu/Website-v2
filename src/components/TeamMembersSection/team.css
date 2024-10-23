@@ -11,6 +11,9 @@
   width: 100vw;
   height: auto;
   font-family: 'Arame';
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 #brand_col {
@@ -127,6 +130,7 @@
   justify-content: space-between;
   color: white;
   margin: 4%;
+  width: 70%;
 }
 
 .faculty1,
@@ -254,7 +258,7 @@
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
-    
+    width: 90%;
   }
 
  
