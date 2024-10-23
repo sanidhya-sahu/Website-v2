@@ -14,10 +14,10 @@
         "team":"tech"
     },
     {
-        "name": "Aryan Mandlik",
+        "name": "Meet Vachhani",
         "pos": "Lead",
         "teamPos": "Event Lead",
-        "img": "/membersIMG/aryanmandlik.png",
+        "img": "/membersIMG/Event Team/MeetVachhani_22MIM10069_Eventteam.jpg",
         "team":"event"
     },
     {
@@ -28,11 +28,11 @@
         "img": "/membersIMG/wrishita.png"
     },
     {
-        "team":"socialmedia",
-        "name": "Saumya Tiwari",
-        "pos": "Lead",
-        "teamPos": "Social Media Lead",
-        "img": "/membersIMG/saumya.png"
+        "team":false,
+        "name": "Aarushi",
+        "pos": "OM",
+        "teamPos": "Operational Manager",
+        "img": "/membersIMG/aarushi.png"
     },
     {
         "team":false,
@@ -49,6 +49,16 @@
         "img": "/membersIMG/sanidhya.png"
     },
     {
+        "team":"content",
+        "name": "Sanyukta Gokhale",
+        "pos": "Lead",
+        "teamPos": "Content Lead",
+        "img": "/membersIMG/sanyukta.png"
+    },
+    
+    
+    
+    {
         "team":"graphics",
         "name": "Harsh Dayal",
         "pos": "Lead",
@@ -56,18 +66,11 @@
         "img": "/membersIMG/harsh.png"
     },
     {
-        "team":"content",
-        "name": "Sanyukta Gokhale",
-        "pos": "Lead",
-        "teamPos": "Content Lead",
-        "img": "/membersIMG/sanyukta.png"
-    },
-    {
-        "team":"outreach",
-        "name": "Harshit Shukla",
-        "pos": "Lead",
-        "teamPos": "Outreach Lead",
-        "img": "/membersIMG/harshit.png"
+        "team":false,
+        "name": "Arpit Sengar",
+        "pos": "OM",
+        "teamPos": "Operational Manager",
+        "img": "/membersIMG/arpit.png"
     },
     {
         "team":false,
@@ -77,26 +80,29 @@
         "img": "/membersIMG/virat.png"
     },
     {
+        "team":"socialmedia",
+        "name": "Saumya Tiwari",
+        "pos": "Lead",
+        "teamPos": "Social Media Lead",
+        "img": "/membersIMG/saumya.png"
+    },
+    {
+        "team":"outreach",
+        "name": "Harshit Shukla",
+        "pos": "Lead",
+        "teamPos": "Outreach Lead",
+        "img": "/membersIMG/harshit.png"
+    },
+    
+    {
         "team":"partnership",
         "name": "Aryan Shah",
         "pos": "Lead",
         "teamPos": "Partnership Lead",
         "img": "/membersIMG/aryan.png"
     },
-    {
-        "team":false,
-        "name": "Aarushi",
-        "pos": "OM",
-        "teamPos": "Operational Manager",
-        "img": "/membersIMG/aarushi.png"
-    },
-    {
-        "team":false,
-        "name": "Arpit Sengar",
-        "pos": "OM",
-        "teamPos": "Operational Manager",
-        "img": "/membersIMG/arpit.png"
-    },
+    
+    
     {
         "team":false,
         "name": "Tarun Nichwani",
