@@ -61,10 +61,7 @@ const App = () => {
           <Route path="/members" element={<MembersPage />}></Route>
           <Route path="/projects" element={<PorjectsPage />}></Route>
           <Route path="/events-gallery" element={<BoxGrid />} />
-          <Route
-            path="/gallery"
-            element={<AsymmetricScrollingGallery></AsymmetricScrollingGallery>}
-          ></Route>
+          <Route path="/gallery" element={<AsymmetricScrollingGallery></AsymmetricScrollingGallery>}></Route>
         </Routes>
       </Router>
     </>
