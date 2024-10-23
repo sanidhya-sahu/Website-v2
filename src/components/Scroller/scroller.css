@@ -1,5 +1,5 @@
 .scroller {
-  min-width: 120px;
+  /* min-width: 120px; */
   max-width: 120px;
   height: 120px;
   position: fixed;
@@ -52,4 +52,27 @@
 }
 .blend {
   mix-blend-mode: difference;
+}
+
+@media (max-width : 768px){
+  .scroller{
+    height: 90px;
+    width: 90px;
+  }
+  .scrollerbox{
+    height: 57px;
+    width: 57px;
+  }
+  .ring {
+    width: 90px;
+    height: 90px;
+  }
+  .ring > img {
+    width: 90px;
+  }
+  .arrow {
+    position: absolute;
+    bottom: 37%;
+    left: 42%;
+  }
 }
