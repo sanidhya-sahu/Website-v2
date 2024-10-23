@@ -17,7 +17,7 @@ import FooterMobile from "./components/FooterMobile/footermobile";
 import BoxGrid from "./components/gallery/BoxGrid.jsx";
 import AsymmetricScrollingGallery from "./components/gallery/Gallery.jsx";
 import GooeyCursor from "./components/Gooey Cursor/gooeyCursor.jsx";
-
+import Scroller from "./components/Scroller/scroller.jsx";
 const App = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 480);
 
@@ -44,6 +44,7 @@ const App = () => {
             path="/"
             element={
               <>
+                <Scroller></Scroller>
                 <GooeyCursor />
                 <Heropage />
                 {isMobile ? <EventsSectionMobile /> : <EventSection />}
