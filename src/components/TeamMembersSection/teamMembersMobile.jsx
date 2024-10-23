@@ -160,18 +160,18 @@ const BrandingSection = () => {
     <div id="branding">
       <div className="meetteam">MEET OUR TEAM</div>
       <div className="faculty">
-        <div className="faculty1">
+        {/* <div className="faculty1">
           <img src="src/assets/faculty.jpg" alt="Teacher 1" />
           <div className="designation">
             Teacher 1<br />
             Designation
           </div>
-        </div>
+        </div> */}
         <div className="faculty2">
-          <img src="path/to/teacher2.jpg" alt="Teacher 2" />
+          <img src="/membersIMG/Ajeet Sir Pic.jpg" alt="Teacher" />
           <div className="designation">
-            Teacher 2<br />
-            Designation
+          Dr. Ajeet Singh<br />
+            Club Co-ordinator
           </div>
         </div>
       </div>
