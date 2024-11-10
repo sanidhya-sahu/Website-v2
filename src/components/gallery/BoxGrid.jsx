@@ -36,8 +36,9 @@ const BoxGrid = () => {
     return () => window.removeEventListener("resize", updateColumns);
   }, []);
 
-  const handleBoxClick = () => {
-    navigate("/gallery");
+  const handleBoxClick = (eventName) => {
+    const urlPath = eventName.toLowerCase().replace(/\s+/g, "-");
+    navigate(`/events/${urlPath}`);
   };
 
   return (
@@ -48,7 +49,12 @@ const BoxGrid = () => {
         style={{ gridTemplateColumns: `repeat(${columns}, 1fr)` }}
       >
         {boxes.map((box) => (
-          <Box banner={box.img} key={box.id} letter={box.name} handleClick={handleBoxClick} />
+          <Box
+            banner={box.img}
+            key={box.id}
+            letter={box.name}
+            handleClick={() => handleBoxClick(box.name)}
+          />
         ))}
       </div>
     </>

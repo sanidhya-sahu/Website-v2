@@ -19,7 +19,7 @@ import BoxGrid from "./components/gallery/BoxGrid.jsx";
 import AsymmetricScrollingGallery from "./components/gallery/Gallery.jsx";
 import GooeyCursor from "./components/Gooey Cursor/gooeyCursor.jsx";
 import Scroller from "./components/Scroller/scroller.jsx";
-import MoreEvents from './components/MoreEvents/moreEvents.jsx'
+import MoreEvents from "./components/MoreEvents/moreEvents.jsx";
 const App = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 480);
 
@@ -29,13 +29,12 @@ const App = () => {
       setIsMobile(window.innerWidth < 480);
       if (window.innerWidth !== lastWidth) {
         window.location.reload();
-    }
-    lastWidth = window.innerWidth;
+      }
+      lastWidth = window.innerWidth;
     };
     window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize)
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
-
 
   return (
     <>
@@ -51,7 +50,11 @@ const App = () => {
                 {isMobile ? <EventsSectionMobile /> : <EventSection />}
                 {isMobile ? <GallerySectionMobile /> : <GallerySection />}
                 <Proj />
-                {isMobile ? <TeamMembersSectionMobile /> : <TeamMembersSection />}
+                {isMobile ? (
+                  <TeamMembersSectionMobile />
+                ) : (
+                  <TeamMembersSection />
+                )}
                 {isMobile ? <FooterMobile /> : <Footer />}
               </>
             }
@@ -62,7 +65,10 @@ const App = () => {
           <Route path="/members" element={<MembersPage />}></Route>
           <Route path="/projects" element={<PorjectsPage />}></Route>
           <Route path="/events-gallery" element={<BoxGrid />} />
-          <Route path="/gallery" element={<AsymmetricScrollingGallery></AsymmetricScrollingGallery>}></Route>
+          <Route
+            path="/events/:eventName"
+            element={<AsymmetricScrollingGallery />}
+          />
         </Routes>
       </Router>
     </>
