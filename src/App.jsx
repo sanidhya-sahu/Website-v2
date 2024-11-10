@@ -19,18 +19,18 @@ import BoxGrid from "./components/gallery/BoxGrid.jsx";
 import AsymmetricScrollingGallery from "./components/gallery/Gallery.jsx";
 import GooeyCursor from "./components/Gooey Cursor/gooeyCursor.jsx";
 import Scroller from "./components/Scroller/scroller.jsx";
+import MoreEvents from './components/MoreEvents/moreEvents.jsx'
 const App = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 480);
 
   useEffect(() => {
+    var lastWidth = window.innerWidth;
     const handleResize = () => {
       setIsMobile(window.innerWidth < 480);
-      if (window.innerWidth < 768 || window.innerWidth > 768) {
+      if (window.innerWidth !== lastWidth) {
         window.location.reload();
-        // alert(
-        //   "We know you wanna test our responsiveness, so please reload site after resizing , thanks 🙂"
-        // );
-      }
+    }
+    lastWidth = window.innerWidth;
     };
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize)
@@ -56,6 +56,7 @@ const App = () => {
               </>
             }
           ></Route>
+          <Route path="/events" element={<MoreEvents />}></Route>
           <Route path="/magazine" element={<Magazine />}></Route>
           <Route path="/about" element={<About />}></Route>
           <Route path="/members" element={<MembersPage />}></Route>

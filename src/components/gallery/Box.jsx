@@ -1,9 +1,9 @@
 import React from "react";
 import "./Box.css";
 
-const Box = ({ letter, handleClick }) => {
+const Box = ({ letter, handleClick, banner }) => {
   return (
-    <div className="box" onClick={handleClick}>
+    <div style={{backgroundImage:`url(${banner})`}} className="box" onClick={handleClick}>
       {letter}
     </div>
   );

@@ -68,6 +68,12 @@
   flex-wrap: wrap;
 }
 
+.container1,
+.container2,
+.container3 :hover{
+  cursor: pointer;
+}
+
 .container1 {
   background-color: #1b1b1b;
 }
@@ -86,7 +92,7 @@
 
 .projImg {
   width: 50%;
-  height: 70%;
+  height: auto;
   position: relative;
 }
 
@@ -97,13 +103,23 @@
 
 .projImgMask {
   width: 65%;
-  height: 100%;
+  height: 90%;
   position: absolute;
   top: 10px;
   left: 15px;
   background-color: white;
   border-radius: 340px;
   /* mix-blend-mode: screen; */
+  background-repeat: round;
+}
+#mask1{
+  background-image: url('/projects/cityscapes.png');
+}
+#mask2{
+  background-image: url('/projects/helmet.jpeg');
+}
+#mask3{
+  background-image: url('/projects/agroAI.png');
 }
 
 .projDesc {

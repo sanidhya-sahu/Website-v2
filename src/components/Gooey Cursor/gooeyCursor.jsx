@@ -4,7 +4,7 @@ import "./gooeyCursor.css";
 function gooeyCursor() {
     useEffect(() => {
         const blockContainer = document.getElementById('blocks')
-        const blockSize = 70
+        const blockSize = 50
         const scWidth = window.innerWidth
         const scHeight = window.innerHeight
         const numCol = Math.ceil(scWidth / blockSize)
@@ -31,9 +31,9 @@ function gooeyCursor() {
                 let pointerPosX = event.clientX
                 let pointerPosY = event.clientY
                 let blockX = document.getElementById(index).getBoundingClientRect().x
-                let blockEndX = document.getElementById(index).getBoundingClientRect().x + 70
+                let blockEndX = document.getElementById(index).getBoundingClientRect().x + 50
                 let blockY = document.getElementById(index).getBoundingClientRect().y
-                let blockEndY = document.getElementById(index).getBoundingClientRect().y + 70
+                let blockEndY = document.getElementById(index).getBoundingClientRect().y + 50
                 if (pointerPosX >= blockX && pointerPosX <= blockEndX) {
                     if (pointerPosY >= blockY && pointerPosY <= blockEndY) {
                         document.getElementById(index).classList.add("blockhighlight")

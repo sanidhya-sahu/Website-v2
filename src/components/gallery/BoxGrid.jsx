@@ -48,7 +48,7 @@ const BoxGrid = () => {
         style={{ gridTemplateColumns: `repeat(${columns}, 1fr)` }}
       >
         {boxes.map((box) => (
-          <Box key={box.id} letter={box.name} handleClick={handleBoxClick} />
+          <Box banner={box.img} key={box.id} letter={box.name} handleClick={handleBoxClick} />
         ))}
       </div>
     </>

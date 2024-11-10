@@ -4,7 +4,9 @@ import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import eventOBJ from "../../Data/sliderEvents.json";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 const EventsSectionMobile = () => {
+  const navigate = useNavigate();
   //   gsap.registerPlugin(ScrollTrigger);
 
   //   useGSAP(() => {
@@ -47,7 +49,7 @@ const EventsSectionMobile = () => {
         /Recent Events
       </div> */}
       <div data-scroll className="slider">
-        <span data-scroll style={{ "--i": 4 }}>
+        <span data-scroll style={{ "--i": 4 }} onClick={()=>{navigate('/events')}} >
           <div data-scroll className="cardbox octa">
             <img
               data-scroll
@@ -76,7 +78,7 @@ const EventsSectionMobile = () => {
             </div>
           </div>
         </span>
-        <span data-scroll style={{ "--i": 3 }}>
+        <span data-scroll style={{ "--i": 3 }} onClick={()=>{navigate('/events')}} >
           <div data-scroll className="cardbox octa">
             <img
               data-scroll
@@ -105,7 +107,7 @@ const EventsSectionMobile = () => {
             </div>
           </div>
         </span>
-        <span data-scroll style={{ "--i": 2 }}>
+        <span data-scroll style={{ "--i": 2 }} onClick={()=>{navigate('/events')}} >
           <div data-scroll className="cardbox octa">
             <img
               data-scroll
@@ -134,7 +136,7 @@ const EventsSectionMobile = () => {
             </div>
           </div>
         </span>
-        <span data-scroll style={{ "--i": 1 }}>
+        <span data-scroll style={{ "--i": 1 }} onClick={()=>{navigate('/events')}} >
           <div data-scroll className="cardbox octa">
             <img
               data-scroll

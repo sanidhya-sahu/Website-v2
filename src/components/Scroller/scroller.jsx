@@ -21,7 +21,7 @@ const scroller = () => {
       },
     });
     gsap.to(".ring", {
-      rotate: 1080,
+      rotate: 2080,
       scrollTrigger: {
         trigger: ".scrollerbox2",
         scroller: "body",
