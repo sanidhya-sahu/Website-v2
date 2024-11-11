@@ -20,6 +20,7 @@ import AsymmetricScrollingGallery from "./components/gallery/Gallery.jsx";
 import GooeyCursor from "./components/Gooey Cursor/gooeyCursor.jsx";
 import Scroller from "./components/Scroller/scroller.jsx";
 import MoreEvents from './components/MoreEvents/moreEvents.jsx'
+import Cursor from "./components/Cursor/cursor.jsx";
 const App = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 480);
 
@@ -45,6 +46,7 @@ const App = () => {
             path="/"
             element={
               <>
+                {/* <Cursor></Cursor> */}
                 <Scroller></Scroller>
                 <GooeyCursor />
                 <Heropage />
