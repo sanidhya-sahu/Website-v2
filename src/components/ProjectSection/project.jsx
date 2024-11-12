@@ -16,7 +16,6 @@ const ProjectsSection = () => {
         // to make body dark
 
         gsap.to("body", {
-            background: "#131315",
             scrollTrigger: {
                 trigger: ".projectPage",
                 scroller: "body",

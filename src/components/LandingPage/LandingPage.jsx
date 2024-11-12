@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import "./LandingPage.css";
 import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useGSAP } from "@gsap/react";
 
 const ROWS = 6;
 const COLS = 6;
@@ -11,19 +13,39 @@ const LandingPage = () => {
   const [isFlipped, setIsFlipped] = useState(false);
   const [scrollLocked, setScrollLocked] = useState(false);
 
+  gsap.registerPlugin(ScrollTrigger);
+  useGSAP(() => {
+    const tiles = document.querySelectorAll(".tile");
+    setIsFlipped(!isFlipped);
+    gsap.to('.tile', {
+      rotateX: isFlipped ? 180 : 0,
+      scrollTrigger: {
+        trigger: "#landing-page",
+        scroller: "body",
+        markers: true,
+        start: "top -1%",
+        end: `top -50%`,
+        scrub: 1,
+        pin: true,
+      },
+      // duration: 1,
+      // stagger: {
+      //   amount: 0.5,
+      //   from: "random",
+      // },
+      // ease: "power2.inOut",
+      // onComplete: resolve,
+    });
+  })
+
   useEffect(() => {
     createBoard();
     initializeTileAnimation();
-    if (!window.blockInfo) {
-      window.blockInfo = createBlocks();
-    }
-    document.addEventListener("mousemove", highlightBlock);
-    window.addEventListener("scroll", handleScroll);
+    // window.addEventListener('scroll', handleScroll);
 
-    return () => {
-      document.removeEventListener("mousemove", highlightBlock);
-      window.removeEventListener("scroll", handleScroll);
-    };
+    // return () => {
+    //   window.removeEventListener("scroll", handleScroll);
+    // };
   }, []);
 
   const createTiles = (row, col) => {
@@ -88,12 +110,12 @@ const LandingPage = () => {
   };
 
   const handleScroll = (event) => {
+    setScrollLocked(true);
     if (scrollLocked) {
       event.preventDefault();
       return; // Prevent further scrolling while the tiles are flipping
     }
 
-    setScrollLocked(true);
     const tiles = document.querySelectorAll(".tile");
 
     flipAllTiles(tiles).then(() => {
@@ -126,60 +148,26 @@ const LandingPage = () => {
   };
 
   const flipAllTiles = (tiles) => {
+    console.log(tiles);
+
     return new Promise((resolve) => {
       setIsFlipped(!isFlipped);
       gsap.to(tiles, {
         rotateX: isFlipped ? 180 : 0,
-        duration: 1,
+        // duration: 1,
         stagger: {
           amount: 0.5,
           from: "random",
         },
-        ease: "power2.inOut",
+        // ease: "power2.inOut",
         onComplete: resolve,
+        pin: true
       });
     });
   };
 
-  const createBlocks = () => {
-    const blocksContainer = document.getElementById("blocks");
-    const screenWidth = window.innerWidth;
-    const screenHeight = window.innerHeight;
-    const numCols = Math.ceil(screenWidth / BLOCK_SIZE);
-    const numRows = Math.ceil(screenHeight / BLOCK_SIZE);
-    const numBlocks = numCols * numRows;
-
-    for (let i = 0; i < numBlocks; i++) {
-      const block = document.createElement("div");
-      block.classList.add("block");
-      block.dataset.index = i;
-      blocksContainer.appendChild(block);
-    }
-
-    return { numCols, numBlocks };
-  };
-
-  const highlightBlock = (event) => {
-    const { numCols } = window.blockInfo;
-    const blocksContainer = document.getElementById("blocks");
-    const rect = blocksContainer.getBoundingClientRect();
-    const x = event.clientX - rect.left;
-    const y = event.clientY - rect.top;
-    const col = Math.floor(x / BLOCK_SIZE);
-    const row = Math.floor(y / BLOCK_SIZE);
-    const index = row * numCols + col;
-
-    const block = blocksContainer.children[index];
-    if (block) {
-      block.classList.add("highlight");
-      setTimeout(() => {
-        block.classList.remove("highlight");
-      }, 250);
-    }
-  };
-
   return (
-    <div className="landing-page">
+    <div id="landing-page" className="landing-page">
       <nav>
         <a href="#">AI Club</a>
         <button
@@ -190,10 +178,6 @@ const LandingPage = () => {
         </button>
       </nav>
       <section className="board"></section>
-      <div className="blocks-container">
-        <div id="blocks"></div>
-      </div>
-      <div style={{ height: "2000px", backgroundColor: "lightgrey" }}></div>
     </div>
   );
 };

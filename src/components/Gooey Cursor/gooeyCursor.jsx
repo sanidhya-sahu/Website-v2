@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import "./gooeyCursor.css";
 function gooeyCursor() {
     useEffect(() => {
-        const blockContainer = document.getElementById('blocks')
+        const blockContainer = document.getElementById('Gooeyblocks')
         const blockSize = 50
         const scWidth = window.innerWidth
         const scHeight = window.innerHeight
@@ -25,7 +25,7 @@ function gooeyCursor() {
         createBlocks()
         
         window.addEventListener('mousemove', (event) => {
-            const blockContainer = document.getElementById('blocks')
+            const blockContainer = document.getElementById('Gooeyblocks')
             const numBlocks = blockContainer.children.length
             for (let index = 0; index < numBlocks; index++) {
                 let pointerPosX = event.clientX
@@ -72,7 +72,7 @@ function gooeyCursor() {
 
     return (
         <div id="box-cont" style={boxContStyle} >
-            <div id="blocks" style={boxStyle}></div>
+            <div id="Gooeyblocks" style={boxStyle}></div>
         </div>
     )
 }

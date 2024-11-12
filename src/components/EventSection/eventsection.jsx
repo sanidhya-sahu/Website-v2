@@ -8,6 +8,8 @@ import { useNavigate } from "react-router-dom";
 const EventsSection = () => {
   gsap.registerPlugin(ScrollTrigger);
   const navigate = useNavigate();
+  const [isDark, setIsDark] = useState(false);
+
   useGSAP(() => {
     var vw = window.innerHeight;
     var sliderWidth = document.querySelector(".slider").scrollWidth;
@@ -16,7 +18,19 @@ const EventsSection = () => {
       var vw = window.innerHeight;
       var sliderWidth = document.querySelector(".slider").scrollWidth;
       var cardHeight = document.querySelector("span").clientHeight;
-
+      gsap.to("body", {
+        background: "#131315",
+        scrollTrigger: {
+          trigger: ".eventSection",
+          scroller: "body",
+          // markers: true,
+          start: "top 20%",
+          end: "top 10%",
+          scrub: 1,
+          onEnter: () => setIsDark(true),
+          onLeaveBack: () => setIsDark(false),
+        },
+      });
       gsap.to(".eventSection", {
         scrollTrigger: {
           trigger: ".eventSection",
@@ -48,7 +62,7 @@ const EventsSection = () => {
         /Recent Events
       </div> */}
       <div data-scroll className="slider">
-        <span data-scroll style={{ "--i": 4 }}  onClick={()=>{navigate('/events')}} >
+        <span data-scroll style={{ "--i": 4 }} onClick={() => { navigate('/events') }} >
           <div data-scroll className="cardbox octa">
             <img
               data-scroll
@@ -69,7 +83,7 @@ const EventsSection = () => {
             </div>
           </div>
           <div data-scroll className="eventDetails">
-            <div data-scroll className="eventName">
+            <div data-scroll style={{ color: isDark ? "white" : "black" }} className="eventName">
               {eventOBJ[1].name}
             </div>
             <div data-scroll className="viewEvent">
@@ -77,7 +91,7 @@ const EventsSection = () => {
             </div>
           </div>
         </span>
-        <span data-scroll style={{ "--i": 3 }} onClick={()=>{navigate('/events')}} >
+        <span data-scroll style={{ "--i": 3 }} onClick={() => { navigate('/events') }} >
           <div data-scroll className="cardbox octa">
             <img
               data-scroll
@@ -98,7 +112,7 @@ const EventsSection = () => {
             </div>
           </div>
           <div data-scroll className="eventDetails">
-            <div data-scroll className="eventName">
+            <div data-scroll style={{ color: isDark ? "white" : "black" }} className="eventName">
               {eventOBJ[2].name}
             </div>
             <div data-scroll className="viewEvent">
@@ -106,7 +120,7 @@ const EventsSection = () => {
             </div>
           </div>
         </span>
-        <span data-scroll style={{ "--i": 2 }} onClick={()=>{navigate('/events')}} >
+        <span data-scroll style={{ "--i": 2 }} onClick={() => { navigate('/events') }} >
           <div data-scroll className="cardbox octa">
             <img
               data-scroll
@@ -127,7 +141,7 @@ const EventsSection = () => {
             </div>
           </div>
           <div data-scroll className="eventDetails">
-            <div data-scroll className="eventName">
+            <div data-scroll style={{ color: isDark ? "white" : "black" }} className="eventName">
               {eventOBJ[3].name}
             </div>
             <div data-scroll className="viewEvent">
@@ -135,7 +149,7 @@ const EventsSection = () => {
             </div>
           </div>
         </span>
-        <span data-scroll style={{ "--i": 1 }} onClick={()=>{navigate('/events')}} >
+        <span data-scroll style={{ "--i": 1 }} onClick={() => { navigate('/events') }} >
           <div data-scroll className="cardbox octa">
             <img
               data-scroll
@@ -156,7 +170,7 @@ const EventsSection = () => {
             </div>
           </div>
           <div data-scroll className="eventDetails">
-            <div data-scroll className="eventName">
+            <div data-scroll style={{ color: isDark ? "white" : "black" }} className="eventName">
               {eventOBJ[4].name}
             </div>
             <div data-scroll className="viewEvent">
