@@ -7,49 +7,63 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 const EventsSectionMobile = () => {
   const navigate = useNavigate();
-  //   gsap.registerPlugin(ScrollTrigger);
+  const [isDark, setIsDark] = useState(false);
+  gsap.registerPlugin(ScrollTrigger);
 
-  //   useGSAP(() => {
-  //     var vw = window.innerHeight;
-  //     var sliderWidth = document.querySelector(".slider").scrollWidth;
+  useGSAP(() => {
+    gsap.to("body", {
+      background: "#131315",
+      scrollTrigger: {
+        trigger: ".eventSection",
+        scroller: "body",
+        // markers: true,
+        start: "top 20%",
+        end: "top 10%",
+        scrub: 1,
+        onEnter: () => setIsDark(true),
+        onLeaveBack: () => setIsDark(false),
+      },
+    });
+    // var vw = window.innerHeight;
+    // var sliderWidth = document.querySelector(".slider").scrollWidth;
 
-  //     if (window.innerWidth > 768) {
-  //       var vw = window.innerHeight;
-  //       var sliderWidth = document.querySelector(".slider").scrollWidth;
-  //       var cardHeight = document.querySelector("span").clientHeight;
+    //     if (window.innerWidth > 768) {
+    //       var vw = window.innerHeight;
+    //       var sliderWidth = document.querySelector(".slider").scrollWidth;
+    //       var cardHeight = document.querySelector("span").clientHeight;
 
-  //       gsap.to(".eventSection", {
-  //         scrollTrigger: {
-  //           trigger: ".eventSection",
-  //           scroller: "body",
-  //           // markers: true,
-  //           start: "top 10%",
-  //           end: `top -${sliderWidth / 8}%`,
-  //           scrub: 1,
-  //           pin: true,
-  //         },
-  //       });
-  //       gsap.to(".eventSection .slider", {
-  //         rotateY: 130,
-  //         scrollTrigger: {
-  //           trigger: ".eventSection",
-  //           scroller: "body",
-  //           // markers: true,
-  //           start: "top 50%",
-  //           end: `top -${sliderWidth / 8}%`,
-  //           scrub: 1,
-  //           // pin: true
-  //         },
-  //       });
-  //     }
-  //   });
+    //       gsap.to(".eventSection", {
+    //         scrollTrigger: {
+    //           trigger: ".eventSection",
+    //           scroller: "body",
+    //           // markers: true,
+    //           start: "top 10%",
+    //           end: `top -${sliderWidth / 8}%`,
+    //           scrub: 1,
+    //           pin: true,
+    //         },
+    //       });
+    //       gsap.to(".eventSection .slider", {
+    //         rotateY: 130,
+    //         scrollTrigger: {
+    //           trigger: ".eventSection",
+    //           scroller: "body",
+    //           // markers: true,
+    //           start: "top 50%",
+    //           end: `top -${sliderWidth / 8}%`,
+    //           scrub: 1,
+    //           // pin: true
+    //         },
+    //       });
+    //     }
+  });
   return (
     <div data-scroll className="eventSection">
       {/* <div data-scroll className="eventTitle">
         /Recent Events
       </div> */}
       <div data-scroll className="slider">
-        <span data-scroll style={{ "--i": 4 }} onClick={()=>{navigate('/events')}} >
+        <span data-scroll style={{ "--i": 4 }} onClick={() => { navigate('/events') }} >
           <div data-scroll className="cardbox octa">
             <img
               data-scroll
@@ -70,7 +84,7 @@ const EventsSectionMobile = () => {
             </div>
           </div>
           <div data-scroll className="eventDetails">
-            <div data-scroll className="eventName">
+            <div data-scroll  style={{ color: isDark ? "white" : "black" }}  className="eventName">
               {eventOBJ[1].name}
             </div>
             <div data-scroll className="viewEvent">
@@ -78,7 +92,7 @@ const EventsSectionMobile = () => {
             </div>
           </div>
         </span>
-        <span data-scroll style={{ "--i": 3 }} onClick={()=>{navigate('/events')}} >
+        <span data-scroll style={{ "--i": 3 }} onClick={() => { navigate('/events') }} >
           <div data-scroll className="cardbox octa">
             <img
               data-scroll
@@ -99,7 +113,7 @@ const EventsSectionMobile = () => {
             </div>
           </div>
           <div data-scroll className="eventDetails">
-            <div data-scroll className="eventName">
+            <div data-scroll  style={{ color: isDark ? "white" : "black" }}  className="eventName">
               {eventOBJ[2].name}
             </div>
             <div data-scroll className="viewEvent">
@@ -107,7 +121,7 @@ const EventsSectionMobile = () => {
             </div>
           </div>
         </span>
-        <span data-scroll style={{ "--i": 2 }} onClick={()=>{navigate('/events')}} >
+        <span data-scroll style={{ "--i": 2 }} onClick={() => { navigate('/events') }} >
           <div data-scroll className="cardbox octa">
             <img
               data-scroll
@@ -128,7 +142,7 @@ const EventsSectionMobile = () => {
             </div>
           </div>
           <div data-scroll className="eventDetails">
-            <div data-scroll className="eventName">
+            <div data-scroll  style={{ color: isDark ? "white" : "black" }}  className="eventName">
               {eventOBJ[3].name}
             </div>
             <div data-scroll className="viewEvent">
@@ -136,7 +150,7 @@ const EventsSectionMobile = () => {
             </div>
           </div>
         </span>
-        <span data-scroll style={{ "--i": 1 }} onClick={()=>{navigate('/events')}} >
+        <span data-scroll style={{ "--i": 1 }} onClick={() => { navigate('/events') }} >
           <div data-scroll className="cardbox octa">
             <img
               data-scroll
@@ -157,7 +171,7 @@ const EventsSectionMobile = () => {
             </div>
           </div>
           <div data-scroll className="eventDetails">
-            <div data-scroll className="eventName">
+            <div data-scroll  style={{ color: isDark ? "white" : "black" }}  className="eventName">
               {eventOBJ[4].name}
             </div>
             <div data-scroll className="viewEvent">

@@ -20,7 +20,7 @@ const ProjectsSection = () => {
                 trigger: ".projectPage",
                 scroller: "body",
                 // markers: true,
-                start: "top 10%",
+                start: "top 20%",
                 end: "top 10%",
                 scrub: 1,
                 onEnter: () => setIsDark(true),
