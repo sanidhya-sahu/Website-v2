@@ -73,7 +73,7 @@ const membersPage = () => {
                     if (i == 0) {
                         document.getElementById('wave').innerHTML += `
                         <div className="waveBox">
-                        <img id="wave${i}" style="transform: rotate(3deg);position: relative;" src="src/assets/teamWave.svg" alt="" key=${i} />
+                        <img id="wave${i}" style="position: relative;" src="src/assets/teamWave.svg" alt="" key=${i} />
                         </div>
                         `
                     }
@@ -81,7 +81,7 @@ const membersPage = () => {
                         let leftVal = i * 28
                         document.getElementById('wave').innerHTML += `
                         <div className="waveBox">
-                        <img id="wave${i}" style="transform: rotate(3deg);position: relative;left: -${leftVal}px;" src="src/assets/teamWave.svg" alt="" key=${i} />
+                        <img id="wave${i}" style="position: relative;left: -${leftVal}px;" src="src/assets/teamWave.svg" alt="" key=${i} />
                         </div>
                         `
                     }
