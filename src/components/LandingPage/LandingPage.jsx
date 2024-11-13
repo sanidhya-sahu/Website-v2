@@ -13,31 +13,6 @@ const LandingPage = () => {
   const [isFlipped, setIsFlipped] = useState(false);
   const [scrollLocked, setScrollLocked] = useState(false);
 
-  gsap.registerPlugin(ScrollTrigger);
-  useGSAP(() => {
-    const tiles = document.querySelectorAll(".tile");
-    setIsFlipped(!isFlipped);
-    gsap.to('.tile', {
-      rotateX: isFlipped ? 180 : 0,
-      scrollTrigger: {
-        trigger: "#landing-page",
-        scroller: "body",
-        markers: true,
-        start: "top -1%",
-        end: `top -50%`,
-        scrub: 1,
-        pin: true,
-      },
-      // duration: 1,
-      // stagger: {
-      //   amount: 0.5,
-      //   from: "random",
-      // },
-      // ease: "power2.inOut",
-      // onComplete: resolve,
-    });
-  })
-
   useEffect(() => {
     createBoard();
     initializeTileAnimation();
@@ -161,7 +136,7 @@ const LandingPage = () => {
         },
         // ease: "power2.inOut",
         onComplete: resolve,
-        pin: true
+        pin: true,
       });
     });
   };
