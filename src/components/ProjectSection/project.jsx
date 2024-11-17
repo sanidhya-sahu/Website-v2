@@ -87,7 +87,7 @@ const ProjectsSection = () => {
                         <div id="mask2" className="projImgMask" ></div>
                     </div>
                     <div className="projDesc">
-                        Real Time Helmet Detection. Non Helmet subjects on Bike are retrieved by capturing Vehicle No. to Govt. Database
+                        Real Time Helmet Detection. <br />Non Helmet subjects on Bike are retrieved by capturing Vehicle No. to Govt. Database. The JSON Can be used to generate 3D city maps  for Artists in any Blender using bpy.
                     </div>
                     <div className="projName">Helmet Detection</div>
                     <div className="projNum">02</div>
@@ -98,12 +98,12 @@ const ProjectsSection = () => {
                         <div id="mask3" className="projImgMask"></div>
                     </div>
                     <div className="projDesc">
-                    AgroAI predicts Plants diseases and Fertilizer Option for plants.
+                    AgroAI predicts Plants diseases and Fertilizer Option for plants. The JSON Can be used to generate 3D city maps  for Artists in any Blender using bpy. This generates 2D Citymaps and 3D Meshwork as JSON.
                     </div>
                     <div className="projName">AgroAI</div>
                     <div className="projNum">03</div>
                 </div>
-                <div className="projectTitle viewmore">
+                <div className="projectTitle-viewmore">
                     <Link to="/projects" style={{ textDecoration: "none" }}>
                         <h1>View More Projects</h1>
                         <br /> <br />

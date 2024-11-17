@@ -60,10 +60,10 @@ const Heropage = () => {
             src="/HeroSection/genesis.png"
             alt="Technology"
           />
-          {/* <div className="description">
-                        Welcome to AI Conclave 2024, A 3-day thrill ride from February 5th
-                        to 7th, hosted by the AI Club at VIT Bhopal University.
-                    </div> */}
+          <div className="description">
+            Welcome to AI Conclave 2024, A 3-day thrill ride from February 5th
+            to 7th, hosted by the AI Club at VIT Bhopal University.
+          </div>
         </div>
       </div>
     </div>

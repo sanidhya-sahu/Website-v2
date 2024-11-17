@@ -1,7 +1,19 @@
+@font-face {
+  font-family: dirtyline;
+  src: url("../../fonts/dirtyline-36daysoftype-2022.otf");
+}
+
+@font-face {
+  font-family: helvetica-b;
+  src: url("../../fonts/Helvetica-Bold.ttf");
+}
+
+
 .wholepage {
+  /* background-color: transparent; */
   width: 100vw;
+  min-height: 100vh;
   /* height: 100vh;*/
-  background: url(/src/assets/dotGrid.png);
   background-size: cover;
   background-repeat: repeat-x;
   background-attachment: fixed;
@@ -12,12 +24,15 @@
 }
 
 .blurLayer {
+  background-color: #131315;
+  background-image: radial-gradient(circle, #383c3d7d 2px, transparent 1px);
+  background-size: 20px 20px; 
   position: absolute;
   top: 0;
   left: 0;
   width: 100vw;
-  filter: blur(10px);
-  background: #00000052;
+  /* filter: blur(10px); */
+  
 }
 
 /* .projectPageWrap .head{
@@ -29,12 +44,15 @@
 } */
 
 .Projects {
+  
   /* font-size: 4rem;
   text-decoration: wavy;
   text-align: center; */
+  text-transform: uppercase;
   color: #ffffff;
   font-size: 45px;
-  font-family: 'ArameBold';
+  font-family: inter;
+  font-weight: 700;
   letter-spacing: 2px;
   margin-top: 40px;
   z-index: 1;
@@ -123,7 +141,9 @@
   color: #fff;
   padding: 10px;
   letter-spacing: 1px;
-  font-size: 13px;
+  text-transform: capitalize;
+  font-family: inter;
+  font-size: 20px;
 }
 
 .container .text2,
@@ -134,7 +154,9 @@
   color: #fff;
   padding: 10px;
   letter-spacing: 1px;
-  font-size: 13px;
+  text-transform: capitalize;
+  font-family: inter;
+  font-size: 20px;
 }
 
 
@@ -198,21 +220,25 @@
   .container .text3,
   .container .text5 {
     margin: 0;
-    margin-left: -10vw;
+    margin-left: -5vw;
     max-width: 85vw;
     text-align: center;
     color: #fff;
     line-height: 1rem;
+    font-size: 15px;
+    text-align: left;
   }
 
   .container .text2,
   .container .text4,
   .container .text6 {
     margin: 0;
-    margin-left: -10vw;
+    margin-left: -5vw;
     max-width: 85vw;
     text-align: center;
     color: #fff;
     line-height: 1rem;
+    font-size: 15px;
+    text-align: left;
   }
 }
