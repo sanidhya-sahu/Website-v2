@@ -20,7 +20,7 @@ function projectpage() {
   return (
     <>
       <GooeyCursor />
-      <div id='projectWrap' className='wholepage'>
+      <div id='projectWrap' className='Projectwholepage'>
         <div id='blurLayer' className="blurLayer" style={{ height: `${blurLayerHeight}px` }}></div>
         <h1 className='Projects'>Our Projects</h1>
         <br />

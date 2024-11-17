@@ -3,6 +3,7 @@ import './moreEvents.css';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import GooeyCursor from "../Gooey Cursor/gooeyCursor.jsx";
+
 gsap.registerPlugin(ScrollTrigger);
 
 

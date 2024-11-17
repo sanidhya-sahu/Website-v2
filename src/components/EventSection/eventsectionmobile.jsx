@@ -12,7 +12,7 @@ const EventsSectionMobile = () => {
 
   useGSAP(() => {
     gsap.to("body", {
-      background: "#131315",
+      backgroundColor: "#131315",
       scrollTrigger: {
         trigger: ".eventSection",
         scroller: "body",

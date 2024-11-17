@@ -19,7 +19,7 @@ const EventsSection = () => {
       var sliderWidth = document.querySelector(".slider").scrollWidth;
       var cardHeight = document.querySelector("span").clientHeight;
       gsap.to("body", {
-        background: "#131315",
+        backgroundColor : "#131315",
         scrollTrigger: {
           trigger: ".eventSection",
           scroller: "body",

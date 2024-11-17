@@ -1,7 +1,7 @@
-.pin-spacer{ 
+/* .pin-spacer{ 
   background-image: radial-gradient(circle, #383c3d7d 2px, transparent 1px);
   background-size: 20px 20px; 
-}
+} */
 
 .eventSection {
   /* background-color:#131315; */
@@ -160,6 +160,7 @@
   font-weight: 500;
 }
 
+
 /* @media screen and (max-width: 768px) {
   .eventSection {
     flex-direction: column;
@@ -297,6 +298,8 @@
     padding: 5px;
     width: 100%;
     border-radius: 10px;
+    height: 50px;
+    text-align: center;
   }
 
   .cardbox {
@@ -314,7 +317,7 @@
   .eventName {
     font-size: 21px;
     width: 100%;
-    margin: 10px 0;
+    margin-bottom: 10px;
     padding: 0;
     text-align: center; /* Centering text */
   }
