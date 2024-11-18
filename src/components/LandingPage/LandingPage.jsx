@@ -13,10 +13,11 @@ const LandingPage = () => {
   const [isFlipped, setIsFlipped] = useState(false);
   const [scrollLocked, setScrollLocked] = useState(false);
 
+
   useEffect(() => {
     createBoard();
     initializeTileAnimation();
-    // window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll);
 
     // return () => {
     //   window.removeEventListener("scroll", handleScroll);
@@ -85,17 +86,14 @@ const LandingPage = () => {
   };
 
   const handleScroll = (event) => {
-    setScrollLocked(true);
-    if (scrollLocked) {
-      event.preventDefault();
-      return; // Prevent further scrolling while the tiles are flipping
-    }
-
     const tiles = document.querySelectorAll(".tile");
-
     flipAllTiles(tiles).then(() => {
+      var x = window.scrollX;
+      var y = window.scrollY;
+      window.onscroll = function () { window.scrollTo(x, y); };
       setTimeout(() => {
-        setScrollLocked(false); // Unlock scrolling after flip animation
+        window.onscroll = function () {};
+        // setScrollLocked(false); // Unlock scrolling after flip animation
       }, 500);
     });
   };
@@ -123,7 +121,7 @@ const LandingPage = () => {
   };
 
   const flipAllTiles = (tiles) => {
-    console.log(tiles);
+    // console.log(tiles);
 
     return new Promise((resolve) => {
       setIsFlipped(!isFlipped);
@@ -136,13 +134,14 @@ const LandingPage = () => {
         },
         // ease: "power2.inOut",
         onComplete: resolve,
-        pin: true,
+        // pin: true,
       });
     });
   };
 
   return (
     <div id="landing-page" className="landing-page">
+      <section className="board"></section>
       <nav>
         <a href="#">AI Club</a>
         <button
@@ -152,7 +151,6 @@ const LandingPage = () => {
           Flip Tiles
         </button>
       </nav>
-      <section className="board"></section>
     </div>
   );
 };

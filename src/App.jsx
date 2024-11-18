@@ -22,7 +22,6 @@ import Scroller from "./components/Scroller/scroller.jsx";
 import MoreEvents from './components/MoreEvents/moreEvents.jsx'
 import Cursor from "./components/Cursor/cursor.jsx";
 import LandingPage from "./components/LandingPage/LandingPage.jsx";
-
 const App = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 480);
 
@@ -50,7 +49,7 @@ const App = () => {
                 {/* <Cursor></Cursor> */}
                 <Scroller></Scroller>
                 <GooeyCursor />
-                <LandingPage />
+                {/* <LandingPage /> */}
                 <Heropage />
                 {isMobile ? <EventsSectionMobile /> : <EventSection />}
                 {isMobile ? <GallerySectionMobile /> : <GallerySection />}
