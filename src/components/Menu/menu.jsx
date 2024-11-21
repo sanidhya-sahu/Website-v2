@@ -6,7 +6,7 @@ function menu() {
     const navigate = useNavigate();
     useEffect(() => {
         document.getElementById('ham').addEventListener('click', () => {
-            console.log(menuOpened);
+            // console.log(menuOpened);
             if (menuOpened) {
                 document.getElementById('menulist').style.display = 'none'
                 const menuBody = document.getElementById('menuBody')
@@ -35,7 +35,7 @@ function menu() {
                     menuOpened = true
                 }, 500);
             }
-            console.log(menuOpened);
+            // console.log(menuOpened);
 
         })
     }, [])
