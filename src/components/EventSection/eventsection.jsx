@@ -3,7 +3,7 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import eventOBJ from "../../Data/sliderEvents.json";
-import { useState } from "react";
+import { useState , useEffect} from "react";
 import { useNavigate } from "react-router-dom";
 const EventsSection = () => {
   gsap.registerPlugin(ScrollTrigger);
@@ -19,7 +19,7 @@ const EventsSection = () => {
       var sliderWidth = document.querySelector(".slider").scrollWidth;
       var cardHeight = document.querySelector("span").clientHeight;
       gsap.to("body", {
-        backgroundColor : "#131315",
+        backgroundColor: "#131315",
         scrollTrigger: {
           trigger: ".eventSection",
           scroller: "body",
@@ -32,7 +32,7 @@ const EventsSection = () => {
         },
       });
       gsap.to("#menutxt", {
-        color : "white",
+        color: "white",
         scrollTrigger: {
           trigger: ".eventSection",
           scroller: "body",
@@ -67,12 +67,13 @@ const EventsSection = () => {
       });
     }
   });
+ 
   return (
     <div id="eventSection" data-scroll className="eventSection">
       <div style={{ color: isDark ? "white" : "black" }} data-scroll className="eventTitle">
         ~ Events
       </div>
-      <div data-scroll className="slider">
+      <div id="slider" data-scroll className="slider">
         <span data-scroll style={{ "--i": 4 }} onClick={() => { navigate('/events') }} >
           <div data-scroll className="cardbox octa">
             <img

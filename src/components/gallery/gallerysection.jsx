@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "./gallerySection.css";
 import gsap from "gsap";
@@ -7,7 +7,6 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const GallerySection = () => {
   const navigate = useNavigate();
-
   gsap.registerPlugin(ScrollTrigger);
   useGSAP(() => {
     gsap.to("#galleryBox1", {
@@ -66,6 +65,75 @@ const GallerySection = () => {
     navigate("/events-gallery");
   };
 
+  useEffect(()=>{
+    document.getElementById('galleryBox1').addEventListener('mouseenter',()=>{
+      document.getElementById('webCursor').style.width='auto'
+      document.getElementById('webCursor').style.height='auto'
+      document.getElementById('webCursor').style.padding='8px'
+      document.getElementById('webCursor').innerText='View Gallery'
+    })
+    document.getElementById('galleryBox1').addEventListener('mouseleave',()=>{
+      document.getElementById('webCursor').style.width='20px'
+      document.getElementById('webCursor').style.height='20px'
+      document.getElementById('webCursor').innerText=''
+    })
+    document.getElementById('galleryBox2').addEventListener('mouseenter',()=>{
+      document.getElementById('webCursor').style.width='auto'
+      document.getElementById('webCursor').style.height='auto'
+      document.getElementById('webCursor').style.padding='8px'
+      document.getElementById('webCursor').innerText='View Gallery'
+    })
+    document.getElementById('galleryBox2').addEventListener('mouseleave',()=>{
+      document.getElementById('webCursor').style.width='20px'
+      document.getElementById('webCursor').style.height='20px'
+      document.getElementById('webCursor').innerText=''
+    })
+    document.getElementById('galleryBox3').addEventListener('mouseenter',()=>{
+      document.getElementById('webCursor').style.width='auto'
+      document.getElementById('webCursor').style.height='auto'
+      document.getElementById('webCursor').style.padding='8px'
+      document.getElementById('webCursor').innerText='View Gallery'
+    })
+    document.getElementById('galleryBox3').addEventListener('mouseleave',()=>{
+      document.getElementById('webCursor').style.width='20px'
+      document.getElementById('webCursor').style.height='20px'
+      document.getElementById('webCursor').innerText=''
+    })
+    document.getElementById('galleryBox4').addEventListener('mouseenter',()=>{
+      document.getElementById('webCursor').style.width='auto'
+      document.getElementById('webCursor').style.height='auto'
+      document.getElementById('webCursor').style.padding='8px'
+      document.getElementById('webCursor').innerText='View Gallery'
+    })
+    document.getElementById('galleryBox4').addEventListener('mouseleave',()=>{
+      document.getElementById('webCursor').style.width='20px'
+      document.getElementById('webCursor').style.height='20px'
+      document.getElementById('webCursor').innerText=''
+    })
+    document.getElementById('galleryBox5').addEventListener('mouseenter',()=>{
+      document.getElementById('webCursor').style.width='auto'
+      document.getElementById('webCursor').style.height='auto'
+      document.getElementById('webCursor').style.padding='8px'
+      document.getElementById('webCursor').innerText='View Gallery'
+    })
+    document.getElementById('galleryBox5').addEventListener('mouseleave',()=>{
+      document.getElementById('webCursor').style.width='20px'
+      document.getElementById('webCursor').style.height='20px'
+      document.getElementById('webCursor').innerText=''
+    })
+    document.getElementById('galleryCenterBox').addEventListener('mouseenter',()=>{
+      document.getElementById('webCursor').style.width='auto'
+      document.getElementById('webCursor').style.height='auto'
+      document.getElementById('webCursor').style.padding='8px'
+      document.getElementById('webCursor').innerText='View Gallery'
+    })
+    document.getElementById('galleryCenterBox').addEventListener('mouseleave',()=>{
+      document.getElementById('webCursor').style.width='20px'
+      document.getElementById('webCursor').style.height='20px'
+      document.getElementById('webCursor').innerText=''
+    })
+  },[])
+
   return (
     <div id="galleryWrap" className="galleryWrap pin-spacer">
       <div className="eventTitle galleryTitle">~ Gallery</div>
@@ -76,7 +144,7 @@ const GallerySection = () => {
       </div>
       <div className="galleryRow2">
         <div id="galleryBox2" onClick={handleBoxClick} className="boximg1"></div>
-        <div className="boximg2" onClick={handleBoxClick}></div>
+        <div id="galleryCenterBox" className="boximg2" onClick={handleBoxClick}></div>
         <div id="galleryBox3" onClick={handleBoxClick} className="boximg3"></div>
       </div>
       <div className="galleryRow3">

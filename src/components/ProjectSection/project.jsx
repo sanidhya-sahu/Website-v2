@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -41,7 +41,41 @@ const ProjectsSection = () => {
             },
         });
     });
-
+    useEffect(() => {
+        document.getElementById('projectCont1').addEventListener('mouseenter', () => {
+            document.getElementById('webCursor').style.width = 'auto'
+            document.getElementById('webCursor').style.height = 'auto'
+            document.getElementById('webCursor').style.padding = '8px'
+            document.getElementById('webCursor').innerText = 'View More Projects'
+        })
+        document.getElementById('projectCont1').addEventListener('mouseleave', () => {
+            document.getElementById('webCursor').style.width = '20px'
+            document.getElementById('webCursor').style.height = '20px'
+            document.getElementById('webCursor').innerText = ''
+        })
+        document.getElementById('projectCont2').addEventListener('mouseenter', () => {
+            document.getElementById('webCursor').style.width = 'auto'
+            document.getElementById('webCursor').style.height = 'auto'
+            document.getElementById('webCursor').style.padding = '8px'
+            document.getElementById('webCursor').innerText = 'View More Projects'
+        })
+        document.getElementById('projectCont2').addEventListener('mouseleave', () => {
+            document.getElementById('webCursor').style.width = '20px'
+            document.getElementById('webCursor').style.height = '20px'
+            document.getElementById('webCursor').innerText = ''
+        })
+        document.getElementById('projectCont3').addEventListener('mouseenter', () => {
+            document.getElementById('webCursor').style.width = 'auto'
+            document.getElementById('webCursor').style.height = 'auto'
+            document.getElementById('webCursor').style.padding = '8px'
+            document.getElementById('webCursor').innerText = 'View More Projects'
+        })
+        document.getElementById('projectCont3').addEventListener('mouseleave', () => {
+            document.getElementById('webCursor').style.width = '20px'
+            document.getElementById('webCursor').style.height = '20px'
+            document.getElementById('webCursor').innerText = ''
+        })
+    }, [])
     return (
         <div id="projectCover" className="projectCover">
             <div className="projectPage">
@@ -68,7 +102,7 @@ const ProjectsSection = () => {
                     </h1>
                     <ProjArrow fill={isDark ? "white" : "black"} />
                 </div>
-                <div className="container1" onClick={()=>{navigate('/projects')}}>
+                <div id="projectCont1" className="container1" onClick={() => { navigate('/projects') }}>
                     <div className="projImg">
                         <div className="projMedia"></div>
                         <div id="mask1" className="projImgMask"></div>
@@ -81,7 +115,7 @@ const ProjectsSection = () => {
                     <div className="projName">City Scapes</div>
                     <div className="projNum">01</div>
                 </div>
-                <div className="container2" onClick={()=>{navigate('/projects')}}>
+                <div id="projectCont2" className="container2" onClick={() => { navigate('/projects') }}>
                     <div className="projImg">
                         <div className="projMedia"></div>
                         <div id="mask2" className="projImgMask" ></div>
@@ -92,13 +126,13 @@ const ProjectsSection = () => {
                     <div className="projName">Helmet Detection</div>
                     <div className="projNum">02</div>
                 </div>
-                <div className="container3" onClick={()=>{navigate('/projects')}}>
+                <div id="projectCont3" className="container3" onClick={() => { navigate('/projects') }}>
                     <div className="projImg">
                         <div className="projMedia"></div>
                         <div id="mask3" className="projImgMask"></div>
                     </div>
                     <div className="projDesc">
-                    AgroAI predicts Plants diseases and Fertilizer Option for plants. The JSON Can be used to generate 3D city maps  for Artists in any Blender using bpy. This generates 2D Citymaps and 3D Meshwork as JSON.
+                        AgroAI predicts Plants diseases and Fertilizer Option for plants. The JSON Can be used to generate 3D city maps  for Artists in any Blender using bpy. This generates 2D Citymaps and 3D Meshwork as JSON.
                     </div>
                     <div className="projName">AgroAI</div>
                     <div className="projNum">03</div>

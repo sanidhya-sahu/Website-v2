@@ -1,5 +1,5 @@
 // eslint-disable-next-line no-unused-vars
-import React from "react";
+import React, { useEffect } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -19,9 +19,22 @@ const Heropage = () => {
       },
     });
   });
+  useEffect(()=>{
+    document.getElementById('heroWrap').addEventListener('mouseenter',()=>{
+      document.getElementById('webCursor').style.width='auto'
+      document.getElementById('webCursor').style.height='auto'
+      document.getElementById('webCursor').style.padding='8px'
+      document.getElementById('webCursor').innerText='Upcoming Events'
+    })
+    document.getElementById('heroWrap').addEventListener('mouseleave',()=>{
+      document.getElementById('webCursor').style.width='20px'
+      document.getElementById('webCursor').style.height='20px'
+      document.getElementById('webCursor').innerText=''
+    })
+  },[])
 
   return (
-    <div className="heroWrap">
+    <div id="heroWrap" className="heroWrap">
       <div className="event-container">
         <div className="left-event-container">
           {/* <div className="eventTitle heroTitle">/Upcoming Event</div> */}
