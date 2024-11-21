@@ -17,7 +17,7 @@ import Footer from "./components/Footer/footer";
 import FooterMobile from "./components/FooterMobile/footermobile";
 import BoxGrid from "./components/gallery/BoxGrid.jsx";
 import AsymmetricScrollingGallery from "./components/gallery/Gallery.jsx";
-import GooeyCursor from "./components/Gooey Cursor/gooeyCursor.jsx";
+// import GooeyCursor from "./components/Gooey Cursor/gooeyCursor.jsx";
 import Scroller from "./components/Scroller/scroller.jsx";
 import MoreEvents from './components/MoreEvents/moreEvents.jsx'
 import Cursor from "./components/Cursor/cursor.jsx";
@@ -47,10 +47,10 @@ const App = () => {
             path="/"
             element={
               <>
-                {/* <Cursor></Cursor> */}
+                {isMobile ? '' : <Cursor></Cursor>}
                 <Scroller></Scroller>
                 <Menu></Menu>
-                <GooeyCursor />
+                {/* <GooeyCursor /> */}
                 <LandingPage />
                 <Heropage />
                 {isMobile ? <EventsSectionMobile /> : <EventSection />}

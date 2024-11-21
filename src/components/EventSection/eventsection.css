@@ -94,7 +94,7 @@
   position: absolute;
   top: 30px;
   left: 130px;
-  font-size: 12px;
+  font-size: 16px;
   letter-spacing: 1px;
   line-height: 22px;
   font-weight: 700;
@@ -278,13 +278,14 @@
     border-radius: 50px 20px 50px 20px;
   }
 
-  .eventTitlex {
+  .eventTitle {
     position: initial;
     transform: scaleX(-1);
     font-size: 15px;
     right: auto;
     margin: 50px 20px 15px auto;
-    font-weight: 500;
+    font-weight: 700;
+    font-family: inter;
   }
 
   .eventKeyWords {

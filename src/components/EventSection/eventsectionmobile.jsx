@@ -11,6 +11,17 @@ const EventsSectionMobile = () => {
   gsap.registerPlugin(ScrollTrigger);
 
   useGSAP(() => {
+    gsap.to("#menutxt", {
+      color : "white",
+      scrollTrigger: {
+        trigger: ".eventSection",
+        scroller: "body",
+        // markers: true,
+        start: "top 20%",
+        end: "top 10%",
+        scrub: 1,
+      },
+    });
     gsap.to("body", {
       backgroundColor: "#131315",
       scrollTrigger: {
@@ -59,9 +70,9 @@ const EventsSectionMobile = () => {
     });
   return (
     <div id="eventSection" data-scroll className="eventSection">
-      {/* <div data-scroll className="eventTitle">
-        /Recent Events
-      </div> */}
+      <div style={{ color: isDark ? "white" : "black" }} data-scroll className="eventTitle">
+        ~ Events
+      </div>
       <div data-scroll className="slider">
         <span data-scroll style={{ "--i": 4 }} onClick={() => { navigate('/events') }} >
           <div data-scroll className="cardbox octa">

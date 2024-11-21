@@ -1,8 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./Gallery.css";
 import { useParams } from "react-router-dom";
-import GooeyCursor from "../Gooey Cursor/gooeyCursor.jsx";
-
+// import GooeyCursor from "../Gooey Cursor/gooeyCursor.jsx";
+import Cursor from "../Cursor/cursor";
 export default function AsymmetricScrollingGallery() {
   const leftColumnRef = useRef(null);
   const centerColumnRef = useRef(null);
@@ -79,7 +79,8 @@ export default function AsymmetricScrollingGallery() {
 
   return (
     <>
-      <GooeyCursor />
+      {/* <GooeyCursor /> */}
+      <Cursor></Cursor>
       <div id="galleryContainer" className="gallery-container">
         <h1 className="gallery-title">
           {eventName

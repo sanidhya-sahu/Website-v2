@@ -4,7 +4,9 @@ import helmet from '/projects/helmet.jpeg'
 import cityScapes from '/projects/cityscapes.png'
 import agroAI from '/projects/agroAI.png'
 import visualbert from '/projects/visualbert.png'
-import GooeyCursor from "../Gooey Cursor/gooeyCursor.jsx";
+import BackButton from '../backButton/backButton';
+// import GooeyCursor from "../Gooey Cursor/gooeyCursor.jsx";
+import Cursor from "../Cursor/cursor.jsx";
 function projectpage() {
   const [blurLayerHeight, setblurLayerHeight] = useState(0)
   useEffect(() => {
@@ -15,11 +17,15 @@ function projectpage() {
       setblurLayerHeight(document.getElementById("projectWrap").clientHeight)
     })
     scrollTo({ top: 0, behavior: "smooth" })
+    document.getElementById('blurLayer').style.backgroundImage = 'radial-gradient(circle, #383c3d7d 2px, transparent 1px)'
+    document.getElementById('blurLayer').style.backgroundSize = '20px 20px'
   }, [])
 
   return (
     <>
-      <GooeyCursor />
+      <Cursor></Cursor>
+      {/* <GooeyCursor /> */}
+      <BackButton textDisplay={true} filter="invert(1)" ></BackButton>
       <div id='projectWrap' className='Projectwholepage'>
         <div id='blurLayer' className="blurLayer" style={{ height: `${blurLayerHeight}px` }}></div>
         <h1 className='Projects'>Our Projects</h1>

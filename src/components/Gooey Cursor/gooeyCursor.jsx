@@ -4,7 +4,7 @@ import "./gooeyCursor.css";
 function gooeyCursor() {
     useEffect(() => {
         const blockContainer = document.getElementById('Gooeyblocks')
-        const blockSize = 50
+        const blockSize = 30
         const scWidth = window.innerWidth
         const scHeight = window.innerHeight
         const numCol = Math.ceil(scWidth / blockSize)
@@ -22,7 +22,7 @@ function gooeyCursor() {
                 }
             }
         }
-        createBlocks()
+        // createBlocks()
         
         window.addEventListener('mousemove', (event) => {
             const blockContainer = document.getElementById('Gooeyblocks')
@@ -31,15 +31,15 @@ function gooeyCursor() {
                 let pointerPosX = event.clientX
                 let pointerPosY = event.clientY
                 let blockX = document.getElementById(index).getBoundingClientRect().x
-                let blockEndX = document.getElementById(index).getBoundingClientRect().x + 50
+                let blockEndX = document.getElementById(index).getBoundingClientRect().x + 30
                 let blockY = document.getElementById(index).getBoundingClientRect().y
-                let blockEndY = document.getElementById(index).getBoundingClientRect().y + 50
+                let blockEndY = document.getElementById(index).getBoundingClientRect().y + 30
                 if (pointerPosX >= blockX && pointerPosX <= blockEndX) {
                     if (pointerPosY >= blockY && pointerPosY <= blockEndY) {
                         document.getElementById(index).classList.add("blockhighlight")
                         setTimeout(() => {
                             document.getElementById(index).classList.remove("blockhighlight")
-                        }, 300);
+                        }, 100);
                     }
                 }
             }

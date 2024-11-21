@@ -6,7 +6,9 @@ import './membersPage.css'
 import { useSearchParams } from "react-router-dom";
 import HeadSVG from '../../assets/teamHeadSvg.svg'
 import data from '../../../public/Data/members.json'
-import GooeyCursor from "../Gooey Cursor/gooeyCursor.jsx";
+// import GooeyCursor from "../Gooey Cursor/gooeyCursor.jsx";
+import BackButton from '../backButton/backButton.jsx'
+import Cursor from '../Cursor/cursor.jsx';
 const membersPage = () => {
     gsap.registerPlugin(ScrollTrigger);
     useGSAP(() => {
@@ -95,7 +97,7 @@ const membersPage = () => {
                     <div className="member" id="member${i}" style="left:70px;flex-direction: column-reverse;bottom:0px">
                     <div id="teamDetailCont">
                         <div id="memName">${e.name}</div>
-                        <div id="msg">${e.msg}</div>
+                        <div id="msg">"${e.msg}"</div>
                     </div>
                     <div id="mask">
                     <img id="teamImg" src="${e.img}" alt="" />
@@ -106,12 +108,12 @@ const membersPage = () => {
                 else {
                     var bottom = i % 2 == 0 ? 0 : -250
                     var colDirection = i % 2 != 0 ? 'column' : 'column-reverse'
-                    var Left = Number(document.getElementById(`member${i - 1}`).style.left.replace('px', '')) + 140
+                    var Left = Number(document.getElementById(`member${i - 1}`).style.left.replace('px', '')) + 135
                     document.getElementById('membersBox').innerHTML += `
                     <div className="member" id="member${i}" style="left:${Left}px;flex-direction: ${colDirection};bottom:${bottom}px">
                     <div id="teamDetailCont">
                         <div id="memName">${e.name}</div>
-                        <div id="msg">${e.msg}</div>
+                        <div id="msg">"${e.msg}"</div>
                     </div>
                     <div id="mask"> 
                     <img id="teamImg" src="${e.img}" alt="" />
@@ -125,7 +127,9 @@ const membersPage = () => {
     }, [searchParams])
     return (
         <>
-            <GooeyCursor></GooeyCursor>
+            {/* <GooeyCursor></GooeyCursor> */}
+            <Cursor></Cursor>
+            <BackButton filter='invert(1)' textDisplay={true} ></BackButton>
             <div className='teamWrap'>
                 <div className="teamCont">
                     <div className="teamHead">

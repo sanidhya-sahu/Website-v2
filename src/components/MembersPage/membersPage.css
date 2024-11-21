@@ -11,7 +11,7 @@
 .teamWrap {
     background-color: #131315;
     background-image: radial-gradient(circle, #383c3d7d 2px, transparent 1px);
-    background-size: 20px 20px; 
+    background-size: 20px 20px;
     width: 100vw;
     height: 100vh;
     overflow-x: hidden;
@@ -85,6 +85,10 @@
     gap: 20px;
 }
 
+#membersBox> :nth-child(odd) {
+    height: 350px;
+}
+
 #teamDetailCont {
     display: flex;
     flex-direction: column;
@@ -106,7 +110,7 @@
 
 #msg {
     max-width: 100%;
-    max-height: 30px;
+    max-height: 100px;
     width: 100%;
     text-align: center;
     word-wrap: break-word;
@@ -114,7 +118,8 @@
     font-family: inter;
     font-size: smaller;
     overflow-y: auto;
-    font-size: 85%;
+    font-size: 80%;
+    font-family: "Playwrite ES", cursive;
 }
 
 #teamImg {
@@ -129,22 +134,30 @@
 }
 
 @media screen and (max-width:768px) {
+    #webCursor {
+        display: none;
+    }
+
     .teamHead {
         align-items: flex-start;
         padding-left: 20px;
         gap: 10px;
     }
-    .teamHead > h1{
+
+    .teamHead>h1 {
         line-height: 1.2;
     }
-    .teamHead{
+
+    .teamHead {
         line-height: 35px;
     }
+
     .teamNameHead {
         left: 0px;
         font-size: medium;
     }
-    .headBorder{
+
+    .headBorder {
         top: -5px;
     }
 }

@@ -10,7 +10,8 @@
 
 
 .Projectwholepage {
-  background-color: transparent;
+  background-color: #131315;
+  
   width: 100vw;
   min-height: 100vh;
   /* height: 100vh;*/
@@ -24,9 +25,8 @@
 }
 
 .blurLayer {
-  background-color: #131315;
-  background-image: radial-gradient(circle, #383c3d7d 2px, transparent 1px);
-  background-size: 20px 20px; 
+  /* background-image: radial-gradient(circle, #383c3d7d 2px, transparent 1px); */
+  /* background-size: 20px 20px;  */
   position: absolute;
   top: 0;
   left: 0;
@@ -161,6 +161,9 @@
 
 
 @media (max-width: 850px) {
+  #webCursor{
+    display: none;
+  }
   .Projects{
     font-size: 40px;
   }

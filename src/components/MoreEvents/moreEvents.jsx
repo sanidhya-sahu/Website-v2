@@ -2,8 +2,9 @@ import React, { useEffect, useState } from 'react';
 import './moreEvents.css';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import GooeyCursor from "../Gooey Cursor/gooeyCursor.jsx";
-
+// import GooeyCursor from "../Gooey Cursor/gooeyCursor.jsx";
+import BackButton from '../backButton/backButton.jsx'
+import Cursor from '../Cursor/cursor.jsx';
 gsap.registerPlugin(ScrollTrigger);
 
 
@@ -42,7 +43,9 @@ const MoreEvents = () => {
 
   return (
     <>
-      <GooeyCursor />
+      {/* <GooeyCursor /> */}
+      <Cursor></Cursor>
+      <BackButton textDisplay={true} ></BackButton>
       <main className="fscreen">
         {eventsData.map((event) => (
           <div key={event.id} id='eventBox' className={`div${event.id}`}>

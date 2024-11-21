@@ -13,7 +13,7 @@ const CustomCursor = () => {
         x: e.x,
         y: e.y,
         duration: 0.5,
-        ease: "back.out",
+        ease: "back.out(2)",
       });
     };
 
@@ -25,7 +25,7 @@ const CustomCursor = () => {
   }, []);
 
   return (
-    <div
+    <div id='webCursor'
       ref={cursorRef}
       className="cursor"
     />
