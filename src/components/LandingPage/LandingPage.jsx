@@ -1,130 +1,54 @@
-import { useEffect, useState } from "react";
-import "./LandingPage.css";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useGSAP } from "@gsap/react";
-
-const COLS =6;
-const ROWS =5;
-const BLOCK_SIZE = 100; // Increased block size
-const COOLDOWN = 1000;
-
-const LandingPage = () => {
-  const [isFlipped, setIsFlipped] = useState(false);
-  const [scrollLocked, setScrollLocked] = useState(false);
-
-
-  useEffect(() => {
-    createBoard();
-    initializeTileAnimation();
-
-  }, []);
-
-  const createTiles = (row, col) => {
-    const tile = document.createElement("div");
-    tile.className = "tile";
-    tile.innerHTML = `
-      <div class="tile-face tile-front"></div>
-      <div class="tile-face tile-back"></div>
-    `;
-
-    const bgPosition = `${col * 20}% ${row * 20}%`;
-    tile.querySelector(".tile-front").style.backgroundPosition = bgPosition;
-    tile.querySelector(".tile-back").style.backgroundPosition = bgPosition;
-
-    return tile;
-  };
-
-  const createBoard = () => {
-    const board = document.querySelector(".board");
-    board.innerHTML = ""; // Clear existing tiles to prevent duplication
-    for (let i = 0; i < ROWS; i++) {
-      const row = document.createElement("div");
-      row.className = "row";
-      for (let j = 0; j < COLS; j++) {
-        row.appendChild(createTiles(i, j));
-      }
-      board.appendChild(row);
-    }
-  };
-
-  const initializeTileAnimation = () => {
-    const tiles = document.querySelectorAll(".tile");
-
-    tiles.forEach((tile, index) => {
-      let lastEnterTime = 0;
-
-      tile.addEventListener("mouseenter", () => {
-        const currentTime = Date.now();
-
-        if (currentTime - lastEnterTime > COOLDOWN) {
-          lastEnterTime = currentTime;
-
-          let tileY;
-          if (index % 6 === 0) {
-            tileY = -40;
-          } else if (index % 6 === 5) {
-            tileY = 40;
-          } else if (index % 6 === 1) {
-            tileY = -20;
-          } else if (index % 6 === 4) {
-            tileY = 20;
-          } else if (index % 6 === 2) {
-            tileY = -10;
-          } else {
-            tileY = 10;
-          }
-
-          animateTile(tile, tileY);
-        }
-      });
-    });
-  };
-
-  const animateTile = (tile, tileY) => {
-    gsap
-      .timeline()
-      .set(tile, { rotateX: isFlipped ? 180 : 0, rotateY: 0 })
-      .to(tile, {
-        rotateX: isFlipped ? 450 : 270,
-        rotateY: tileY,
-        duration: 0.5,
-        ease: "power2.out",
-      })
-      .to(
-        tile,
-        {
-          rotateX: isFlipped ? 540 : 360,
-          rotateY: 0,
-          duration: 0.5,
-          ease: "power2.out",
-        },
-        "-=0.25"
-      );
-  };
-
-  const flipAllTiles = (tiles) => {
-    return new Promise((resolve) => {
-      setIsFlipped(!isFlipped);
-      gsap.to(tiles, {
-        rotateX: isFlipped ? 180 : 0,
-        // duration: 1,
-        stagger: {
-          amount: 0.5,
-          from: "random",
-        },
-        ease: "power2.inOut",
-        onComplete: resolve,
-        // pin: true,
-      });
-    });
-  };
-
+import React from 'react'
+import './LandingPage.css'
+function LandingPage() {
   return (
-    <div id="landing-page" className="landing-page">
-      <section className="board" onClick={()=>flipAllTiles(document.querySelectorAll(".tile"))} ></section>
+    <div className='landingPageWrap'>
+      <div className="landingMain">
+        <div className="mainBox1">
+          <div className="box1row1">
+            AI CLUB
+            <img src="/PublicAssets/club_dark.png" alt="" srcset="" />
+          </div>
+          <div className="box1row2">
+            <div className="box1row2main">
+              Machine Learning
+              <br />
+              Natural Language Processing
+              <br />
+              Generative AI
+              <br />
+              Computer Vision
+              <br />
+              Robotics
+            </div>
+            <div className="box1row2side"></div>
+          </div>
+          <div className="box1row3">
+            <div className="box1row3main">
+              Let’s talk about <span> &nbsp; AI</span>
+            </div>
+            <div className="box1row3side"></div>
+          </div>
+        </div>
+        <div className="mainBox2">
+          <div className="box2row1">
+            AI Club is the fastest growing club in VIT Bhopal imparting knowledge about AI and pioneering AI based advanced education to students.
+          </div>
+          <div className="box2row2">
+            <div className="box2row2col1">
+              <img src="/PublicAssets/robot.png" alt="" srcset="" />
+            </div>
+            <div className="box2row2col2"></div>
+          </div>
+        </div>
+      </div>
+      <div className="landingInfiniteScroll">
+        <div class="landingFooter">
+          Hackathons / Projects / Workshops / Webinars / Sessions / Events / Competitions / Exhibitions
+        </div>
+      </div>
     </div>
-  );
-};
+  )
+}
 
-export default LandingPage;
+export default LandingPage
