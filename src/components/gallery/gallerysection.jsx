@@ -67,7 +67,7 @@ const GallerySection = () => {
   };
 
   return (
-    <div className="galleryWrap pin-spacer">
+    <div id="galleryWrap" className="galleryWrap pin-spacer">
       {/* <div className="eventTitle galleryTitle">/Gallery</div> */}
       <div className="galleryRow1">
         <div className="ghostboximg1"></div>

@@ -39,7 +39,7 @@ function gooeyCursor() {
                         document.getElementById(index).classList.add("blockhighlight")
                         setTimeout(() => {
                             document.getElementById(index).classList.remove("blockhighlight")
-                        }, 500);
+                        }, 300);
                     }
                 }
             }

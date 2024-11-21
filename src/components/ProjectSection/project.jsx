@@ -43,7 +43,7 @@ const ProjectsSection = () => {
     });
 
     return (
-        <div className="projectCover">
+        <div id="projectCover" className="projectCover">
             <div className="projectPage">
                 {/* <div
                     className="eventTitle"

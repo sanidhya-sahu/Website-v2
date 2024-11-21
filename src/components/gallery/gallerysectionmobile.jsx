@@ -74,7 +74,7 @@ const gallerysectionmobile = () => {
 
 
   return (
-    <div className="galleryWrap">
+    <div id="galleryWrap" className="galleryWrap">
       {/* <div className="eventTitle galleryTitle">/Gallery</div> */}
       <div className="galleryRow1">
         <div id="galleryBox1" onClick={handleBoxClick} className="boximg1"></div>

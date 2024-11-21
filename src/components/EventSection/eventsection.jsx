@@ -31,6 +31,17 @@ const EventsSection = () => {
           onLeaveBack: () => setIsDark(false),
         },
       });
+      gsap.to("#menutxt", {
+        color : "white",
+        scrollTrigger: {
+          trigger: ".eventSection",
+          scroller: "body",
+          // markers: true,
+          start: "top 20%",
+          end: "top 10%",
+          scrub: 1,
+        },
+      });
       gsap.to(".eventSection", {
         scrollTrigger: {
           trigger: ".eventSection",
@@ -57,7 +68,7 @@ const EventsSection = () => {
     }
   });
   return (
-    <div data-scroll className="eventSection">
+    <div id="eventSection" data-scroll className="eventSection">
       {/* <div data-scroll className="eventTitle">
         /Recent Events
       </div> */}

@@ -4,8 +4,8 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 
-const ROWS = 6;
-const COLS = 6;
+const COLS =6;
+const ROWS =5;
 const BLOCK_SIZE = 100; // Increased block size
 const COOLDOWN = 1000;
 
@@ -17,11 +17,7 @@ const LandingPage = () => {
   useEffect(() => {
     createBoard();
     initializeTileAnimation();
-    window.addEventListener('scroll', handleScroll);
 
-    // return () => {
-    //   window.removeEventListener("scroll", handleScroll);
-    // };
   }, []);
 
   const createTiles = (row, col) => {
@@ -85,19 +81,6 @@ const LandingPage = () => {
     });
   };
 
-  const handleScroll = (event) => {
-    const tiles = document.querySelectorAll(".tile");
-    flipAllTiles(tiles).then(() => {
-      var x = window.scrollX;
-      var y = window.scrollY;
-      window.onscroll = function () { window.scrollTo(x, y); };
-      setTimeout(() => {
-        window.onscroll = function () {};
-        // setScrollLocked(false); // Unlock scrolling after flip animation
-      }, 500);
-    });
-  };
-
   const animateTile = (tile, tileY) => {
     gsap
       .timeline()
@@ -121,8 +104,6 @@ const LandingPage = () => {
   };
 
   const flipAllTiles = (tiles) => {
-    // console.log(tiles);
-
     return new Promise((resolve) => {
       setIsFlipped(!isFlipped);
       gsap.to(tiles, {
@@ -132,7 +113,7 @@ const LandingPage = () => {
           amount: 0.5,
           from: "random",
         },
-        // ease: "power2.inOut",
+        ease: "power2.inOut",
         onComplete: resolve,
         // pin: true,
       });
@@ -141,16 +122,7 @@ const LandingPage = () => {
 
   return (
     <div id="landing-page" className="landing-page">
-      <section className="board"></section>
-      <nav>
-        <a href="#">AI Club</a>
-        <button
-          id="flipButton"
-          onClick={() => flipAllTiles(document.querySelectorAll(".tile"))}
-        >
-          Flip Tiles
-        </button>
-      </nav>
+      <section className="board" onClick={()=>flipAllTiles(document.querySelectorAll(".tile"))} ></section>
     </div>
   );
 };

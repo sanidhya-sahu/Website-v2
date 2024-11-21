@@ -4,7 +4,6 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./herosection.css";
-
 const Heropage = () => {
   gsap.registerPlugin(ScrollTrigger);
   useGSAP(() => {

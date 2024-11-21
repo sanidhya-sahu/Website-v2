@@ -58,7 +58,7 @@ const EventsSectionMobile = () => {
   //     }
     });
   return (
-    <div data-scroll className="eventSection">
+    <div id="eventSection" data-scroll className="eventSection">
       {/* <div data-scroll className="eventTitle">
         /Recent Events
       </div> */}
