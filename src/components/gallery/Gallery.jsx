@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import "./Gallery.css";
 import { useParams } from "react-router-dom";
 // import GooeyCursor from "../Gooey Cursor/gooeyCursor.jsx";
@@ -19,35 +19,6 @@ export default function AsymmetricScrollingGallery() {
   }, [eventName]);
 
   // Scroll effect code remains the same
-  useEffect(() => {
-    const handleScroll = () => {
-      if (
-        leftColumnRef.current &&
-        centerColumnRef.current &&
-        rightColumnRef.current
-      ) {
-        const scrollY = window.scrollY;
-        const windowHeight = window.innerHeight;
-        const documentHeight = document.documentElement.scrollHeight;
-        const maxScroll = documentHeight - windowHeight;
-        const progress = Math.min(scrollY / maxScroll, 1);
-        const maxTranslation = 300;
-
-        leftColumnRef.current.style.transform = `translateY(${
-          -progress * maxTranslation
-        }px)`;
-        centerColumnRef.current.style.transform = `translateY(${
-          progress * maxTranslation
-        }px)`;
-        rightColumnRef.current.style.transform = `translateY(${
-          -progress * maxTranslation
-        }px)`;
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
 
   const renderColumn = (columnIndex) => {
     if (!images.length) return null;

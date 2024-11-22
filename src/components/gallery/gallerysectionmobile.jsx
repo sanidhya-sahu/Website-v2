@@ -1,4 +1,3 @@
-import React from "react";
 import "./gallerySection.css";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
@@ -72,23 +71,42 @@ const gallerysectionmobile = () => {
     navigate("/events-gallery");
   };
 
-
   return (
     <div id="galleryWrap" className="galleryWrap">
       <div className="eventTitle galleryTitle">~ Gallery</div>
       <div className="galleryRow1">
-        <div id="galleryBox1" onClick={handleBoxClick} className="boximg1"></div>
-        <div id="galleryBox2" onClick={handleBoxClick} className="boximg2"></div>
+        <div
+          id="galleryBox1"
+          onClick={handleBoxClick}
+          className="boximg1"
+        ></div>
+        <div
+          id="galleryBox2"
+          onClick={handleBoxClick}
+          className="boximg2"
+        ></div>
       </div>
       <div className="galleryRow2">
-        <div id="galleryBox3" onClick={handleBoxClick} className="boximg1"></div>
+        <div
+          id="galleryBox3"
+          onClick={handleBoxClick}
+          className="boximg1"
+        ></div>
       </div>
       <div className="galleryRow3">
-        <div id="galleryBox4" onClick={handleBoxClick} className="galleryRowbox">
+        <div
+          id="galleryBox4"
+          onClick={handleBoxClick}
+          className="galleryRowbox"
+        >
           <div className="subBoximg1"></div>
           <div className="subBoximg2"></div>
         </div>
-        <div id="galleryBox5" onClick={handleBoxClick} className="boximg2"></div>
+        <div
+          id="galleryBox5"
+          onClick={handleBoxClick}
+          className="boximg2"
+        ></div>
       </div>
     </div>
   );

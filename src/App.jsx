@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { useState, useEffect } from "react";
 import "./App.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Proj from "./components/ProjectSection/project";
@@ -20,7 +19,7 @@ import BoxGrid from "./components/gallery/BoxGrid.jsx";
 import AsymmetricScrollingGallery from "./components/gallery/Gallery.jsx";
 // import GooeyCursor from "./components/Gooey Cursor/gooeyCursor.jsx";
 import Scroller from "./components/Scroller/scroller.jsx";
-import MoreEvents from './components/MoreEvents/moreEvents.jsx'
+import MoreEvents from "./components/MoreEvents/moreEvents.jsx";
 import Cursor from "./components/Cursor/cursor.jsx";
 import LandingPage from "./components/LandingPage/LandingPage.jsx";
 import Menu from "./components/Menu/menu.jsx";
@@ -48,7 +47,7 @@ const App = () => {
             path="/"
             element={
               <>
-                {isMobile ? '' : <Cursor></Cursor>}
+                {isMobile ? "" : <Cursor></Cursor>}
                 <Scroller></Scroller>
                 <Menu></Menu>
                 {/* <GooeyCursor /> */}
@@ -72,7 +71,9 @@ const App = () => {
           <Route path="/members" element={<MembersPage />}></Route>
           <Route path="/projects" element={<PorjectsPage />}></Route>
           <Route path="/events-gallery" element={<BoxGrid />} />
-          <Route path="/events/:eventName" element={<AsymmetricScrollingGallery />}
+          <Route
+            path="/events/:eventName"
+            element={<AsymmetricScrollingGallery />}
           />
         </Routes>
       </Router>

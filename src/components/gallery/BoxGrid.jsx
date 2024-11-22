@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Box from "./Box";
 import "./BoxGrid.css";
@@ -45,7 +45,7 @@ const BoxGrid = () => {
   return (
     <>
       {/* <GooeyCursor /> */}
-      <BackButton textDisplay={true} top='1px' left='1px' ></BackButton>
+      <BackButton textDisplay={true} top="1px" left="1px"></BackButton>
       <Cursor></Cursor>
       <div
         className="grid-container"
