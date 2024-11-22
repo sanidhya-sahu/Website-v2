@@ -1,12 +1,12 @@
 @font-face {
   font-family: dirtyline;
-  src: url('../../fonts/dirtyline-36daysoftype-2022.otf');
+  src: url("../../fonts/dirtyline-36daysoftype-2022.otf");
 }
 @font-face {
   font-family: maison;
   src: url("../../fonts/fonnts.com-Maison_Neue_Book.ttf");
 }
-.Mainfooter{
+.Mainfooter {
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -15,33 +15,27 @@
   flex-direction: column;
   margin-top: 20px;
 }
-.footCont1{
+.footCont1 {
   width: 100%;
-  height: 85%;
+  height: 65%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   background-color: #baf400;
   gap: 10px;
-  border-top-left-radius: 150px;
+  border-radius: 550px;
 }
 .footCont1 > h1 {
+  padding-top: 50px;
   font-family: dirtyline;
   text-transform: lowercase;
   letter-spacing: 4px;
-  font-size: 10vw;
+  font-size: 28vw;
   font-weight: bold;
+  color: white;
 }
-.footCont1 > h5{
-  font-family: dirtyline;
-  text-transform: lowercase;
-  letter-spacing: 5px;
-  font-weight: 100;
-  word-spacing: 6px;
-  font-size: 1vw;
-}
-.footCont1 > img{
+.footCont1 > img {
   width: 50px;
   position: absolute;
   right: 65px;
@@ -57,7 +51,7 @@
   font-size: small;
   cursor: pointer;
 }
-.footCont2{
+.footCont2 {
   width: 100%;
   height: 15%;
   display: flex;
@@ -68,17 +62,19 @@
   color: white;
   font-family: maison;
 }
-.footCont2 > .foot2cont2{
+.footCont2 > .foot2cont2 {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 20px;
 }
-.footCont2 > .foot2cont2 > a{
+.footCont2 > .foot2cont2 > a {
   color: #baf400;
   text-decoration: none;
 }
-.foot2cont1,.foot2cont2,.foot2cont3{
+.foot2cont1,
+.foot2cont2,
+.foot2cont3 {
   font-size: large;
   letter-spacing: 1px;
 }
