@@ -71,8 +71,8 @@
   align-items: center;
   padding-left: 20px;
   line-height: 30px;
-  position: relative;
   font-size: large;
+  position: relative;
   letter-spacing: 1px;
   word-spacing: 5px;
   background-image: radial-gradient(circle, #383c3d36 2px, transparent 1px);
@@ -218,7 +218,7 @@
 }
 
 .landingInfiniteScroll {
-  position: absolute;
+  position: relative;
   bottom: 5px;
   left: 0;
   width: 100%;
@@ -242,5 +242,98 @@
 
   100% {
     transform: translateX(-100%);
+  }
+}
+
+@media screen and (max-width : 500px) {
+
+  .landingInfiniteScroll{
+    height: 8vh;
+    font-size: 3em;
+    bottom: 0px;
+  }
+
+  .landingMain {
+    flex-direction: column;
+    height: 92vh;
+  }
+
+  .box1row1 {
+    height: 20%;
+    width: 100%;
+    align-items: flex-end;
+    padding-left: 0px;
+    font-size: 15vw;
+  }
+
+  .box1row1>img {
+    width: 50px;
+    top: 15px;
+    left: 20px;
+  }
+
+  .mainBox1 {
+    height: 49%;
+    width: 100%;
+    flex-direction: row;
+  }
+  .box1row2{
+    width: 60%;
+    height: 100%;
+    flex-direction: column;
+  }
+  .box2row1{
+    height: 50%;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    font-size: 90%;
+    font-weight: 500;
+    align-items: center;
+    border-top-right-radius: 10px;
+  }
+  .box1row2side{
+    width: 100%;
+    height: 100%;
+    border-bottom-left-radius: 0px;
+    height: 49.5%;
+  }
+  .box1row3{
+    width: 40%;
+    height: 100%;
+    flex-direction: column;
+  }
+  .box1row3side{
+    width: 100%;
+    border-top-left-radius: 10px;
+  }
+  .box2row2col1{
+    width: 100%;;
+  }
+
+  .mainBox2 {
+    height: 20%;
+    width: 100%;
+  }
+
+  .box1row2main {
+    width: 100%;
+    height: 100%;
+    border-bottom-right-radius: 0px;
+    line-height: 20px;
+    font-size: small;
+    font-weight: 500;
+    padding-left: 10px;
+  }
+
+  .box1row3main {
+    height: 10%;
+    width: 100%;
+    font-size: xx-large;
+    border-top-right-radius: 0px;
+  }
+
+
+  .landingFooter {
+    animation: scroll 10s linear infinite;
   }
 }

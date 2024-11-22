@@ -66,15 +66,14 @@ const Heropage = () => {
         </div>
 
         <div className="right-event-container">
-          <h1 className="heading">AI CONCLAVE 4.0</h1>
+          <h1 className="heading">AI CONIC 2.0</h1>
           <img
             className="event-image-right"
-            src="/HeroSection/genesis.png"
+            src="/HeroSection/aiconic2.png"
             alt="Technology"
           />
           <div className="description">
-            Welcome to AI Conclave 2024, A 3-day thrill ride from February 5th
-            to 7th, hosted by the AI Club at VIT Bhopal University.
+          AI CONIC 2.0 at VIT Bhopal is a one-day offline event offering students hands-on exposure to industry-level AI and ML applications and practices.
           </div>
         </div>
       </div>

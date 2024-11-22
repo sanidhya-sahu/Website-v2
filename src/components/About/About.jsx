@@ -10,8 +10,8 @@ import menuWidget from '../../assets/menuWidget.svg'
 import flower from '../../assets/flower.svg'
 import knowMoreArrow from '../../assets/knowMoreArrow.svg'
 import { Link } from "react-router-dom";
-import GooeyCursor from "../Gooey Cursor/gooeyCursor.jsx";
 import BackButton from "../backButton/backButton.jsx";
+import Cursor from '../Cursor/cursor.jsx'
 const About = () => {
     
     function scrollToBottom() {
@@ -19,7 +19,7 @@ const About = () => {
     }
     return (
         <>
-            <GooeyCursor></GooeyCursor>
+            <Cursor></Cursor>
             <BackButton top='10px' left='10px' textDisplay={false} ></BackButton>
             <div className='aboutWrap'>
                 <div id='aboutTop' className="top">
