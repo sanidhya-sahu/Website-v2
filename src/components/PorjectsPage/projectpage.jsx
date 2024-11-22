@@ -34,23 +34,23 @@ function projectpage() {
         <br />
 
         <div className="container">
-          <div className="box1">
+          <div onClick={()=>{window.location.href="https://github.com/aiclubvitbhopal"}} className="box1">
             <img class='projectBanner' src={cityScapes} alt="Description of the image" />
           </div>
           <span className="text1">Cityscapes (3D City Planning) : Users selects geographical topology for Generative Model.
             This generates 2D Citymaps and 3D Meshwork as JSON.
             The JSON Can be used to generate 3D city maps  for Artists in any Blender using bpy</span>
-          <div className="box2">
+          <div onClick={()=>{window.location.href="https://github.com/aiclubvitbhopal"}} className="box2">
             <img class='projectBanner' src={helmet} alt="Description of the image" />
           </div>
           <span className="text2">
             Real Time Helmet Detection. Non Helmet subjects on Bike are retrieved by capturing Vehicle No. to Govt. Database
           </span>
-          <div className="box3">
+          <div onClick={()=>{window.location.href='https://github.com/aiclubvitbhopal/Fertilizer_Recommender'}} className="box3">
             <img class='projectBanner' src={agroAI} alt="Description of the image" />
           </div>
           <span className="text3">AgroAI predicts Plants diseases and Fertilizer Option for plants.</span>
-          <div className="box4">
+          <div onClick={()=>{window.location.href='https://github.com/aiclubvitbhopal/VQA_RAD_Short_Term_Project-'}} className="box4">
             <img class='projectBanner' src={visualbert} alt="Description of the image" />
           </div>
           <span className="text4">VisualBERT is a multi-modal vision and language model. It can be used for visual question answering, multiple choice, visual reasoning and region-to-phrase correspondence tasks.</span>

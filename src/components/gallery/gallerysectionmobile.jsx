@@ -73,7 +73,7 @@ const gallerysectionmobile = () => {
 
   return (
     <div id="galleryWrap" className="galleryWrap">
-      <div className="eventTitle galleryTitle">~ Gallery</div>
+      <div className="eventTitle galleryTitle">Gallery</div>
       <div className="galleryRow1">
         <div
           id="galleryBox1"

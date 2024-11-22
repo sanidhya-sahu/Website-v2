@@ -11,7 +11,7 @@ function LandingPage() {
                 <div className="mainBox1">
                     <div className="box1row2">
                         <div className="box2row1">
-                            AI Club is the fastest growing club in VIT Bhopal imparting knowledge about AI and pioneering AI based advanced education to students.
+                        The AI Club at VIT Bhopal is a hub for innovators, creators, and dreamers. From ideathons to annual conclaves, we drive the frontier of Artificial Intelligence through learning, collaboration, and action.
                         </div>
                         <div className="box1row2side"></div>
                     </div>

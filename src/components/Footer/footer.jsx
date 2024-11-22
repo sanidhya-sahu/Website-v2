@@ -4,24 +4,25 @@ import React from "react";
 export default function footer() {
   return (
     <div className="Mainfooter">
+      <img
+        onClick={() => {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        }}
+        className="topArrowSvg"
+        src="/PublicAssets/pageTopArrow.svg"
+        alt=""
+      />
+      <div
+        onClick={() => {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        }}
+        className="topArrowtxt"
+      >
+        Page Top
+      </div>
       <div className="footCont1">
+        <div className="dotLayer"></div>
         <h1>AI CLUB</h1>
-        <img
-          onClick={() => {
-            window.scrollTo({ top: 0, behavior: "smooth" });
-          }}
-          className="topArrowSvg"
-          src="/PublicAssets/pageTopArrow.svg"
-          alt=""
-        />
-        <div
-          onClick={() => {
-            window.scrollTo({ top: 0, behavior: "smooth" });
-          }}
-          className="topArrowtxt"
-        >
-          Page Top
-        </div>
       </div>
       <div className="footCont2">
         <div className="foot2cont1">&copy; 2024 AI Club - VIT Bhopal</div>
