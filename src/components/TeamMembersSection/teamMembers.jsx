@@ -139,7 +139,7 @@ const BrandingSection = () => {
   });
 
   useEffect(() => {
-    window.addEventListener('load', () => {
+    document.getElementById('branding').addEventListener('mouseenter', () => {
       document.getElementById('viewweb').addEventListener('mouseenter', () => {
         document.getElementById('webCursor').style.width = 'auto'
         document.getElementById('webCursor').style.height = 'auto'

@@ -72,7 +72,7 @@ const GallerySection = () => {
         document.getElementById("webCursor").style.width = "auto";
         document.getElementById("webCursor").style.height = "auto";
         document.getElementById("webCursor").style.padding = "8px";
-        document.getElementById("webCursor").innerText = "View Gallery";
+        document.getElementById("webCursor").innerText = "Open Gallery";
       });
     document
       .getElementById("galleryBox1")
@@ -87,7 +87,7 @@ const GallerySection = () => {
         document.getElementById("webCursor").style.width = "auto";
         document.getElementById("webCursor").style.height = "auto";
         document.getElementById("webCursor").style.padding = "8px";
-        document.getElementById("webCursor").innerText = "View Gallery";
+        document.getElementById("webCursor").innerText = "Open Gallery";
       });
     document
       .getElementById("galleryBox2")
@@ -102,7 +102,7 @@ const GallerySection = () => {
         document.getElementById("webCursor").style.width = "auto";
         document.getElementById("webCursor").style.height = "auto";
         document.getElementById("webCursor").style.padding = "8px";
-        document.getElementById("webCursor").innerText = "View Gallery";
+        document.getElementById("webCursor").innerText = "Open Gallery";
       });
     document
       .getElementById("galleryBox3")
@@ -117,7 +117,7 @@ const GallerySection = () => {
         document.getElementById("webCursor").style.width = "auto";
         document.getElementById("webCursor").style.height = "auto";
         document.getElementById("webCursor").style.padding = "8px";
-        document.getElementById("webCursor").innerText = "View Gallery";
+        document.getElementById("webCursor").innerText = "Open Gallery";
       });
     document
       .getElementById("galleryBox4")
@@ -132,7 +132,7 @@ const GallerySection = () => {
         document.getElementById("webCursor").style.width = "auto";
         document.getElementById("webCursor").style.height = "auto";
         document.getElementById("webCursor").style.padding = "8px";
-        document.getElementById("webCursor").innerText = "View Gallery";
+        document.getElementById("webCursor").innerText = "Open Gallery";
       });
     document
       .getElementById("galleryBox5")
@@ -147,7 +147,7 @@ const GallerySection = () => {
         document.getElementById("webCursor").style.width = "auto";
         document.getElementById("webCursor").style.height = "auto";
         document.getElementById("webCursor").style.padding = "8px";
-        document.getElementById("webCursor").innerText = "View Gallery";
+        document.getElementById("webCursor").innerText = "Open Gallery";
       });
     document
       .getElementById("galleryCenterBox")
