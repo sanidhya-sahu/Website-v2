@@ -11,6 +11,7 @@ function LandingPage() {
           </div>
           <div className="box1row2">
             <div className="box1row2main">
+              <div className="vertxt">sudo rm -rf System32</div>
               Machine Learning
               <br />
               Natural Language Processing
@@ -21,7 +22,9 @@ function LandingPage() {
               <br />
               Robotics
             </div>
-            <div className="box1row2side"></div>
+            <div className="box1row2side">
+              <img src="/PublicAssets/landRing.svg" alt="" />
+            </div>
           </div>
           <div className="box1row3">
             <div className="box1row3main">

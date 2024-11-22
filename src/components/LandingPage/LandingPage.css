@@ -90,6 +90,15 @@
   left: 70%;
 }
 
+.vertxt {
+  position: absolute;
+  right: 13%;
+  color: white;
+  font-family: 'Inter';
+  transform: rotate(270deg);
+  font-size: small;
+}
+
 .box1row2side {
   width: 40%;
   height: 100%;
@@ -98,6 +107,23 @@
   background-image: radial-gradient(circle, #383c3d36 2px, transparent 1px);
   background-size: 20px 20px;
   background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box1row2side > img{
+  width: 140px;
+  animation: landRingRotate 10s linear infinite;
+}
+
+@keyframes landRingRotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .box1row3 {
@@ -229,7 +255,7 @@
   text-align: center;
   font-family: inter;
   font-size: 4.5em;
-  font-weight: 400; 
+  font-weight: 400;
   z-index: 10;
   overflow: hidden;
   white-space: nowrap;
@@ -251,7 +277,7 @@
 
 @media screen and (max-width : 500px) {
 
-  .landingInfiniteScroll{
+  .landingInfiniteScroll {
     height: 8vh;
     font-size: 3em;
     bottom: -3px;
@@ -260,6 +286,15 @@
   .landingMain {
     flex-direction: column;
     height: 92vh;
+  }
+
+  .vertxt {
+    position: absolute;
+    right: 6%;
+    color: white;
+    font-family: 'Inter';
+    transform: rotate(270deg);
+    font-size: 8px;
   }
 
   .box1row1 {
@@ -281,37 +316,44 @@
     width: 100%;
     flex-direction: row;
   }
-  .box1row2{
+
+  .box1row2 {
     width: 60%;
     height: 100%;
     flex-direction: column;
   }
-  .box2row1{
+
+  .box2row1 {
     height: 50%;
     padding-bottom: 0px;
     padding-top: 0px;
-    font-size: 90%;
+    font-size: 80%;
     font-weight: 500;
     align-items: center;
     border-top-right-radius: 15px;
   }
-  .box1row2side{
+
+  .box1row2side {
     width: 100%;
     height: 100%;
     border-bottom-left-radius: 0px;
     height: 49.5%;
   }
-  .box1row3{
+
+  .box1row3 {
     width: 40%;
     height: 100%;
     flex-direction: column;
   }
-  .box1row3side{
+
+  .box1row3side {
     width: 100%;
     border-top-left-radius: 15px;
   }
-  .box2row2col1{
-    width: 100%;;
+
+  .box2row2col1 {
+    width: 100%;
+    ;
   }
 
   .mainBox2 {

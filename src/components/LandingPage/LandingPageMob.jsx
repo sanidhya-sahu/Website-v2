@@ -11,9 +11,11 @@ function LandingPage() {
                 <div className="mainBox1">
                     <div className="box1row2">
                         <div className="box2row1">
-                        The AI Club at VIT Bhopal is a hub for innovators, creators, and dreamers. From ideathons to annual conclaves, we drive the frontier of Artificial Intelligence through learning, collaboration, and action.
+                            The AI Club at VIT Bhopal is a hub for innovators, creators, and dreamers. From ideathons to annual conclaves, we drive the frontier of Artificial Intelligence through learning, collaboration, and action.
                         </div>
-                        <div className="box1row2side"></div>
+                        <div className="box1row2side">
+                            <img src="/PublicAssets/landRing.svg" alt="" />
+                        </div>
                     </div>
                     <div className="box1row3">
                         <div className="box1row3side"></div>
@@ -24,6 +26,7 @@ function LandingPage() {
                 </div>
                 <div className="mainBox2">
                     <div className="box1row2main">
+                        <div className="vertxt">sudo rm -rf System32</div>
                         Machine Learning
                         <br />
                         Natural Language Processing

@@ -22,6 +22,7 @@ export default function footer() {
       </div>
       <div className="footCont1">
         <div className="dotLayer"></div>
+        <div className="quoteLayer">Where Ideas Spark and vision ignites</div>
         <h1>AI CLUB</h1>
       </div>
       <div className="footCont2">
@@ -43,7 +44,7 @@ export default function footer() {
             Discord
           </a>
         </div>
-        <div className="foot2cont3">Developed by Web Team ’24 💚</div>
+        <div className="foot2cont3">Developed by Web Team ’24</div>
       </div>
     </div>
   );

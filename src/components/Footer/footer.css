@@ -31,13 +31,27 @@
   border-radius: 550px;
   content-visibility: auto;
 }
-.dotLayer{
+
+.dotLayer {
   background-image: radial-gradient(circle, #383c3d36 2px, transparent 1px);
   background-size: 20px 20px;
   width: 100%;
   height: 100%;
   position: absolute;
 }
+
+.quoteLayer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Inter';
+  font-size: 4.5em;
+}
+
 .footCont1>h1 {
   padding-top: 80px;
   font-family: dirtyline;
