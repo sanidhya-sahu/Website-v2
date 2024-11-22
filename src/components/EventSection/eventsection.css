@@ -94,7 +94,7 @@
   position: absolute;
   top: 30px;
   left: 130px;
-  font-size: 16px;
+  font-size: 40px;
   letter-spacing: 1px;
   line-height: 22px;
   font-weight: 700;
@@ -281,7 +281,7 @@
   .eventTitle {
     position: initial;
     transform: scaleX(-1);
-    font-size: 15px;
+    font-size: 20px;
     right: auto;
     margin: 50px 20px 15px auto;
     font-weight: 700;

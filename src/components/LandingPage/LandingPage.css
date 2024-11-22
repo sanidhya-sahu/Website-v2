@@ -71,7 +71,8 @@
   align-items: center;
   padding-left: 20px;
   line-height: 30px;
-  font-size: large;
+  font-size: larger;
+  color: #383C3D;
   position: relative;
   letter-spacing: 1px;
   word-spacing: 5px;
@@ -113,11 +114,11 @@
   border-top-right-radius: 20px;
   background-color: #f1f1f1;
   font-family: inter;
-  font-size: xxx-large;
+  font-size: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-weight: 200;
+  font-weight: 400;
   background-image: radial-gradient(circle, #383c3d36 2px, transparent 1px);
   background-size: 20px 20px;
   background-attachment: fixed;
@@ -125,7 +126,7 @@
 
 .box1row3main>span {
   font-family: neue;
-  letter-spacing: -3px;
+  letter-spacing: -2px;
   padding-top: 3px;
 }
 
@@ -164,6 +165,7 @@
   width: 100%;
   height: 32%;
   background-color: #f1f1f1;
+  color: #383C3D;
   display: flex;
   align-items: flex-end;
   font-family: 'Inter';
@@ -219,13 +221,15 @@
 
 .landingInfiniteScroll {
   position: relative;
-  bottom: 5px;
+  bottom: 10px;
   left: 0;
   width: 100%;
   height: 12%;
   color: white;
   text-align: center;
+  font-family: inter;
   font-size: 4.5em;
+  font-weight: 400; 
   z-index: 10;
   overflow: hidden;
   white-space: nowrap;
@@ -250,7 +254,7 @@
   .landingInfiniteScroll{
     height: 8vh;
     font-size: 3em;
-    bottom: 0px;
+    bottom: -3px;
   }
 
   .landingMain {

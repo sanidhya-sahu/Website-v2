@@ -6,7 +6,7 @@
     border-radius: 50px;
     z-index: 100000000000000000000000000000;
     pointer-events: none;
-    mix-blend-mode: difference;
+    /* mix-blend-mode: difference; */
     border-top-left-radius: 0px;
     font-family: neue;
     letter-spacing: 1px;

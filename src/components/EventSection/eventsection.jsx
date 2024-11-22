@@ -71,7 +71,7 @@ const EventsSection = () => {
   return (
     <div id="eventSection" data-scroll className="eventSection">
       <div style={{ color: isDark ? "white" : "black" }} data-scroll className="eventTitle">
-        ~ Events
+       Events
       </div>
       <div id="slider" data-scroll className="slider">
         <span data-scroll style={{ "--i": 4 }} onClick={() => { navigate('/events') }} >

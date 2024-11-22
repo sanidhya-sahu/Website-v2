@@ -1,9 +1,4 @@
 @font-face {
-  font-family: maison;
-  src: url("../../fonts/fonnts.com-Maison_Neue_Book.ttf");
-}
-
-@font-face {
   font-family: dirtyline;
   src: url('../../fonts/dirtyline-36daysoftype-2022.otf');
 }
@@ -20,14 +15,14 @@
 
 .menutxt {
   color: #111;
-  font-family: maison;
+  font-family: inter;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
   font-weight: 700;
-  letter-spacing: 2px;
-  font-size: small;
+  letter-spacing: 1px;
+  font-size: 18px;
 }
 
 .menuBody {
