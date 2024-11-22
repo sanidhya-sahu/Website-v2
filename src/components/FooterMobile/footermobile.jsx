@@ -1,58 +1,28 @@
-import logo from "../../assets/logo.svg";
-import "./footermobile.css";
+import "./footerMob.css";
+import React from 'react'
 
 const FooterMobile = () => {
   return (
-    <>
-      <div className="footer-mobile">
-        <div className="footer-header">
-          <div className="logo">
-            <img src={logo} alt="AI Club Logo" />
-          </div>
-          <div className="footer-nav-mobile">
-            <ul>
-              <li>
-                <a href="#">[ HOME&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]</a>
-              </li>
-              <li>
-                <a className="home" href="#">
-                  ABOUT
-                </a>
-              </li>
-              <li>
-                <a className="home" href="#">
-                  PROJECT
-                </a>
-              </li>
-              <li>
-                <a className="home" href="#">
-                  MAGAZINE
-                </a>
-              </li>
-              <li>
-                <a className="home" href="#">
-                  EVENTS
-                </a>
-              </li>
-            </ul>
-          </div>
+    <div className="mob_Mainfooter">
+      <div className="mob_footCont1">
+        <h1>AI CLUB</h1>
+        <h5>where humans and machines unite</h5>
+      </div>
+      <div className="mob_footCont2">
+        <div className="mob_foot2cont1">
+        &copy; 2024 AI Club - VIT Bhopal
         </div>
-        <div className="footer-aiclub">
-          <h1>AI CLUB</h1>
+        <div className="mob_foot2cont3">
+        Developed by Web Team ’24 💚
         </div>
-        <div className="footer-mobile-bottom">
-          <p>ASK US ANYTHING</p>
-          <button>How to register in AI Conclave 25?</button>
-          <div className="footer-links">
-            <a href="#">LinkedIn</a>
-            <a href="#">Instagram</a>
-            <a href="#">GitHub</a>
-            <a href="#">Discord</a>
-          </div>
-          <p>Developed by Web Team '24</p>
+        <div className="mob_foot2cont2">
+          <a target="_blank" href="https://www.linkedin.com/company/aiclub-vitb/mycompany/">LinkedIn</a>
+          <a target="_blank" href="https://www.instagram.com/aiclub.vitb">Instagram</a>
+          <a target="_blank" href="https://github.com/aiclubvitbhopal">Github</a>
+          <a target="_blank" href="#">Discord</a>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

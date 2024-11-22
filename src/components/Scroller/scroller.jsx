@@ -15,13 +15,13 @@ const scroller = () => {
         trigger: ".scrollerbox2",
         scroller: "body",
         start: "top 85%",
-        end: `top -${winH*3}px`,
+        end: `top -${winH*2.5}px`,
         markers: false,
         scrub: 2,
       },
     });
     gsap.to(".ring", {
-      rotate: 1080,
+      rotate: 2080,
       scrollTrigger: {
         trigger: ".scrollerbox2",
         scroller: "body",

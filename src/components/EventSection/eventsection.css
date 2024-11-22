@@ -1,4 +1,13 @@
+/* .pin-spacer{ 
+  background-image: radial-gradient(circle, #383c3d7d 2px, transparent 1px);
+  background-size: 20px 20px; 
+} */
+
 .eventSection {
+  /* background-color:#131315; */
+  /* background-color: white; */
+  /* background-image: radial-gradient(circle, #383c3d32 2px, transparent 1px);
+  background-size: 20px 20px;  */
   display: flex;
   width: 100vw;
   height: 100vh;
@@ -8,6 +17,7 @@
 }
 
 .slider {
+  
   display: flex;
   position: relative;
   gap: 44px;
@@ -38,6 +48,7 @@
   align-items: center;
   justify-content: flex-start;
   gap: 20px;
+  cursor: pointer;
 }
 
 .slider span img {
@@ -78,21 +89,17 @@
   object-fit: cover;
 }
 
-@font-face {
-  font-family: arame;
-  src: url("../fonts/Arame.ttf");
-}
 
 .eventTitle {
   position: absolute;
   top: 30px;
   left: 130px;
-  font-size: 12px;
+  font-size: 16px;
   letter-spacing: 1px;
   line-height: 22px;
   font-weight: 700;
   text-transform: uppercase;
-  font-family: Arame, Helvetica, sans-serif;
+  font-family: inter;
 }
 
 .eventKeyWords {
@@ -109,8 +116,10 @@
 }
 
 .word {
-  font-size: 25px;
-  font-family: "Arame";
+  border: 2px solid rgb(0, 0, 0);
+  font-weight: 600;
+  font-size: 30px;
+  font-family: inter;
   background: #baf400;
   padding: 15px;
   border-radius: 15px;
@@ -129,8 +138,9 @@
 }
 
 .eventName {
-  font-size: 45px;
-  font-family: "Arame";
+  
+  font-size: 50px;
+  font-family: inter;
   letter-spacing: 3px;
 }
 
@@ -139,15 +149,19 @@
 }
 
 .viewEvent button {
+  font-family: inter;
+  background-color: transparent;
+  color: white;
   font-size: 30px;
   padding: 15px;
   width: 100%;
-  border: 2px solid black;
+  border: 3px solid rgb(255, 255, 255);
   border-radius: 15px;
-  font-weight: 700;
+  font-weight: 500;
 }
 
-@media screen and (max-width: 768px) {
+
+/* @media screen and (max-width: 768px) {
   .eventSection {
     flex-direction: column;
     transform: scaleX(-1);
@@ -225,5 +239,105 @@
   .viewEvent button {
     font-size: 15px;
     padding: 7px;
+  }
+} */
+
+@media screen and (max-width: 768px) {
+  .eventSection {
+    flex-direction: column;
+    transform: scaleX(-1);
+    height: auto;
+    justify-content: center; /* Centering the content vertically */
+    align-items: center; /* Centering the content horizontally */
+  }
+
+  .slider {
+    flex-direction: column;
+    transform: none;
+    width: 90vw;
+    margin: 0 0 0 12px;
+    display: flex;
+    justify-content: center; /* Centering content */
+    align-items: center; /* Centering content */
+  }
+
+  .slider span {
+    position: static;
+    width: 100%;
+    height: auto;
+    transform: none;
+  }
+
+  .octa {
+    width: 100%;
+    aspect-ratio: 1;
+    clip-path: none;
+  }
+
+  #bannerImage {
+    border-radius: 50px 20px 50px 20px;
+  }
+
+  .eventTitle {
+    position: initial;
+    transform: scaleX(-1);
+    font-size: 15px;
+    right: auto;
+    margin: 50px 20px 15px auto;
+    font-weight: 700;
+    font-family: inter;
+  }
+
+  .eventKeyWords {
+    top: 0;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .word {
+    font-size: 15px;
+    padding: 5px;
+    width: 100%;
+    border-radius: 10px;
+    height: 50px;
+    text-align: center;
+  }
+
+  .cardbox {
+    width: 100%;
+  }
+
+  .eventDetails {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the event details */
+    justify-content: center; /* Vertically center */
+    text-align: center;
+  }
+
+  .eventName {
+    font-size: 21px;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 0;
+    text-align: center; /* Centering text */
+  }
+
+  .viewEvent {
+    width: 80%; /* Increase width for button */
+    margin-left: 0; /* Adjust to center the button */
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center the button */
+  }
+
+  .viewEvent button {
+    font-size: 15px;
+    padding: 10px 20px; /* Adjust padding for a larger button */
+    width: 100%; /* Make it take up the full width of its container */
+    text-align: center; /* Ensure button text is centered */
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; /* Hide overflowing text */
+    text-overflow: ellipsis; /* Add ellipsis if the text is too long */
   }
 }

@@ -1,4 +1,17 @@
+@font-face {
+    font-family: dirtyline;
+    src: url("../../fonts/dirtyline-36daysoftype-2022.otf");
+}
+
+@font-face {
+    font-family: helvetica-b;
+    src: url("../../fonts/Helvetica-Bold.ttf");
+}
+
 .teamWrap {
+    background-color: #131315;
+    background-image: radial-gradient(circle, #383c3d7d 2px, transparent 1px);
+    background-size: 20px 20px;
     width: 100vw;
     height: 100vh;
     overflow-x: hidden;
@@ -9,13 +22,16 @@
 .teamCont {
     width: auto;
     height: 100vh;
-    background: url(/src/assets/dotGrid.png);
     background-size: cover;
     background-repeat: repeat-x;
     background-attachment: fixed;
 }
 
 .teamHead {
+    /* font-size: 2.5vh; */
+    /* letter-spacing: 3px; */
+    /* text-transform: uppercase; */
+    font-family: helvetica-b;
     width: 100%;
     display: flex;
     align-items: center;
@@ -28,9 +44,9 @@
 
 .headBorder {
     position: absolute;
-    width: 110px;
-    left: 6px;
-    top: -2px;
+    width: 120px;
+    left: 4px;
+    top: -4px;
 }
 
 .teamNameHead {
@@ -39,7 +55,8 @@
 }
 
 .headHighlight {
-    color: #CDFF63;
+    text-transform: capitalize;
+    color: #C6FF97;
 }
 
 .teamBox {
@@ -68,6 +85,10 @@
     gap: 20px;
 }
 
+#membersBox> :nth-child(odd) {
+    height: 350px;
+}
+
 #teamDetailCont {
     display: flex;
     flex-direction: column;
@@ -89,15 +110,16 @@
 
 #msg {
     max-width: 100%;
-    max-height: 30px;
+    max-height: 100px;
     width: 100%;
     text-align: center;
     word-wrap: break-word;
-    color: #a0d03c;
-    font-family: "Playwrite ES", cursive;
+    color: #C6FF97;
+    font-family: inter;
     font-size: smaller;
     overflow-y: auto;
-    font-size: 85%;
+    font-size: 80%;
+    font-family: "Playwrite ES", cursive;
 }
 
 #teamImg {
@@ -105,25 +127,37 @@
 }
 
 #memName {
+    font-family: inter;
     font-size: large;
     letter-spacing: 1px;
     text-align: center;
 }
 
 @media screen and (max-width:768px) {
+    #webCursor {
+        display: none;
+    }
+
     .teamHead {
         align-items: flex-start;
         padding-left: 20px;
         gap: 10px;
     }
-    .teamHead{
+
+    .teamHead>h1 {
+        line-height: 1.2;
+    }
+
+    .teamHead {
         line-height: 35px;
     }
+
     .teamNameHead {
         left: 0px;
         font-size: medium;
     }
-    .headBorder{
+
+    .headBorder {
         top: -5px;
     }
 }

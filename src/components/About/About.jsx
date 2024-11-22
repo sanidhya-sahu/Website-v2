@@ -11,15 +11,18 @@ import flower from '../../assets/flower.svg'
 import knowMoreArrow from '../../assets/knowMoreArrow.svg'
 import { Link } from "react-router-dom";
 import GooeyCursor from "../Gooey Cursor/gooeyCursor.jsx";
+import BackButton from "../backButton/backButton.jsx";
 const About = () => {
+    
     function scrollToBottom() {
         document.getElementById('aboutBottom').scrollIntoView({ behavior: 'smooth' })
     }
     return (
         <>
             <GooeyCursor></GooeyCursor>
+            <BackButton top='10px' left='10px' textDisplay={false} ></BackButton>
             <div className='aboutWrap'>
-                <div className="top">
+                <div id='aboutTop' className="top">
                     <div className="aboutBox">
                         <div className="aboutHead">
                             <h1>About</h1>
@@ -30,7 +33,7 @@ const About = () => {
                         <div className="aboutMain">
                             <img src={flower} alt="" />
                             <p>A place to share one’s Passion for <span>AI</span></p>
-                            <button onClick={scrollToBottom}>Know More <img src={knowMoreArrow} alt="" /></button>
+                            <button onClick={()=>{scrollToBottom()}}>Know More <img src={knowMoreArrow} alt="" /></button>
                         </div>
                         <div className="quote">
                             <p>“<span>Machine intelligence </span>is the last invention that humanity will ever need to make.”</p>

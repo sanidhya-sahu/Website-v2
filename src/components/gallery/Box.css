@@ -1,5 +1,5 @@
 .box {
-    background-color: #2b2b3f;
+    background-color: #000000b9;
     color: white;
     display: flex;
     justify-content: center;
@@ -11,6 +11,8 @@
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    background-repeat: round;
+    background-blend-mode: multiply;
   }
   
   .box:hover {

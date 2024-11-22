@@ -1,0 +1,70 @@
+@font-face {
+  font-family: dirtyline;
+  src: url('../../fonts/dirtyline-36daysoftype-2022.otf');
+}
+@font-face {
+  font-family: maison;
+  src: url("../../fonts/fonnts.com-Maison_Neue_Book.ttf");
+}
+.mob_Mainfooter{
+  width: 100vw;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* margin-top: 20px; */
+}
+.mob_footCont1{
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #baf400;
+  gap: 30px;
+  border-top-left-radius: 50px;
+  z-index: 100000000000000000000000000000000;
+}
+.mob_footCont1 > h1 {
+  font-family: dirtyline;
+  text-transform: lowercase;
+  letter-spacing: 4px;
+  font-size: 15vw;
+  font-weight: bold;
+}
+.mob_footCont1 > h5{
+  font-family: dirtyline;
+  text-transform: lowercase;
+  letter-spacing: 4px;
+  font-weight: 100;
+  word-spacing: 6px;
+  font-size: 2.5vw;
+}
+.mob_footCont2{
+  width: 100%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #131315;
+  color: white;
+  font-family: maison;
+  z-index: 100000000000000000000000000000000;
+}
+.mob_footCont2 > .mob_foot2cont2{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+.mob_footCont2 > .mob_foot2cont2 > a{
+  color: #baf400;
+  text-decoration: none;
+}
+.mob_foot2cont1,.mob_foot2cont2,.mob_foot2cont3{
+  font-size: small;
+  letter-spacing: 1px;
+}

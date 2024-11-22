@@ -1,7 +1,20 @@
-.wholepage {
+@font-face {
+  font-family: dirtyline;
+  src: url("../../fonts/dirtyline-36daysoftype-2022.otf");
+}
+
+@font-face {
+  font-family: helvetica-b;
+  src: url("../../fonts/Helvetica-Bold.ttf");
+}
+
+
+.Projectwholepage {
+  background-color: #131315;
+  
   width: 100vw;
-  /* height: 100vh; */
-  background: url(/src/assets/dotGrid.png);
+  min-height: 100vh;
+  /* height: 100vh;*/
   background-size: cover;
   background-repeat: repeat-x;
   background-attachment: fixed;
@@ -12,12 +25,14 @@
 }
 
 .blurLayer {
+  /* background-image: radial-gradient(circle, #383c3d7d 2px, transparent 1px); */
+  /* background-size: 20px 20px;  */
   position: absolute;
   top: 0;
   left: 0;
   width: 100vw;
-  filter: blur(10px);
-  background: #00000052;
+  /* filter: blur(10px); */
+  
 }
 
 /* .projectPageWrap .head{
@@ -29,12 +44,15 @@
 } */
 
 .Projects {
+  
   /* font-size: 4rem;
   text-decoration: wavy;
   text-align: center; */
+  text-transform: uppercase;
   color: #ffffff;
   font-size: 45px;
-  font-family: 'ArameBold';
+  font-family: inter;
+  font-weight: 700;
   letter-spacing: 2px;
   margin-top: 40px;
   z-index: 1;
@@ -73,7 +91,7 @@
   aspect-ratio: 4/3;
 }
 
-.box1 img {
+.projectBanner {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -123,7 +141,9 @@
   color: #fff;
   padding: 10px;
   letter-spacing: 1px;
-  font-size: 13px;
+  text-transform: capitalize;
+  font-family: inter;
+  font-size: 20px;
 }
 
 .container .text2,
@@ -134,27 +154,35 @@
   color: #fff;
   padding: 10px;
   letter-spacing: 1px;
-  font-size: 13px;
+  text-transform: capitalize;
+  font-family: inter;
+  font-size: 20px;
 }
 
-/* Responsive Styles */
-@media (max-width: 768px) {
 
+@media (max-width: 850px) {
+  #webCursor{
+    display: none;
+  }
+  .Projects{
+    font-size: 40px;
+  }
   .container {
     flex-direction: column;
     align-items: center;
   }
 
   .container::before {
-    left: 10vw;
+    left: 95vw;
     width: 3px;
     background-color: #fff;
   }
 
   .container div {
-    width: 60vw;
-    height: auto;
-    aspect-ratio: 4/3;
+    width: 80vw;
+    height: 60vh;
+    aspect-ratio: 3/5;
+
     margin-bottom: 15px;
     margin-top: 10px;
     border-radius: 10px;
@@ -163,43 +191,57 @@
   .container .box1,
   .container .box3,
   .container .box5 {
-    margin-right: 00vw;
+    margin-right: 5vw;
   }
 
   .container .box2,
   .container .box4,
   .container .box6 {
-    margin-left: 00vw;
+    margin-left: -5vw;
   }
 
   .container div::before {
     content: '';
     position: absolute;
-    width: 2vw;
-    height: 2vw;
+    width: 4vw;
+    height: 4vw;
     background-color: white;
     border-radius: 50%;
   }
 
   .container div:nth-of-type(odd)::before {
-    left: calc(0% - 10.6vw);
+    left: calc(86vw);
     background-color: white;
   }
 
   .container div:nth-of-type(even)::before {
-    left: calc(0% - 10.6vw);
+    left: calc(86vw);
     background-color: white;
   }
 
   .container .text1,
-  .container .text2,
   .container .text3,
-  .container .text4,
-  .container .text5,
-  .container .text6 {
+  .container .text5 {
     margin: 0;
-    max-width: 50vw;
+    margin-left: -5vw;
+    max-width: 85vw;
     text-align: center;
     color: #fff;
+    line-height: 1rem;
+    font-size: 15px;
+    text-align: left;
+  }
+
+  .container .text2,
+  .container .text4,
+  .container .text6 {
+    margin: 0;
+    margin-left: -5vw;
+    max-width: 85vw;
+    text-align: center;
+    color: #fff;
+    line-height: 1rem;
+    font-size: 15px;
+    text-align: left;
   }
 }

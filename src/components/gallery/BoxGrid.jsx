@@ -2,8 +2,9 @@ import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Box from "./Box";
 import "./BoxGrid.css";
-import GooeyCursor from "../Gooey Cursor/gooeyCursor.jsx";
-
+// import GooeyCursor from "../Gooey Cursor/gooeyCursor.jsx";
+import Cursor from "../Cursor/cursor";
+import BackButton from "../backButton/backButton";
 const BoxGrid = () => {
   const [boxes, setBoxes] = useState([]);
   const [columns, setColumns] = useState(3);
@@ -36,19 +37,27 @@ const BoxGrid = () => {
     return () => window.removeEventListener("resize", updateColumns);
   }, []);
 
-  const handleBoxClick = () => {
-    navigate("/gallery");
+  const handleBoxClick = (eventName) => {
+    const urlPath = eventName.toLowerCase().replace(/\s+/g, "-");
+    navigate(`/events/${urlPath}`);
   };
 
   return (
     <>
-      <GooeyCursor />
+      {/* <GooeyCursor /> */}
+      <BackButton textDisplay={true} top='1px' left='1px' ></BackButton>
+      <Cursor></Cursor>
       <div
         className="grid-container"
         style={{ gridTemplateColumns: `repeat(${columns}, 1fr)` }}
       >
         {boxes.map((box) => (
-          <Box key={box.id} letter={box.name} handleClick={handleBoxClick} />
+          <Box
+            banner={box.img}
+            key={box.id}
+            letter={box.name}
+            handleClick={() => handleBoxClick(box.name)}
+          />
         ))}
       </div>
     </>

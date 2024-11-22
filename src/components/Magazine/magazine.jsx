@@ -4,8 +4,9 @@ import pdf1 from "/Magazines/Edition_1.pdf";
 import pdf2 from "/Magazines/Edition_2.pdf";
 import { Document, Page, pdfjs } from "react-pdf";
 import "./magazine.css";
-import GooeyCursor from "../Gooey Cursor/gooeyCursor.jsx";
-
+// import GooeyCursor from "../Gooey Cursor/gooeyCursor.jsx";
+import Cursor from "../Cursor/cursor";
+import BackButton from "../backButton/backButton";
 pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`;
 
 const Pages = React.forwardRef((props, ref) => {
@@ -59,7 +60,9 @@ function Flipbook() {
 
   return (
     <>
-      <GooeyCursor></GooeyCursor>
+      {/* <GooeyCursor></GooeyCursor> */}
+      <Cursor></Cursor>
+      <BackButton textDisplay={true} filter='invert(1)' ></BackButton>
     <div className="magazineWrap">
       <div className="flipbook-container">
         <div className="nav-bar">

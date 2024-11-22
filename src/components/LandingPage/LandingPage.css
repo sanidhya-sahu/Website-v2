@@ -1,0 +1,246 @@
+@font-face {
+  font-family: neue;
+  src: url("../../fonts/Neue.ttf");
+}
+
+.landingPageWrap {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #131315;
+  font-family: neue;
+}
+
+.landingMain {
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.mainBox1 {
+  width: 69.8%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: .5%;
+}
+
+.box1row1 {
+  width: 100%;
+  height: 32%;
+  background-color: #f1f1f1;
+  font-size: 11vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-text-stroke: thin;
+  padding-left: 50px;
+  position: relative;
+  background-image: radial-gradient(circle, #383c3d36 2px, transparent 1px);
+  background-size: 20px 20px;
+  background-attachment: fixed;
+}
+
+.box1row1>img {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+.box1row2 {
+  width: 100%;
+  height: 32%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.box1row2main {
+  width: 59.6%;
+  height: 100%;
+  border-bottom-right-radius: 20px;
+  background-color: #f1f1f1;
+  font-family: inter;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  line-height: 30px;
+  position: relative;
+  font-size: large;
+  letter-spacing: 1px;
+  word-spacing: 5px;
+  background-image: radial-gradient(circle, #383c3d36 2px, transparent 1px);
+  background-size: 20px 20px;
+  background-attachment: fixed;
+}
+
+.box1row2main::before {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 100%;
+  background: black;
+  left: 70%;
+}
+
+.box1row2side {
+  width: 40%;
+  height: 100%;
+  border-bottom-left-radius: 20px;
+  background-color: #f1f1f1;
+  background-image: radial-gradient(circle, #383c3d36 2px, transparent 1px);
+  background-size: 20px 20px;
+  background-attachment: fixed;
+}
+
+.box1row3 {
+  width: 100%;
+  height: 32%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.box1row3main {
+  width: 59.6%;
+  height: 100%;
+  border-top-right-radius: 20px;
+  background-color: #f1f1f1;
+  font-family: inter;
+  font-size: xxx-large;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 200;
+  background-image: radial-gradient(circle, #383c3d36 2px, transparent 1px);
+  background-size: 20px 20px;
+  background-attachment: fixed;
+}
+
+.box1row3main>span {
+  font-family: neue;
+  letter-spacing: -3px;
+  padding-top: 3px;
+}
+
+.box1row3side {
+  width: 40%;
+  height: 100%;
+  border-top-left-radius: 20px;
+  background-color: #f1f1f1;
+  position: relative;
+  background-image: radial-gradient(circle, #383c3d36 2px, transparent 1px);
+  background-size: 20px 20px;
+  background-attachment: fixed;
+}
+
+.box1row3side::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom right, transparent 50%, black 50.3%, black 51%, transparent 51%);
+}
+
+.mainBox2 {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: .5%;
+}
+
+.box2row1 {
+  width: 100%;
+  height: 32%;
+  background-color: #f1f1f1;
+  display: flex;
+  align-items: flex-end;
+  font-family: 'Inter';
+  padding: 10px;
+  letter-spacing: 1px;
+  word-spacing: 5px;
+  background-image: radial-gradient(circle, #383c3d36 2px, transparent 1px);
+  background-size: 20px 20px;
+  background-attachment: fixed;
+}
+
+.box2row2 {
+  width: 100%;
+  height: 65%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.box2row2col1 {
+  width: 60%;
+  height: 100%;
+  background-color: #f1f1f1;
+  background-image: radial-gradient(circle, #383c3d36 2px, transparent 1px);
+  background-size: 20px 20px;
+  background-attachment: fixed;
+}
+
+.box2row2col1>img {
+  width: 100%;
+  height: 100%;
+}
+
+.box2row2col2 {
+  width: 39%;
+  height: 100%;
+  background-color: #f1f1f1;
+  background-image: radial-gradient(circle, #383c3d36 2px, transparent 1px);
+  background-size: 20px 20px;
+  position: relative;
+  background-attachment: fixed;
+}
+
+.box2row2col2::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: .5%;
+  top: 50%;
+  background: black;
+}
+
+.landingInfiniteScroll {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  width: 100%;
+  height: 12%;
+  color: white;
+  text-align: center;
+  font-size: 4.5em;
+  z-index: 10;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.landingFooter {
+  animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(5%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}

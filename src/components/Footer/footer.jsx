@@ -1,71 +1,29 @@
 import "./footer.css";
-import logo from "../../assets/logo.svg";
-
-const Footer = () => {
+import React from 'react'
+// import pageTopArrow from '/pageTopArrow.svg'
+export default function footer() {
   return (
-    <div className="footerWrap">
-      <div className="mainFooter">
-        <div className="header">
-          <div className="logo">
-            <img src={logo} alt="AI Club Logo" />
-          </div>
-          <div className="nav">
-            <ul>
-              <li>
-                <a href="#">
-                  [
-                  HOME&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]
-                </a>
-              </li>
-              <li>
-                <a className="home" href="#">
-                  ABOUT
-                </a>
-              </li>
-              <li>
-                <a className="home" href="#">
-                  PROJECT
-                </a>
-              </li>
-              <li>
-                <a className="home" href="#">
-                  MAGAZINE
-                </a>
-              </li>
-              <li>
-                <a className="home" href="#">
-                  EVENTS
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div className="header-right">
-            <span className="ask">ASK US ANYTHING</span>
-            <div className="ask-us">
-              <button>How to register in AI Conclave 25?</button>
-            </div>
-          </div>
-        </div>
-        <div className="main">
-          <div className="title">
-            <h1>AI CLUB</h1>
-          </div>
-        </div>
+    <div className="Mainfooter">
+      <div className="footCont1">
+        <h1>AI CLUB</h1>
+        <h5>where humans and machines unite</h5>
+        <img onClick={()=>{window.scrollTo({ top: 0, behavior: "smooth" })}} className="topArrowSvg" src="/PublicAssets/pageTopArrow.svg" alt="" srcset="" />
+        <div onClick={()=>{window.scrollTo({ top: 0, behavior: "smooth" })}} className="topArrowtxt" >Page Top</div>
       </div>
-      <div className="footer">
-        <div className="footer-content">
-          <p>© 2024 AI Club - VIT Bhopal</p>
-          <div className="links">
-            <a href="#">LinkedIn</a>
-            <a href="#">Instagram</a>
-            <a href="#">GitHub</a>
-            <a href="#">Discord</a>
-          </div>
+      <div className="footCont2">
+        <div className="foot2cont1">
+        &copy; 2024 AI Club - VIT Bhopal
         </div>
-        <p className="developed-by">Developed by Web Team '24 with 🖤</p>
+        <div className="foot2cont2">
+          <a target="_blank" href="https://www.linkedin.com/company/aiclub-vitb/mycompany/">LinkedIn</a>
+          <a target="_blank" href="https://www.instagram.com/aiclub.vitb">Instagram</a>
+          <a target="_blank" href="https://github.com/aiclubvitbhopal">Github</a>
+          <a target="_blank" href="#">Discord</a>
+        </div>
+        <div className="foot2cont3">
+        Developed by Web Team ’24 💚
+        </div>
       </div>
     </div>
-  );
-};
-
-export default Footer;
+  )
+}

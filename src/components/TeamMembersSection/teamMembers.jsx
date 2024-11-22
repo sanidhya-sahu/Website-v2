@@ -93,55 +93,172 @@ const BrandingSection = () => {
       );
     });
 
-  //   const faculty1 = document.querySelector(".faculty1");
-  //   if (faculty1) {
-  //     gsap.fromTo(
-  //       faculty1,
-  //       { autoAlpha: 1, y: -50 },
-  //       {
-  //         autoAlpha: 1,
-  //         opacity: 1,
-  //         y: 20,
-  //         scrollTrigger: {
-  //           trigger: faculty1,
-  //           start: "top 70%",
-  //           end: "bottom 0%",
-  //           scrub: 2,
-  //           toggleActions: "play reverse play reverse",
-  //         },
-  //       }
-  //     );
-  //   }
+    //   const faculty1 = document.querySelector(".faculty1");
+    //   if (faculty1) {
+    //     gsap.fromTo(
+    //       faculty1,
+    //       { autoAlpha: 1, y: -50 },
+    //       {
+    //         autoAlpha: 1,
+    //         opacity: 1,
+    //         y: 20,
+    //         scrollTrigger: {
+    //           trigger: faculty1,
+    //           start: "top 70%",
+    //           end: "bottom 0%",
+    //           scrub: 2,
+    //           toggleActions: "play reverse play reverse",
+    //         },
+    //       }
+    //     );
+    //   }
 
-  //   const faculty2 = document.querySelector(".faculty2");
-  //   if (faculty2) {
-  //     gsap.fromTo(
-  //       faculty2,
-  //       { autoAlpha: 1, y: -50 },
-  //       {
-  //         autoAlpha: 1,
-  //         opacity: 1,
-  //         y: 20,
-  //         scrollTrigger: {
-  //           trigger: faculty2,
-  //           start: "top 70%",
-  //           end: "bottom 0%",
-  //           scrub: 2,
-  //           toggleActions: "play reverse play reverse",
-  //         },
-  //       }
-  //     );
-  //   }
+    //   const faculty2 = document.querySelector(".faculty2");
+    //   if (faculty2) {
+    //     gsap.fromTo(
+    //       faculty2,
+    //       { autoAlpha: 1, y: -50 },
+    //       {
+    //         autoAlpha: 1,
+    //         opacity: 1,
+    //         y: 20,
+    //         scrollTrigger: {
+    //           trigger: faculty2,
+    //           start: "top 70%",
+    //           end: "bottom 0%",
+    //           scrub: 2,
+    //           toggleActions: "play reverse play reverse",
+    //         },
+    //       }
+    //     );
+    //   }
   };
 
   useGSAP(() => {
     animateSections();
   });
 
+  useEffect(() => {
+    window.addEventListener('load', () => {
+      document.getElementById('viewweb').addEventListener('mouseenter', () => {
+        document.getElementById('webCursor').style.width = 'auto'
+        document.getElementById('webCursor').style.height = 'auto'
+        document.getElementById('webCursor').style.padding = '8px'
+        document.getElementById('webCursor').innerText = 'View Web Team'
+      })
+      document.getElementById('viewweb').addEventListener('mouseleave', () => {
+        document.getElementById('webCursor').style.width = '20px'
+        document.getElementById('webCursor').style.height = '20px'
+        document.getElementById('webCursor').innerText = ''
+      })
+
+      document.getElementById('viewcontent').addEventListener('mouseenter', () => {
+        document.getElementById('webCursor').style.width = 'auto'
+        document.getElementById('webCursor').style.height = 'auto'
+        document.getElementById('webCursor').style.padding = '8px'
+        document.getElementById('webCursor').innerText = 'View Content Team'
+      })
+      document.getElementById('viewcontent').addEventListener('mouseleave', () => {
+        document.getElementById('webCursor').style.width = '20px'
+        document.getElementById('webCursor').style.height = '20px'
+        document.getElementById('webCursor').innerText = ''
+      })
+
+      document.getElementById('viewtech').addEventListener('mouseenter', () => {
+        document.getElementById('webCursor').style.width = 'auto'
+        document.getElementById('webCursor').style.height = 'auto'
+        document.getElementById('webCursor').style.padding = '8px'
+        document.getElementById('webCursor').innerText = 'View Technical Team'
+      })
+      document.getElementById('viewtech').addEventListener('mouseleave', () => {
+        document.getElementById('webCursor').style.width = '20px'
+        document.getElementById('webCursor').style.height = '20px'
+        document.getElementById('webCursor').innerText = ''
+      })
+      document.getElementById('viewevent').addEventListener('mouseenter', () => {
+        document.getElementById('webCursor').style.width = 'auto'
+        document.getElementById('webCursor').style.height = 'auto'
+        document.getElementById('webCursor').style.padding = '8px'
+        document.getElementById('webCursor').innerText = 'View Event Team'
+      })
+      document.getElementById('viewevent').addEventListener('mouseleave', () => {
+        document.getElementById('webCursor').style.width = '20px'
+        document.getElementById('webCursor').style.height = '20px'
+        document.getElementById('webCursor').innerText = ''
+      })
+      document.getElementById('vieweditorial').addEventListener('mouseenter', () => {
+        document.getElementById('webCursor').style.width = 'auto'
+        document.getElementById('webCursor').style.height = 'auto'
+        document.getElementById('webCursor').style.padding = '8px'
+        document.getElementById('webCursor').innerText = 'View Editorial Team'
+      })
+      document.getElementById('vieweditorial').addEventListener('mouseleave', () => {
+        document.getElementById('webCursor').style.width = '20px'
+        document.getElementById('webCursor').style.height = '20px'
+        document.getElementById('webCursor').innerText = ''
+      })
+      document.getElementById('viewsocialmedia').addEventListener('mouseenter', () => {
+        document.getElementById('webCursor').style.width = 'auto'
+        document.getElementById('webCursor').style.height = 'auto'
+        document.getElementById('webCursor').style.padding = '8px'
+        document.getElementById('webCursor').innerText = 'View Social Media Team'
+      })
+      document.getElementById('viewsocialmedia').addEventListener('mouseleave', () => {
+        document.getElementById('webCursor').style.width = '20px'
+        document.getElementById('webCursor').style.height = '20px'
+        document.getElementById('webCursor').innerText = ''
+      })
+      document.getElementById('viewgraphics').addEventListener('mouseenter', () => {
+        document.getElementById('webCursor').style.width = 'auto'
+        document.getElementById('webCursor').style.height = 'auto'
+        document.getElementById('webCursor').style.padding = '8px'
+        document.getElementById('webCursor').innerText = 'View Graphics Team'
+      })
+      document.getElementById('viewgraphics').addEventListener('mouseleave', () => {
+        document.getElementById('webCursor').style.width = '20px'
+        document.getElementById('webCursor').style.height = '20px'
+        document.getElementById('webCursor').innerText = ''
+      })
+      document.getElementById('viewcontent').addEventListener('mouseenter', () => {
+        document.getElementById('webCursor').style.width = 'auto'
+        document.getElementById('webCursor').style.height = 'auto'
+        document.getElementById('webCursor').style.padding = '8px'
+        document.getElementById('webCursor').innerText = 'View Content Team'
+      })
+      document.getElementById('viewcontent').addEventListener('mouseleave', () => {
+        document.getElementById('webCursor').style.width = '20px'
+        document.getElementById('webCursor').style.height = '20px'
+        document.getElementById('webCursor').innerText = ''
+      })
+      document.getElementById('viewoutreach').addEventListener('mouseenter', () => {
+        document.getElementById('webCursor').style.width = 'auto'
+        document.getElementById('webCursor').style.height = 'auto'
+        document.getElementById('webCursor').style.padding = '8px'
+        document.getElementById('webCursor').innerText = 'View PR & Outreach Team'
+      })
+      document.getElementById('viewoutreach').addEventListener('mouseleave', () => {
+        document.getElementById('webCursor').style.width = '20px'
+        document.getElementById('webCursor').style.height = '20px'
+        document.getElementById('webCursor').innerText = ''
+      })
+      document.getElementById('viewpartnership').addEventListener('mouseenter', () => {
+        document.getElementById('webCursor').style.width = 'auto'
+        document.getElementById('webCursor').style.height = 'auto'
+        document.getElementById('webCursor').style.padding = '8px'
+        document.getElementById('webCursor').innerText = 'View Partnership Team'
+      })
+      document.getElementById('viewpartnership').addEventListener('mouseleave', () => {
+        document.getElementById('webCursor').style.width = '20px'
+        document.getElementById('webCursor').style.height = '20px'
+        document.getElementById('webCursor').innerText = ''
+      })
+    });
+  }, [])
+
   const renderListItems = (items) => {
     return items.map((item, index) => (
       <Link to={item.team != false ? `/members?team=${item.team}` : null} style={{ textDecoration: "none" }}>
-        <li key={index}>
+        <li id={`view${item.team}`} key={index}>
           <div>
             <h3>{item.name}</h3>
           </div>
@@ -170,7 +287,7 @@ const BrandingSection = () => {
         <div className="faculty2">
           <img src="/membersIMG/Ajeet Sir Pic.jpg" alt="Teacher" />
           <div className="designation">
-          Dr. Ajeet Singh<br />
+            Dr. Ajeet Singh<br />
             Club Co-ordinator
           </div>
         </div>

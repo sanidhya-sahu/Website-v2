@@ -111,12 +111,14 @@
     top: 0px;
     left: 130px;
     margin-right: auto;
+    color: white;
 }
 
 @media screen and (max-width: 600px) {
     .galleryTitle{
         left: 30px;
         margin-bottom: 10px;
+        color: white;
     }
     #galleryBox1{
         transform: translateY(-100px);
