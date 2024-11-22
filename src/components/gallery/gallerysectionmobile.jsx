@@ -1,11 +1,36 @@
+import { useEffect, useState } from "react";
 import "./gallerySection.css";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useNavigate } from "react-router-dom";
 
-const gallerysectionmobile = () => {
+/**
+ * @typedef {Object} GalleryItem
+ * @property {string} id
+ * @property {string} src
+ * @property {string} alt
+ */
+
+const GallerySectionMobile = () => {
   const navigate = useNavigate();
+  /** @type {GalleryItem[]} */
+  const [galleryData, setGalleryData] = useState([]);
+
+  useEffect(() => {
+    const loadGalleryData = async () => {
+      try {
+        const response = await fetch("/Data/gallery.json");
+        const data = await response.json();
+        setGalleryData(data);
+      } catch (error) {
+        console.error("Error loading gallery data:", error);
+      }
+    };
+
+    loadGalleryData();
+  }, []);
+
   gsap.registerPlugin(ScrollTrigger);
   useGSAP(() => {
     gsap.to("#galleryBox1", {
@@ -13,7 +38,6 @@ const gallerysectionmobile = () => {
       opacity: 1,
       scrollTrigger: {
         trigger: ".galleryWrap",
-        // markers:true,
         start: "top 70%",
         end: "top 5%",
         scrub: 1,
@@ -24,7 +48,6 @@ const gallerysectionmobile = () => {
       opacity: 1,
       scrollTrigger: {
         trigger: ".galleryWrap",
-        // markers:true,
         start: "top 70%",
         end: "top 5%",
         scrub: 1,
@@ -35,7 +58,6 @@ const gallerysectionmobile = () => {
       opacity: 1,
       scrollTrigger: {
         trigger: ".galleryWrap",
-        // markers:true,
         start: "top 70%",
         end: "top 5%",
         scrub: 1,
@@ -47,7 +69,6 @@ const gallerysectionmobile = () => {
       opacity: 1,
       scrollTrigger: {
         trigger: ".galleryWrap",
-        // markers:true,
         start: "top 70%",
         end: "top 5%",
         scrub: 1,
@@ -59,7 +80,6 @@ const gallerysectionmobile = () => {
       opacity: 1,
       scrollTrigger: {
         trigger: ".galleryWrap",
-        // markers:true,
         start: "top 70%",
         end: "top 5%",
         scrub: 1,
@@ -79,11 +99,25 @@ const gallerysectionmobile = () => {
           id="galleryBox1"
           onClick={handleBoxClick}
           className="boximg1"
+          style={{
+            backgroundImage: galleryData[0]
+              ? `url(${galleryData[0].src})`
+              : "none",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
         ></div>
         <div
           id="galleryBox2"
           onClick={handleBoxClick}
           className="boximg2"
+          style={{
+            backgroundImage: galleryData[1]
+              ? `url(${galleryData[1].src})`
+              : "none",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
         ></div>
       </div>
       <div className="galleryRow2">
@@ -91,6 +125,13 @@ const gallerysectionmobile = () => {
           id="galleryBox3"
           onClick={handleBoxClick}
           className="boximg1"
+          style={{
+            backgroundImage: galleryData[5]
+              ? `url(${galleryData[5].src})`
+              : "none",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
         ></div>
       </div>
       <div className="galleryRow3">
@@ -99,17 +140,42 @@ const gallerysectionmobile = () => {
           onClick={handleBoxClick}
           className="galleryRowbox"
         >
-          <div className="subBoximg1"></div>
-          <div className="subBoximg2"></div>
+          <div
+            className="subBoximg1"
+            style={{
+              backgroundImage: galleryData[3]
+                ? `url(${galleryData[3].src})`
+                : "none",
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+          ></div>
+          <div
+            className="subBoximg2"
+            style={{
+              backgroundImage: galleryData[4]
+                ? `url(${galleryData[4].src})`
+                : "none",
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+          ></div>
         </div>
         <div
           id="galleryBox5"
           onClick={handleBoxClick}
           className="boximg2"
+          style={{
+            backgroundImage: galleryData[2]
+              ? `url(${galleryData[2].src})`
+              : "none",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
         ></div>
       </div>
     </div>
   );
 };
 
-export default gallerysectionmobile;
+export default GallerySectionMobile;
