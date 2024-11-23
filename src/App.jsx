@@ -24,7 +24,6 @@ import Cursor from "./components/Cursor/cursor.jsx";
 import LandingPage from "./components/LandingPage/LandingPage.jsx";
 import LandingPageMob from "./components/LandingPage/LandingPageMob.jsx";
 import Menu from "./components/Menu/menu.jsx";
-import Loader from '../src/components/Loader/loader.jsx';
 const App = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 480);
   const [loading, setLoading] = useState(true);
@@ -40,18 +39,10 @@ const App = () => {
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 7700); 
-
-    return () => clearTimeout(timer);
-  }, []);
+  
 
   return (
     <>
-      {loading && <Loader onLoadingComplete={() => setLoading(false)} />}
-      {!loading &&
         <Router>
           <Routes>
             <Route
@@ -88,7 +79,7 @@ const App = () => {
             />
           </Routes>
         </Router>
-      }
+      
     </>
   );
 };
