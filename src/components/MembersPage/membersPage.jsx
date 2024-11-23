@@ -54,7 +54,7 @@ const membersPage = () => {
                     if (i == 0) {
                         document.getElementById('wave').innerHTML += `
                         <div className="waveBox">
-                        <img id="wave${i}" style="position: relative;" src="src/assets/teamWave.svg" alt="" key=${i} />
+                        <img id="wave${i}" style="position: relative;" src="/PublicAssets/teamWave.svg" alt="" key=${i} />
                         </div>
                         `
                     }
@@ -62,7 +62,7 @@ const membersPage = () => {
                         let leftVal = i * 28
                         document.getElementById('wave').innerHTML += `
                         <div className="waveBox">
-                        <img id="wave${i}" style="position: relative;left: -${leftVal}px;" src="src/assets/teamWave.svg" alt="" key=${i} />
+                        <img id="wave${i}" style="position: relative;left: -${leftVal}px;" src="/PublicAssets/teamWave.svg" alt="" key=${i} />
                         </div>
                         `
                     }
@@ -75,7 +75,7 @@ const membersPage = () => {
                     if (i == 0) {
                         document.getElementById('wave').innerHTML += `
                         <div className="waveBox">
-                        <img id="wave${i}" style="position: relative;" src="src/assets/teamWave.svg" alt="" key=${i} />
+                        <img id="wave${i}" style="position: relative;" src="/PublicAssets/teamWave.svg" alt="" key=${i} />
                         </div>
                         `
                     }
@@ -83,7 +83,7 @@ const membersPage = () => {
                         let leftVal = i * 28
                         document.getElementById('wave').innerHTML += `
                         <div className="waveBox">
-                        <img id="wave${i}" style="position: relative;left: -${leftVal}px;" src="src/assets/teamWave.svg" alt="" key=${i} />
+                        <img id="wave${i}" style="position: relative;left: -${leftVal}px;" src="/PublicAssets/teamWave.svg" alt="" key=${i} />
                         </div>
                         `
                     }
@@ -134,7 +134,7 @@ const membersPage = () => {
                 <div className="teamCont">
                     <div className="teamHead">
                         <h1>Meet the minds behind the <span style={{ position: 'absolute', paddingLeft: '17px' }} ><img className='headBorder' src={HeadSVG} alt="" />magic</span></h1>
-                        <h1 className='teamNameHead' >The <span className='headHighlight'>{team}</span>{team.toLowerCase()=="board"?" Members":" Team"}</h1>
+                        <h1 className='teamNameHead' >The <span className='headHighlight'>{team}</span>{team.toLowerCase() == "board" ? " Members" : " Team"}</h1>
                     </div>
                     <div className="teamBox">
                         <div id='wave' className="wave"></div>
