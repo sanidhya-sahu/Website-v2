@@ -3,56 +3,56 @@
         "id": 1,
         "name": "Genesis",
         "date": "24-11-2023",
-        "img": "/eventBanners/genesis.png",
+        "img": "/eventBanners/genesis.webp",
         "description": "Genesis was a two-day virtual event that featured a podcast session and an online workshop. It promised to expand the participants' perspectives, and it covered topics including prompt engineering with LLMs, NLP exploration, and discovering the secrets of successful projects and going abroad for future endeavors."
     },
     {
         "id": 2,
         "name": "CH.A.I PE CHARCHA",
         "date": "08-02-2023",
-        "img": "/eventBanners/chai.png",
+        "img": "/eventBanners/chai.webp",
         "description": "This event will be for a day of discussions, presentations, and networking at our Artificial Intelligence conference, named “Ch.A.I pe Charcha”. This event will bring together experts from our Academia VIT Bhopal and all other fellow audience to explore the latest developments in every corner of AI, from how to start AI and how to land a job in AI. This event will feature keynote speakers also known as the moderator, a panel discussion on hot topics in the field, and poster sessions showcasing extra skills and implementation of Artificial Intelligence and Machine Learning."
     },
     {
         "id": 3,
         "name": "A.I. Crypt",
         "date": "28-04-2023",
-        "img": "/eventBanners/aicrypt.png",
+        "img": "/eventBanners/aicrypt.webp",
         "description": "This event will be for a day of discussions, presentations, and networking at our Artificial Intelligence conference, named “Ch.A.I pe Charcha”. This event will bring together experts from our Academia VIT Bhopal and all other fellow audience to explore the latest developments in every corner of AI, from how to start AI and how to land a job in AI. This event will feature keynote speakers also known as the moderator, a panel discussion on hot topics in the field, and poster sessions showcasing extra skills and implementation of Artificial Intelligence and Machine Learning."
     },
     {
         "id": 4,
         "name": "Hack Exchange 2.0",
         "date": "08-02-2023",
-        "img": "/eventBanners/hackExchange2.png",
+        "img": "/eventBanners/hackExchange2.webp",
         "description": "HackExchange 2.0 of VIT Bhopal University was a 3-day inter-college ideathon where participants converged to explore the realms of Artificial Intelligence and Machine Learning. They eagerly joined forces, leveraging the power of artificial intelligence to tackle challenges head-on. Teams were tasked to identify a problem and present an idea of a solution that uses AIML."
     },
     {
         "id": 5,
         "name": "AIConic",
         "date": "26-07-2023",
-        "img": "/eventBanners/aiconic.jpg",
+        "img": "/eventBanners/aiconic.webp",
         "description": "AIConic was a one-day event with two sessions - a sit-down interactive dialogue session with Mr. Rahul Mishra - a renowned Expert in Generative AI and the Head of Growth at Concept Campus in  Bhopal which provided a hands on experience on important skills required in the corporate computer science domain to all the participants, who mostly included 3rd and 4th year students, and a coding based treasure hunt. It encouraged students to increase their interest and their keenness to dive into the world of artificial intelligence."
     },
     {
         "id": 6,
         "name": "AIConic 2.0",
         "date": "05-08-2024",
-        "img": "/eventBanners/aiconic2.jpg",
+        "img": "/eventBanners/aiconic2.webp",
         "description": "The AI CONIC 2.0 of VIT Bhopal University was an offline 1-day event that acted as a platform for students at VIT Bhopal University to gain exposure to Industry-level applications & practices in the field of Artificial Intelligence & Machine Learning. AI CONIC 2.0 was a medium for people to explore & learn deeply about  Artificial Intelligence based industrial applications  and get in touch with experts coming in from across India . AI CONIC 2.0 featured speakers that are extremely knowledgeable and proficient."
     },
     {
         "id": 7,
         "name": "AI Breakdown",
         "date": "09-02-2023",
-        "img": "/eventBanners/aiBreakdown.jpg",
+        "img": "/eventBanners/aiBreakdown.webp",
         "description": "This will web a hilarious event of technology and AI bloopers and failures at a Funny presentation competition. It will bring together tech enthusiasts and AI aficionados to share their funniest moments and biggest blunders in the field. Presenters will have a definite time to design and present on a technology or AI-related blooper or failure. A panel of judges will select the winners based on the audience's responses or the overall humour.  In addition to the presentation competition, we will also have a very interactive montage on fixing those errors and a Q&A with the judges."
     },
     {
         "id": 8,
         "name": "AI Conclave 3.0",
         "date": "05-02-2024",
-        "img": "/eventBanners/aiconclave3.jpg",
+        "img": "/eventBanners/aiconclave3.webp",
         "description": "The AI Conclave of VIT Bhopal University was an offline 3-day Tech-fest whose goal was to act as the platform for students and budding entrepreneurs in India to gain exposure to Industry-level applications & practices in AI&ML by featuring multiple thought leaders, industry experts and college peers in collaboration with the preeminent organization - Cyberpeace Foundation acting as the Title Sponsor of this year’s edition"
     }
 ]

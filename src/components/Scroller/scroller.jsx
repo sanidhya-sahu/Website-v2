@@ -1,6 +1,6 @@
 import "./scroller.css";
-import arrow from "../../assets/arrow.png";
-import ring from "../../assets/ring.png";
+import arrow from "../../assets/arrow.webp";
+import ring from "../../assets/ring.webp";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";

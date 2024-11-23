@@ -3,21 +3,21 @@
         "name": "Anushka Singh",
         "pos": "VP",
         "teamPos": "Vice President",
-        "img": "/membersIMG/anushka.png",
-        "team":false
+        "img": "/membersIMG/anushka.webp",
+        "team":"pannel2"
     },
     {
         "name": "Kshitij Dalvi",
         "pos": "Lead",
         "teamPos": "Technical Lead",
-        "img": "/membersIMG/kshitij.png",
+        "img": "/membersIMG/kshitij.webp",
         "team":"tech"
     },
     {
         "name": "Meet Vachhani",
         "pos": "Lead",
         "teamPos": "Event Lead",
-        "img": "/membersIMG/Event Team/MeetVachhani_22MIM10069_Eventteam.jpg",
+        "img": "/membersIMG/Event Team/MeetVachhani_22MIM10069_Eventteam.webp",
         "team":"event"
     },
     {
@@ -25,35 +25,35 @@
         "name": "Wrishita Paul",
         "pos": "Lead",
         "teamPos": "Editorial Lead",
-        "img": "/membersIMG/wrishita.png"
+        "img": "/membersIMG/wrishita.webp"
     },
     {
-        "team":false,
+        "team":"pannel4",
         "name": "Aarushi",
         "pos": "OM",
         "teamPos": "Operational Manager",
-        "img": "/membersIMG/aarushi.png"
+        "img": "/membersIMG/aarushi.webp    "
     },
     {
-        "team":false,
+        "team":"pannel1",
         "name": "Punit Kaushik",
         "pos": "P",
         "teamPos": "President",
-        "img": "/membersIMG/punit.png"
+        "img": "/membersIMG/punit.webp"
     },
     {
         "team":"web",
         "name": "Sanidhya Sahu",
         "pos": "Lead",
         "teamPos": "Web Lead",
-        "img": "/membersIMG/sanidhya.png"
+        "img": "/membersIMG/sanidhya.webp"
     },
     {
         "team":"content",
-        "name": "Sanyukta Gokhale",
+        "name": "Ashesh Nanda",
         "pos": "Lead",
         "teamPos": "Content Lead",
-        "img": "/membersIMG/sanyukta.png"
+        "img": "/membersIMG/Content Team/ASHESNANDA_22BAI10180_CONTENTTEAM.webp"
     },
     
     
@@ -63,35 +63,35 @@
         "name": "Harsh Dayal",
         "pos": "Lead",
         "teamPos": "Graphics Lead",
-        "img": "/membersIMG/harsh.png"
+        "img": "/membersIMG/harsh.webp"
     },
     {
-        "team":false,
+        "team":"pannel5",
         "name": "Arpit Sengar",
         "pos": "OM",
         "teamPos": "Operational Manager",
-        "img": "/membersIMG/arpit.png"
+        "img": "/membersIMG/arpit.webp"
     },
     {
-        "team":false,
+        "team":"pannel3",
         "name": "Virat Shrivastava",
         "pos": "GSC",
         "teamPos": "General Secretary",
-        "img": "/membersIMG/virat.png"
+        "img": "/membersIMG/virat.webp"
     },
     {
         "team":"socialmedia",
         "name": "Saumya Tiwari",
         "pos": "Lead",
         "teamPos": "Social Media Lead",
-        "img": "/membersIMG/saumya.png"
+        "img": "/membersIMG/saumya.webp"
     },
     {
         "team":"outreach",
         "name": "Harshit Shukla",
         "pos": "Lead",
         "teamPos": "Outreach Lead",
-        "img": "/membersIMG/harshit.png"
+        "img": "/membersIMG/harshit.webp"
     },
     
     {
@@ -99,15 +99,15 @@
         "name": "Aryan Shah",
         "pos": "Lead",
         "teamPos": "Partnership Lead",
-        "img": "/membersIMG/aryan.png"
+        "img": "/membersIMG/aryan.webp"
     },
     
     
     {
-        "team":false,
+        "team":"pannel6",
         "name": "Tarun Nichwani",
         "pos": "OM",
         "teamPos": "Operational Manager",
-        "img": "/membersIMG/tarun.png"
+        "img": "/membersIMG/tarun.webp"
     }
 ]

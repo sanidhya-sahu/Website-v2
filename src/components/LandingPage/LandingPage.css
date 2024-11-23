@@ -92,11 +92,11 @@
 
 .vertxt {
   position: absolute;
-  right: 13%;
+  right: 12%;
   color: white;
   font-family: 'Inter';
   transform: rotate(270deg);
-  font-size: small;
+  font-size: 15px;
 }
 
 .box1row2side {
@@ -290,11 +290,11 @@
 
   .vertxt {
     position: absolute;
-    right: 6%;
+    right: 5%;
     color: white;
     font-family: 'Inter';
     transform: rotate(270deg);
-    font-size: 8px;
+    font-size: 10px;
   }
 
   .box1row1 {

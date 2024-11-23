@@ -12,15 +12,17 @@
   transition: background-color 0.3s ease;
   background-repeat: round;
   background-blend-mode: multiply;
+  position: relative;
 }
+
 
 .box:hover {
   background-color: #6eff5e;
 }
 
-.box:nth-child(6) {
+/* .box:nth-child(6) {
   background-color: #3b3b4f;
-}
+} */
 
 @media (max-width: 768px) {
   .box {

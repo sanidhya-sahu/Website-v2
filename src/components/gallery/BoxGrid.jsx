@@ -45,8 +45,9 @@ const BoxGrid = () => {
   return (
     <>
       {/* <GooeyCursor /> */}
-      <BackButton textDisplay={true} top="1px" left="1px"></BackButton>
+      <BackButton textDisplay={true} top="10px" filter='invert(1)' ></BackButton>
       <Cursor></Cursor>
+      <h1 id="galleryHeading" >Select Event for Gallery</h1>
       <div
         className="grid-container"
         style={{ gridTemplateColumns: `repeat(${columns}, 1fr)` }}

@@ -16,12 +16,12 @@ const membersPage = () => {
         let mm = gsap.matchMedia();
         mm.add("(max-width: 767px)", () => {
             gsap.to(".teamBox", {
-                x: -H - 750,
+                x: -H - 1300,
                 scrollTrigger: {
                     trigger: ".teamWrap",
                     scroller: "body",
                     start: "top 0%",
-                    end: `top -${H / 2}%`,
+                    end: `top -${H / 5}%`,
                     scrub: 2,
                     pin: true,
                 },
@@ -134,7 +134,7 @@ const membersPage = () => {
                 <div className="teamCont">
                     <div className="teamHead">
                         <h1>Meet the minds behind the <span style={{ position: 'absolute', paddingLeft: '17px' }} ><img className='headBorder' src={HeadSVG} alt="" />magic</span></h1>
-                        <h1 className='teamNameHead' >The <span className='headHighlight'>{team}</span> Team</h1>
+                        <h1 className='teamNameHead' >The <span className='headHighlight'>{team}</span>{team.toLowerCase()=="board"?" Members":" Team"}</h1>
                     </div>
                     <div className="teamBox">
                         <div id='wave' className="wave"></div>

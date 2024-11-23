@@ -132,13 +132,13 @@
   background-repeat: round;
 }
 #mask1{
-  background-image: url('/projects/cityscapes.png');
+  background-image: url('/projects/cityscapes.webp');
 }
 #mask2{
-  background-image: url('/projects/helmet.jpeg');
+  background-image: url('/projects/helmet.webp');
 }
 #mask3{
-  background-image: url('/projects/agroAI.png');
+  background-image: url('/projects/agroAI.webp');
 }
 
 .projDesc {

@@ -6,7 +6,7 @@
             "Projects",
             "Games"
         ],
-        "bannerPath": "../eventBanners/hackExchange2.png"
+        "bannerPath": "../eventBanners/hackExchange2.webp"
     },
     "2": {
         "name": "Genesis 24",
@@ -15,7 +15,7 @@
             "LLM's",
             "Work Shops"
         ],
-        "bannerPath": "../eventBanners/genesis.png"
+        "bannerPath": "../eventBanners/genesis.webp"
     },
     "3": {
         "name": "Hack Exchange 1.0",
@@ -24,7 +24,7 @@
             "Projects",
             "Games"
         ],
-        "bannerPath": "../eventBanners/hackExchange.png"
+        "bannerPath": "../eventBanners/hackExchange.webp"
     },
     "4": {
         "name": "AI Conclave 24",
@@ -33,6 +33,6 @@
             "Projects",
             "Games"
         ],
-        "bannerPath": "../eventBanners/aiconclave3.jpg"
+        "bannerPath": "../eventBanners/aiconclave3.webp"
     }
 }

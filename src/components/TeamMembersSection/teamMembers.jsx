@@ -140,6 +140,73 @@ const BrandingSection = () => {
 
   useEffect(() => {
     document.getElementById('branding').addEventListener('mouseenter', () => {
+      
+      document.getElementById('viewpannel1').addEventListener('mouseenter', () => {
+        document.getElementById('webCursor').style.width = 'auto'
+        document.getElementById('webCursor').style.height = 'auto'
+        document.getElementById('webCursor').style.padding = '8px'
+        document.getElementById('webCursor').innerText = 'View Board Members'
+      })
+      document.getElementById('viewpannel1').addEventListener('mouseleave', () => {
+        document.getElementById('webCursor').style.width = '20px'
+        document.getElementById('webCursor').style.height = '20px'
+        document.getElementById('webCursor').innerText = ''
+      })
+      document.getElementById('viewpannel2').addEventListener('mouseenter', () => {
+        document.getElementById('webCursor').style.width = 'auto'
+        document.getElementById('webCursor').style.height = 'auto'
+        document.getElementById('webCursor').style.padding = '8px'
+        document.getElementById('webCursor').innerText = 'View Board Members'
+      })
+      document.getElementById('viewpannel2').addEventListener('mouseleave', () => {
+        document.getElementById('webCursor').style.width = '20px'
+        document.getElementById('webCursor').style.height = '20px'
+        document.getElementById('webCursor').innerText = ''
+      })
+      document.getElementById('viewpannel3').addEventListener('mouseenter', () => {
+        document.getElementById('webCursor').style.width = 'auto'
+        document.getElementById('webCursor').style.height = 'auto'
+        document.getElementById('webCursor').style.padding = '8px'
+        document.getElementById('webCursor').innerText = 'View Board Members'
+      })
+      document.getElementById('viewpannel3').addEventListener('mouseleave', () => {
+        document.getElementById('webCursor').style.width = '20px'
+        document.getElementById('webCursor').style.height = '20px'
+        document.getElementById('webCursor').innerText = ''
+      })
+      document.getElementById('viewpannel4').addEventListener('mouseenter', () => {
+        document.getElementById('webCursor').style.width = 'auto'
+        document.getElementById('webCursor').style.height = 'auto'
+        document.getElementById('webCursor').style.padding = '8px'
+        document.getElementById('webCursor').innerText = 'View Board Members'
+      })
+      document.getElementById('viewpannel4').addEventListener('mouseleave', () => {
+        document.getElementById('webCursor').style.width = '20px'
+        document.getElementById('webCursor').style.height = '20px'
+        document.getElementById('webCursor').innerText = ''
+      })
+      document.getElementById('viewpannel5').addEventListener('mouseenter', () => {
+        document.getElementById('webCursor').style.width = 'auto'
+        document.getElementById('webCursor').style.height = 'auto'
+        document.getElementById('webCursor').style.padding = '8px'
+        document.getElementById('webCursor').innerText = 'View Board Members'
+      })
+      document.getElementById('viewpannel5').addEventListener('mouseleave', () => {
+        document.getElementById('webCursor').style.width = '20px'
+        document.getElementById('webCursor').style.height = '20px'
+        document.getElementById('webCursor').innerText = ''
+      })
+      document.getElementById('viewpannel6').addEventListener('mouseenter', () => {
+        document.getElementById('webCursor').style.width = 'auto'
+        document.getElementById('webCursor').style.height = 'auto'
+        document.getElementById('webCursor').style.padding = '8px'
+        document.getElementById('webCursor').innerText = 'View Board Members'
+      })
+      document.getElementById('viewpannel6').addEventListener('mouseleave', () => {
+        document.getElementById('webCursor').style.width = '20px'
+        document.getElementById('webCursor').style.height = '20px'
+        document.getElementById('webCursor').innerText = ''
+      })
       document.getElementById('viewweb').addEventListener('mouseenter', () => {
         document.getElementById('webCursor').style.width = 'auto'
         document.getElementById('webCursor').style.height = 'auto'
@@ -257,7 +324,7 @@ const BrandingSection = () => {
 
   const renderListItems = (items) => {
     return items.map((item, index) => (
-      <Link to={item.team != false ? `/members?team=${item.team}` : null} style={{ textDecoration: "none" }}>
+      <Link to={item.team != false ? `/members?team=${item.team=="pannel1" || item.team=="pannel2" || item.team=="pannel3" || item.team=="pannel4" || item.team=="pannel5" || item.team=="pannel6" ?"board": item.team}` : null} style={{ textDecoration: "none" }}>
         <li id={`view${item.team}`} key={index}>
           <div>
             <h3>{item.name}</h3>
@@ -278,14 +345,14 @@ const BrandingSection = () => {
       <div className="meetteam">MEET OUR TEAM</div>
       <div className="faculty">
         {/* <div className="faculty1">
-          <img src="src/assets/faculty.jpg" alt="Teacher 1" />
+          <img src="src/assets/faculty.webp" alt="Teacher 1" />
           <div className="designation">
             Teacher 1<br />
             Designation
           </div>
         </div> */}
         <div className="faculty2">
-          <img src="/membersIMG/Ajeet Sir Pic.jpg" alt="Teacher" />
+          <img src="/membersIMG/Ajeet Sir Pic.webp" alt="Teacher" />
           <div className="designation">
             Dr. Ajeet Singh<br />
             Club Co-ordinator

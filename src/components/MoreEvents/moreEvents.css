@@ -11,7 +11,7 @@
   background-image: radial-gradient(circle, #D6D8D9 2px, transparent 1px);
   background-size: 20px 20px; 
   /* height: 300vh; */
-  /* background: url(/src/assets/aboutBG.png); */
+  /* background: url(/src/assets/aboutBG.webp); */
   background-size: contain;
   background-attachment: fixed;
 }

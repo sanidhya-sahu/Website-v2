@@ -161,14 +161,14 @@ const BrandingSection = () => {
       <div className="meetteam">MEET OUR TEAM</div>
       <div className="faculty">
         {/* <div className="faculty1">
-          <img src="src/assets/faculty.jpg" alt="Teacher 1" />
+          <img src="src/assets/faculty.webp" alt="Teacher 1" />
           <div className="designation">
             Teacher 1<br />
             Designation
           </div>
         </div> */}
         <div className="faculty2">
-          <img src="/membersIMG/Ajeet Sir Pic.jpg" alt="Teacher" />
+          <img src="/membersIMG/Ajeet Sir Pic.webp" alt="Teacher" />
           <div className="designation">
           Dr. Ajeet Singh<br />
             Club Co-ordinator

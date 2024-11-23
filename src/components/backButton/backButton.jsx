@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import backBut from '../../assets/backBut.png' 
+import backBut from '../../assets/backBut.webp' 
 import './back.css'
 import { useNavigate } from "react-router-dom";
 function backButton(props) {
@@ -22,9 +22,9 @@ function backButton(props) {
         }
     },[])
   return (
-    <div onClick={()=>navigate('/')} id='backButtonWrap' className='backButtonWrap'>
+    <div onClick={()=>history.back()} id='backButtonWrap' className='backButtonWrap'>
       <img src={backBut} alt="" srcset="" />
-      <h5 id='backtxt' >Home</h5>
+      <h5 id='backtxt' >Back</h5>
     </div>
   )
 }

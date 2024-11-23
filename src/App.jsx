@@ -24,9 +24,10 @@ import Cursor from "./components/Cursor/cursor.jsx";
 import LandingPage from "./components/LandingPage/LandingPage.jsx";
 import LandingPageMob from "./components/LandingPage/LandingPageMob.jsx";
 import Menu from "./components/Menu/menu.jsx";
+import Loader from '../src/components/Loader/loader.jsx';
 const App = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 480);
-
+  const [loading, setLoading] = useState(true);
   useEffect(() => {
     var lastWidth = window.innerWidth;
     const handleResize = () => {
@@ -39,45 +40,55 @@ const App = () => {
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 7700); 
+
+    return () => clearTimeout(timer);
+  }, []);
 
   return (
     <>
-      <Router>
-        <Routes>
-          <Route
-            path="/"
-            element={
-              <>
-                {isMobile ? "" : <Cursor></Cursor>}
-                <Scroller></Scroller>
-                <Menu></Menu>
-                {/* <GooeyCursor /> */}
-                {isMobile ? <LandingPageMob></LandingPageMob> : <LandingPage /> }
-                <Heropage />
-                {isMobile ? <EventsSectionMobile /> : <EventSection />}
-                {isMobile ? <GallerySectionMobile /> : <GallerySection />}
-                <Proj />
-                {isMobile ? (
-                  <TeamMembersSectionMobile />
-                ) : (
-                  <TeamMembersSection />
-                )}
-                {isMobile ? <FooterMobile /> : <Footer />}
-              </>
-            }
-          ></Route>
-          <Route path="/events" element={<MoreEvents />}></Route>
-          <Route path="/magazine" element={<Magazine />}></Route>
-          <Route path="/about" element={<About />}></Route>
-          <Route path="/members" element={<MembersPage />}></Route>
-          <Route path="/projects" element={<PorjectsPage />}></Route>
-          <Route path="/events-gallery" element={<BoxGrid />} />
-          <Route
-            path="/events/:eventName"
-            element={<AsymmetricScrollingGallery />}
-          />
-        </Routes>
-      </Router>
+      {loading && <Loader onLoadingComplete={() => setLoading(false)} />}
+      {!loading &&
+        <Router>
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <>
+                  {isMobile ? "" : <Cursor></Cursor>}
+                  <Scroller></Scroller>
+                  <Menu></Menu>
+                  {/* <GooeyCursor /> */}
+                  {isMobile ? <LandingPageMob></LandingPageMob> : <LandingPage />}
+                  <Heropage />
+                  {isMobile ? <EventsSectionMobile /> : <EventSection />}
+                  {isMobile ? <GallerySectionMobile /> : <GallerySection />}
+                  <Proj />
+                  {isMobile ? (
+                    <TeamMembersSectionMobile />
+                  ) : (
+                    <TeamMembersSection />
+                  )}
+                  {isMobile ? <FooterMobile /> : <Footer />}
+                </>
+              }
+            ></Route>
+            <Route path="/events" element={<MoreEvents />}></Route>
+            <Route path="/magazine" element={<Magazine />}></Route>
+            <Route path="/about" element={<About />}></Route>
+            <Route path="/members" element={<MembersPage />}></Route>
+            <Route path="/projects" element={<PorjectsPage />}></Route>
+            <Route path="/events-gallery" element={<BoxGrid />} />
+            <Route
+              path="/events/:eventName"
+              element={<AsymmetricScrollingGallery />}
+            />
+          </Routes>
+        </Router>
+      }
     </>
   );
 };

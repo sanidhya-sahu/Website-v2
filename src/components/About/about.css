@@ -7,7 +7,7 @@
     flex-direction: column;
     gap: 10vh;
     background-color: #f1f1f1;
-    background-image: url(/src/assets/aboutBG.png);
+    background-image: url(/src/assets/aboutBG.webp);
     background-size: contain;
     background-position-x: left;
     background-attachment: fixed;
@@ -391,7 +391,7 @@
 .statBox1 {
     border-top-right-radius: 50px;
     border-bottom-left-radius: 50px;
-    background-image: url(/src/assets/members23-24.png);
+    background-image: url(/src/assets/members23-24.webp);
     background-size: 230px;
     background-position-x: -40px;
 }
@@ -419,7 +419,7 @@
 .statBox2 {
     border-top-left-radius: 50px;
     border-bottom-right-radius: 50px;
-    background-image: url(/src/assets/aboutSpeaker.png);
+    background-image: url(/src/assets/aboutSpeaker.webp);
     background-size: 230px;
     background-position-x: -40px;
     background-position-y: center;
@@ -428,7 +428,7 @@
 .statBox3 {
     border-bottom-right-radius: 50px;
     border-top-left-radius: 50px;
-    background-image: url(/src/assets/aboutEvent.png);
+    background-image: url(/src/assets/aboutEvent.webp);
     background-size: 230px;
     background-position-x: -40px;
     background-position-y: center;
@@ -437,7 +437,7 @@
 .statBox4 {
     border-top-right-radius: 50px;
     border-bottom-left-radius: 50px;
-    background-image: url(/src/assets/aboutComp.png);
+    background-image: url(/src/assets/aboutComp.webp);
     background-size: 230px;
     background-position-x: -17px;
     background-position-y: center;

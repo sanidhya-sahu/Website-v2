@@ -69,7 +69,7 @@ const Heropage = () => {
           <h1 className="heading">AI CONIC 2.0</h1>
           <img
             className="event-image-right"
-            src="/HeroSection/aiconic2.png"
+            src="/HeroSection/aiconic2.webp"
             alt="Technology"
           />
           <div className="description">

@@ -7,11 +7,11 @@ function LandingPage() {
         <div className="mainBox1">
           <div className="box1row1">
             AI CLUB
-            <img src="/PublicAssets/club_dark.png" alt="" srcset="" />
+            <img src="/PublicAssets/club_dark.webp" alt="" srcset="" />
           </div>
           <div className="box1row2">
             <div className="box1row2main">
-              <div className="vertxt">sudo rm -rf System32</div>
+              <div className="vertxt">sudo rm -rf /models</div>
               Machine Learning
               <br />
               Natural Language Processing
@@ -39,7 +39,7 @@ function LandingPage() {
           </div>
           <div className="box2row2">
             <div className="box2row2col1">
-              <img src="/PublicAssets/robot.png" alt="" srcset="" />
+              <img src="/PublicAssets/robot.webp" alt="" srcset="" />
             </div>
             <div className="box2row2col2"></div>
           </div>
