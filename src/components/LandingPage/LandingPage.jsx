@@ -7,7 +7,7 @@ function LandingPage() {
         <div className="mainBox1">
           <div className="box1row1">
             AI CLUB
-            <img srcSet="/PublicAssets/club_dark.webp" alt="" srcset="" />
+            <img src="/PublicAssets/club_dark.webp" alt="" srcset="" />
           </div>
           <div className="box1row2">
             <div className="box1row2main">
@@ -23,7 +23,7 @@ function LandingPage() {
               Robotics
             </div>
             <div className="box1row2side">
-              <img srcSet="/PublicAssets/landRing.svg" alt="" />
+              <img src="/PublicAssets/landRing.svg" alt="" />
             </div>
           </div>
           <div className="box1row3">
@@ -39,7 +39,7 @@ function LandingPage() {
           </div>
           <div className="box2row2">
             <div className="box2row2col1">
-              <img srcSet="/PublicAssets/robot.webp" alt="" srcset="" />
+              <img src="/PublicAssets/robot.webp" alt="" srcset="" />
             </div>
             <div className="box2row2col2"></div>
           </div>
